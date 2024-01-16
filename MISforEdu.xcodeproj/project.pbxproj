@@ -7,20 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		136F32A1946E222FB1D334C0 /* Pods_MISforEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C600ADD501D55DB17983DCF4 /* Pods_MISforEdu.framework */; };
+		3206A4062B56A31500E35D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206A4052B56A31400E35D90 /* AppDelegate.swift */; };
+		320DDC262B58EE8B0077E50B /* GradeManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC252B58EE8B0077E50B /* GradeManageView.swift */; };
+		320DDC2A2B58EF250077E50B /* AttendLectureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC292B58EF250077E50B /* AttendLectureView.swift */; };
+		320DDC2E2B58EF490077E50B /* SchoolManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC2D2B58EF490077E50B /* SchoolManageView.swift */; };
+		320DDC302B58EF700077E50B /* AttendManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC2F2B58EF700077E50B /* AttendManageView.swift */; };
+		320DDC322B58EFD40077E50B /* GradeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC312B58EFD40077E50B /* GradeCheckView.swift */; };
+		320DDC342B58F0A60077E50B /* InstructManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC332B58F0A60077E50B /* InstructManageView.swift */; };
+		320DDC362B58F0DE0077E50B /* ClassManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC352B58F0DE0077E50B /* ClassManageView.swift */; };
+		320DDC382B58F1F20077E50B /* AttendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC372B58F1F20077E50B /* AttendView.swift */; };
+		320DDC3A2B58F2860077E50B /* PersonCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC392B58F2860077E50B /* PersonCheckView.swift */; };
+		320DDC412B592E060077E50B /* ClassTimeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC402B592E060077E50B /* ClassTimeSheet.swift */; };
+		320DDC452B5937300077E50B /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC442B5937300077E50B /* Filter.swift */; };
+		320DDC492B5963FC0077E50B /* CriticSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC482B5963FC0077E50B /* CriticSheet.swift */; };
 		324A3A522B564E2D0026BB79 /* MISforEduApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A512B564E2D0026BB79 /* MISforEduApp.swift */; };
-		324A3A542B564E2D0026BB79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A532B564E2D0026BB79 /* ContentView.swift */; };
 		324A3A5A2B564E2F0026BB79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324A3A592B564E2F0026BB79 /* Preview Assets.xcassets */; };
 		324A3A642B564E2F0026BB79 /* MISforEduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A632B564E2F0026BB79 /* MISforEduTests.swift */; };
 		324A3A6E2B564E2F0026BB79 /* MISforEduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A6D2B564E2F0026BB79 /* MISforEduUITests.swift */; };
 		324A3A702B564E2F0026BB79 /* MISforEduUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A6F2B564E2F0026BB79 /* MISforEduUITestsLaunchTests.swift */; };
-		324A3A7E2B564F850026BB79 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A7D2B564F850026BB79 /* LoginView.swift */; };
 		324A3A802B56526B0026BB79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324A3A7F2B56526A0026BB79 /* Assets.xcassets */; };
-		324A3A832B5659320026BB79 /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A822B5659310026BB79 /* StudentView.swift */; };
 		324A3A862B565F890026BB79 /* DataDict_stu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A852B565F890026BB79 /* DataDict_stu.swift */; };
-		324A3A882B56671A0026BB79 /* TeacherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A872B56671A0026BB79 /* TeacherView.swift */; };
-		324A3A8A2B5667A50026BB79 /* SecretaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A892B5667A50026BB79 /* SecretaryView.swift */; };
-		324A3A8C2B5668B80026BB79 /* HRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A8B2B5668B70026BB79 /* HRView.swift */; };
-		324A3A8E2B5669730026BB79 /* DeanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A8D2B5669730026BB79 /* DeanView.swift */; };
+		326BE8532B58D1EC00CD3911 /* AccountManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326BE8522B58D1EC00CD3911 /* AccountManageView.swift */; };
+		326BE8552B58D20C00CD3911 /* SyllabusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326BE8542B58D20C00CD3911 /* SyllabusView.swift */; };
+		326BE8572B58D27100CD3911 /* CriticCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326BE8562B58D27100CD3911 /* CriticCheckView.swift */; };
+		326BE8592B58D48400CD3911 /* CriticManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326BE8582B58D48400CD3911 /* CriticManageView.swift */; };
+		326BE85C2B58D4EE00CD3911 /* DataInputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326BE85B2B58D4EE00CD3911 /* DataInputInterface.swift */; };
+		327042872B58128300A8750C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327042862B58128300A8750C /* AccountView.swift */; };
+		3270428E2B582B5A00A8750C /* GlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270428D2B582B5A00A8750C /* GlobalDefinition.swift */; };
+		327042902B58B96300A8750C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270428F2B58B96300A8750C /* LoginView.swift */; };
+		3296FBE62B79FA0F0083FBC2 /* Interface_sql_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */; };
+		32A0B7472B77809F00CB3E76 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0B7462B77809F00CB3E76 /* BackButton.swift */; };
+		32A0B7492B77C02400CB3E76 /* ClassTableSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0B7482B77C02400CB3E76 /* ClassTableSheets.swift */; };
+		32B420642B5A8E500029046D /* CampusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B420632B5A8E500029046D /* CampusView.swift */; };
+		32B420662B5A93CD0029046D /* FilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B420652B5A93CD0029046D /* FilterBar.swift */; };
+		32B420682B5A94160029046D /* FilterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B420672B5A94160029046D /* FilterInfo.swift */; };
+		32B4206A2B5A960E0029046D /* FilterInterpre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B420692B5A960E0029046D /* FilterInterpre.swift */; };
+		32CDDDCC2B59FDCB00931E9D /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDCB2B59FDCB00931E9D /* Loading.swift */; };
+		32CDDDCE2B5A03B300931E9D /* AttendSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDCD2B5A03B300931E9D /* AttendSheet.swift */; };
+		32CDDDD02B5A042E00931E9D /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDCF2B5A042E00931E9D /* CheckboxButton.swift */; };
+		32CDDDD22B5A07F300931E9D /* GradeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDD12B5A07F300931E9D /* GradeSheet.swift */; };
+		32CDDDD42B5A341900931E9D /* GradeEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDD32B5A341900931E9D /* GradeEdit.swift */; };
+		32CDDDD62B5A480100931E9D /* ClassRoomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDD52B5A480100931E9D /* ClassRoomSheet.swift */; };
+		32CDDDD82B5A4B2F00931E9D /* CampusGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDD72B5A4B2F00931E9D /* CampusGuide.swift */; };
+		4B553705BA443EC9DA83ADFE /* Pods_MISforEdu_MISforEduUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C22E230D593C4B5C8A3ED6E6 /* Pods_MISforEdu_MISforEduUITests.framework */; };
+		D88DD4AFC4618CF856D746D0 /* Pods_MISforEduTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2C960E9BA8420FAFD1801A /* Pods_MISforEduTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +72,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03C1F0B5155F1495688BB6A3 /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MISforEdu-MISforEduUITests.debug.xcconfig"; path = "Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		188914FB6CD30B261B9B3802 /* Pods-MISforEduTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MISforEduTests.release.xcconfig"; path = "Target Support Files/Pods-MISforEduTests/Pods-MISforEduTests.release.xcconfig"; sourceTree = "<group>"; };
+		3206A4052B56A31400E35D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		320DDC0F2B58EA2F0077E50B /* Python3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python3.framework; path = Library/Frameworks/Python3.framework; sourceTree = DEVELOPER_DIR; };
+		320DDC152B58EA580077E50B /* AzureCommunication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AzureCommunication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320DDC182B58EA630077E50B /* AzureCommunicationChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AzureCommunicationChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320DDC1B2B58EA660077E50B /* AzureCommunicationCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AzureCommunicationCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320DDC1E2B58EA6A0077E50B /* AzureCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AzureCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320DDC252B58EE8B0077E50B /* GradeManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeManageView.swift; sourceTree = SOURCE_ROOT; };
+		320DDC292B58EF250077E50B /* AttendLectureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendLectureView.swift; sourceTree = "<group>"; };
+		320DDC2D2B58EF490077E50B /* SchoolManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolManageView.swift; sourceTree = "<group>"; };
+		320DDC2F2B58EF700077E50B /* AttendManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AttendManageView.swift; path = MISforEdu/AttendManageView.swift; sourceTree = SOURCE_ROOT; };
+		320DDC312B58EFD40077E50B /* GradeCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCheckView.swift; sourceTree = "<group>"; };
+		320DDC332B58F0A60077E50B /* InstructManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructManageView.swift; sourceTree = "<group>"; };
+		320DDC352B58F0DE0077E50B /* ClassManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassManageView.swift; sourceTree = "<group>"; };
+		320DDC372B58F1F20077E50B /* AttendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendView.swift; sourceTree = "<group>"; };
+		320DDC392B58F2860077E50B /* PersonCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCheckView.swift; sourceTree = "<group>"; };
+		320DDC402B592E060077E50B /* ClassTimeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTimeSheet.swift; sourceTree = "<group>"; };
+		320DDC442B5937300077E50B /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		320DDC482B5963FC0077E50B /* CriticSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticSheet.swift; sourceTree = "<group>"; };
 		324A3A4E2B564E2D0026BB79 /* MISforEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MISforEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A3A512B564E2D0026BB79 /* MISforEduApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MISforEduApp.swift; sourceTree = "<group>"; };
-		324A3A532B564E2D0026BB79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		324A3A572B564E2F0026BB79 /* MISforEdu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MISforEdu.entitlements; sourceTree = "<group>"; };
 		324A3A592B564E2F0026BB79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		324A3A5F2B564E2F0026BB79 /* MISforEduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MISforEduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,28 +101,47 @@
 		324A3A692B564E2F0026BB79 /* MISforEduUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MISforEduUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A3A6D2B564E2F0026BB79 /* MISforEduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MISforEduUITests.swift; sourceTree = "<group>"; };
 		324A3A6F2B564E2F0026BB79 /* MISforEduUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MISforEduUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		324A3A7D2B564F850026BB79 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		324A3A7F2B56526A0026BB79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		324A3A822B5659310026BB79 /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
 		324A3A852B565F890026BB79 /* DataDict_stu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDict_stu.swift; sourceTree = "<group>"; };
-		324A3A872B56671A0026BB79 /* TeacherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherView.swift; sourceTree = "<group>"; };
-		324A3A892B5667A50026BB79 /* SecretaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretaryView.swift; sourceTree = "<group>"; };
-		324A3A8B2B5668B70026BB79 /* HRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRView.swift; sourceTree = "<group>"; };
-		324A3A8D2B5669730026BB79 /* DeanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeanView.swift; sourceTree = "<group>"; };
+		326BE8522B58D1EC00CD3911 /* AccountManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManageView.swift; sourceTree = "<group>"; };
+		326BE8542B58D20C00CD3911 /* SyllabusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyllabusView.swift; sourceTree = "<group>"; };
+		326BE8562B58D27100CD3911 /* CriticCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticCheckView.swift; sourceTree = "<group>"; };
+		326BE8582B58D48400CD3911 /* CriticManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CriticManageView.swift; path = MISforEdu/CriticManageView.swift; sourceTree = SOURCE_ROOT; };
+		326BE85B2B58D4EE00CD3911 /* DataInputInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInputInterface.swift; sourceTree = "<group>"; };
+		327042862B58128300A8750C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		3270428D2B582B5A00A8750C /* GlobalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefinition.swift; sourceTree = "<group>"; };
+		3270428F2B58B96300A8750C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3296FBE32B79FA0E0083FBC2 /* MISforEdu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MISforEdu-Bridging-Header.h"; sourceTree = "<group>"; };
+		3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Interface_sql_server.cpp; sourceTree = "<group>"; };
+		3296FBE52B79FA0F0083FBC2 /* Interface_sql_server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Interface_sql_server.hpp; sourceTree = "<group>"; };
+		32A0B7462B77809F00CB3E76 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		32A0B7482B77C02400CB3E76 /* ClassTableSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableSheets.swift; sourceTree = "<group>"; };
+		32B420632B5A8E500029046D /* CampusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusView.swift; sourceTree = "<group>"; };
+		32B420652B5A93CD0029046D /* FilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBar.swift; sourceTree = "<group>"; };
+		32B420672B5A94160029046D /* FilterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInfo.swift; sourceTree = "<group>"; };
+		32B420692B5A960E0029046D /* FilterInterpre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInterpre.swift; sourceTree = "<group>"; };
+		32CDDDCB2B59FDCB00931E9D /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		32CDDDCD2B5A03B300931E9D /* AttendSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendSheet.swift; sourceTree = "<group>"; };
+		32CDDDCF2B5A042E00931E9D /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		32CDDDD12B5A07F300931E9D /* GradeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeSheet.swift; sourceTree = "<group>"; };
+		32CDDDD32B5A341900931E9D /* GradeEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeEdit.swift; sourceTree = "<group>"; };
+		32CDDDD52B5A480100931E9D /* ClassRoomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRoomSheet.swift; sourceTree = "<group>"; usesTabs = 1; };
+		32CDDDD72B5A4B2F00931E9D /* CampusGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusGuide.swift; sourceTree = "<group>"; };
+		6074905315CB4237A47BFE8F /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MISforEdu-MISforEduUITests.release.xcconfig"; path = "Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83FA8127142E8620D6CFDE35 /* Pods-MISforEduTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MISforEduTests.debug.xcconfig"; path = "Target Support Files/Pods-MISforEduTests/Pods-MISforEduTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A40213EAA43BC66D1EAA8E1B /* Pods-MISforEdu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MISforEdu.debug.xcconfig"; path = "Target Support Files/Pods-MISforEdu/Pods-MISforEdu.debug.xcconfig"; sourceTree = "<group>"; };
+		AA2C960E9BA8420FAFD1801A /* Pods_MISforEduTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MISforEduTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22E230D593C4B5C8A3ED6E6 /* Pods_MISforEdu_MISforEduUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MISforEdu_MISforEduUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C600ADD501D55DB17983DCF4 /* Pods_MISforEdu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MISforEdu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA81E598A430457AF53FD36D /* Pods-MISforEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MISforEdu.release.xcconfig"; path = "Target Support Files/Pods-MISforEdu/Pods-MISforEdu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		324A3A4B2B564E2D0026BB79 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		324A3A5C2B564E2F0026BB79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88DD4AFC4618CF856D746D0 /* Pods_MISforEduTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +149,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B553705BA443EC9DA83ADFE /* Pods_MISforEdu_MISforEduUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C3DFB0A673FC70C1935EB85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136F32A1946E222FB1D334C0 /* Pods_MISforEdu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17F6743C99FF4195C38AC0A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A40213EAA43BC66D1EAA8E1B /* Pods-MISforEdu.debug.xcconfig */,
+				DA81E598A430457AF53FD36D /* Pods-MISforEdu.release.xcconfig */,
+				03C1F0B5155F1495688BB6A3 /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */,
+				6074905315CB4237A47BFE8F /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */,
+				83FA8127142E8620D6CFDE35 /* Pods-MISforEduTests.debug.xcconfig */,
+				188914FB6CD30B261B9B3802 /* Pods-MISforEduTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		208CFA39FA84E1CF253DC635 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				320DDC1E2B58EA6A0077E50B /* AzureCore.framework */,
+				320DDC1B2B58EA660077E50B /* AzureCommunicationCommon.framework */,
+				320DDC182B58EA630077E50B /* AzureCommunicationChat.framework */,
+				320DDC152B58EA580077E50B /* AzureCommunication.framework */,
+				320DDC0F2B58EA2F0077E50B /* Python3.framework */,
+				C600ADD501D55DB17983DCF4 /* Pods_MISforEdu.framework */,
+				C22E230D593C4B5C8A3ED6E6 /* Pods_MISforEdu_MISforEduUITests.framework */,
+				AA2C960E9BA8420FAFD1801A /* Pods_MISforEduTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		320DDC3F2B592DEB0077E50B /* FuncDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				320DDC402B592E060077E50B /* ClassTimeSheet.swift */,
+				32CDDDD52B5A480100931E9D /* ClassRoomSheet.swift */,
+				32A0B7482B77C02400CB3E76 /* ClassTableSheets.swift */,
+				320DDC442B5937300077E50B /* Filter.swift */,
+				32B420652B5A93CD0029046D /* FilterBar.swift */,
+				32CDDDCD2B5A03B300931E9D /* AttendSheet.swift */,
+				32CDDDCF2B5A042E00931E9D /* CheckboxButton.swift */,
+				32A0B7462B77809F00CB3E76 /* BackButton.swift */,
+				32CDDDCB2B59FDCB00931E9D /* Loading.swift */,
+				320DDC482B5963FC0077E50B /* CriticSheet.swift */,
+				32CDDDD12B5A07F300931E9D /* GradeSheet.swift */,
+				32CDDDD32B5A341900931E9D /* GradeEdit.swift */,
+				32CDDDD72B5A4B2F00931E9D /* CampusGuide.swift */,
+			);
+			path = FuncDisplay;
+			sourceTree = "<group>";
+		};
 		324A3A452B564E2D0026BB79 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +219,8 @@
 				324A3A622B564E2F0026BB79 /* MISforEduTests */,
 				324A3A6C2B564E2F0026BB79 /* MISforEduUITests */,
 				324A3A4F2B564E2D0026BB79 /* Products */,
+				17F6743C99FF4195C38AC0A3 /* Pods */,
+				208CFA39FA84E1CF253DC635 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,14 +237,18 @@
 		324A3A502B564E2D0026BB79 /* MISforEdu */ = {
 			isa = PBXGroup;
 			children = (
+				320DDC3F2B592DEB0077E50B /* FuncDisplay */,
+				326BE85A2B58D4D000CD3911 /* FuncCore */,
+				327042882B5817F600A8750C /* DatabaseQuery */,
+				32505A452B56E4B100ECB923 /* SubDisplay */,
 				324A3A842B565F680026BB79 /* DataDict */,
 				324A3A512B564E2D0026BB79 /* MISforEduApp.swift */,
 				324A3A7F2B56526A0026BB79 /* Assets.xcassets */,
-				324A3A812B5658B20026BB79 /* Accounts */,
-				324A3A7C2B564F750026BB79 /* LoginControl */,
-				324A3A532B564E2D0026BB79 /* ContentView.swift */,
+				327042862B58128300A8750C /* AccountView.swift */,
+				3270428F2B58B96300A8750C /* LoginView.swift */,
 				324A3A572B564E2F0026BB79 /* MISforEdu.entitlements */,
 				324A3A582B564E2F0026BB79 /* Preview Content */,
+				3206A4052B56A31400E35D90 /* AppDelegate.swift */,
 			);
 			path = MISforEdu;
 			sourceTree = "<group>";
@@ -146,32 +278,54 @@
 			path = MISforEduUITests;
 			sourceTree = "<group>";
 		};
-		324A3A7C2B564F750026BB79 /* LoginControl */ = {
-			isa = PBXGroup;
-			children = (
-				324A3A7D2B564F850026BB79 /* LoginView.swift */,
-			);
-			path = LoginControl;
-			sourceTree = "<group>";
-		};
-		324A3A812B5658B20026BB79 /* Accounts */ = {
-			isa = PBXGroup;
-			children = (
-				324A3A822B5659310026BB79 /* StudentView.swift */,
-				324A3A872B56671A0026BB79 /* TeacherView.swift */,
-				324A3A892B5667A50026BB79 /* SecretaryView.swift */,
-				324A3A8D2B5669730026BB79 /* DeanView.swift */,
-				324A3A8B2B5668B70026BB79 /* HRView.swift */,
-			);
-			path = Accounts;
-			sourceTree = "<group>";
-		};
 		324A3A842B565F680026BB79 /* DataDict */ = {
 			isa = PBXGroup;
 			children = (
 				324A3A852B565F890026BB79 /* DataDict_stu.swift */,
+				3270428D2B582B5A00A8750C /* GlobalDefinition.swift */,
+				32B420672B5A94160029046D /* FilterInfo.swift */,
 			);
 			path = DataDict;
+			sourceTree = "<group>";
+		};
+		32505A452B56E4B100ECB923 /* SubDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				320DDC2F2B58EF700077E50B /* AttendManageView.swift */,
+				320DDC292B58EF250077E50B /* AttendLectureView.swift */,
+				326BE8522B58D1EC00CD3911 /* AccountManageView.swift */,
+				320DDC372B58F1F20077E50B /* AttendView.swift */,
+				32B420632B5A8E500029046D /* CampusView.swift */,
+				326BE8582B58D48400CD3911 /* CriticManageView.swift */,
+				326BE8562B58D27100CD3911 /* CriticCheckView.swift */,
+				320DDC352B58F0DE0077E50B /* ClassManageView.swift */,
+				320DDC252B58EE8B0077E50B /* GradeManageView.swift */,
+				320DDC312B58EFD40077E50B /* GradeCheckView.swift */,
+				326BE8542B58D20C00CD3911 /* SyllabusView.swift */,
+				320DDC2D2B58EF490077E50B /* SchoolManageView.swift */,
+				320DDC392B58F2860077E50B /* PersonCheckView.swift */,
+				320DDC332B58F0A60077E50B /* InstructManageView.swift */,
+			);
+			path = SubDisplay;
+			sourceTree = "<group>";
+		};
+		326BE85A2B58D4D000CD3911 /* FuncCore */ = {
+			isa = PBXGroup;
+			children = (
+				326BE85B2B58D4EE00CD3911 /* DataInputInterface.swift */,
+				32B420692B5A960E0029046D /* FilterInterpre.swift */,
+			);
+			path = FuncCore;
+			sourceTree = "<group>";
+		};
+		327042882B5817F600A8750C /* DatabaseQuery */ = {
+			isa = PBXGroup;
+			children = (
+				3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */,
+				3296FBE52B79FA0F0083FBC2 /* Interface_sql_server.hpp */,
+				3296FBE32B79FA0E0083FBC2 /* MISforEdu-Bridging-Header.h */,
+			);
+			path = DatabaseQuery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 324A3A732B564E2F0026BB79 /* Build configuration list for PBXNativeTarget "MISforEdu" */;
 			buildPhases = (
+				3C971885BE37031BACB4CCB9 /* [CP] Check Pods Manifest.lock */,
 				324A3A4A2B564E2D0026BB79 /* Sources */,
-				324A3A4B2B564E2D0026BB79 /* Frameworks */,
 				324A3A4C2B564E2D0026BB79 /* Resources */,
+				009F4A4A1F29979E2C59A834 /* [CP] Embed Pods Frameworks */,
+				5C3DFB0A673FC70C1935EB85 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +354,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 324A3A762B564E2F0026BB79 /* Build configuration list for PBXNativeTarget "MISforEduTests" */;
 			buildPhases = (
+				D5B12D34F3F90846D68D1541 /* [CP] Check Pods Manifest.lock */,
 				324A3A5B2B564E2F0026BB79 /* Sources */,
 				324A3A5C2B564E2F0026BB79 /* Frameworks */,
 				324A3A5D2B564E2F0026BB79 /* Resources */,
@@ -216,9 +373,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 324A3A792B564E2F0026BB79 /* Build configuration list for PBXNativeTarget "MISforEduUITests" */;
 			buildPhases = (
+				0F5FB5EFED22ED49D885B3F1 /* [CP] Check Pods Manifest.lock */,
 				324A3A652B564E2F0026BB79 /* Sources */,
 				324A3A662B564E2F0026BB79 /* Frameworks */,
 				324A3A672B564E2F0026BB79 /* Resources */,
+				9D703C9449CA546BC12A40F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +401,7 @@
 				TargetAttributes = {
 					324A3A4D2B564E2D0026BB79 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					324A3A5E2B564E2F0026BB79 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -262,6 +422,8 @@
 				Base,
 			);
 			mainGroup = 324A3A452B564E2D0026BB79;
+			packageReferences = (
+			);
 			productRefGroup = 324A3A4F2B564E2D0026BB79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,20 +461,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		009F4A4A1F29979E2C59A834 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MISforEdu/Pods-MISforEdu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MISforEdu/Pods-MISforEdu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MISforEdu/Pods-MISforEdu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F5FB5EFED22ED49D885B3F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MISforEdu-MISforEduUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C971885BE37031BACB4CCB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MISforEdu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D703C9449CA546BC12A40F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B12D34F3F90846D68D1541 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MISforEduTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		324A3A4A2B564E2D0026BB79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324A3A7E2B564F850026BB79 /* LoginView.swift in Sources */,
-				324A3A8A2B5667A50026BB79 /* SecretaryView.swift in Sources */,
-				324A3A8E2B5669730026BB79 /* DeanView.swift in Sources */,
-				324A3A542B564E2D0026BB79 /* ContentView.swift in Sources */,
+				320DDC302B58EF700077E50B /* AttendManageView.swift in Sources */,
+				32CDDDD42B5A341900931E9D /* GradeEdit.swift in Sources */,
+				32B420662B5A93CD0029046D /* FilterBar.swift in Sources */,
+				32CDDDD62B5A480100931E9D /* ClassRoomSheet.swift in Sources */,
+				320DDC412B592E060077E50B /* ClassTimeSheet.swift in Sources */,
+				32CDDDD22B5A07F300931E9D /* GradeSheet.swift in Sources */,
+				326BE8532B58D1EC00CD3911 /* AccountManageView.swift in Sources */,
+				320DDC452B5937300077E50B /* Filter.swift in Sources */,
+				327042902B58B96300A8750C /* LoginView.swift in Sources */,
+				3270428E2B582B5A00A8750C /* GlobalDefinition.swift in Sources */,
+				32B420642B5A8E500029046D /* CampusView.swift in Sources */,
+				32CDDDD02B5A042E00931E9D /* CheckboxButton.swift in Sources */,
+				32CDDDCC2B59FDCB00931E9D /* Loading.swift in Sources */,
+				320DDC3A2B58F2860077E50B /* PersonCheckView.swift in Sources */,
+				320DDC362B58F0DE0077E50B /* ClassManageView.swift in Sources */,
+				326BE85C2B58D4EE00CD3911 /* DataInputInterface.swift in Sources */,
 				324A3A522B564E2D0026BB79 /* MISforEduApp.swift in Sources */,
-				324A3A8C2B5668B80026BB79 /* HRView.swift in Sources */,
-				324A3A832B5659320026BB79 /* StudentView.swift in Sources */,
+				327042872B58128300A8750C /* AccountView.swift in Sources */,
+				320DDC492B5963FC0077E50B /* CriticSheet.swift in Sources */,
+				32A0B7492B77C02400CB3E76 /* ClassTableSheets.swift in Sources */,
+				326BE8572B58D27100CD3911 /* CriticCheckView.swift in Sources */,
+				32B4206A2B5A960E0029046D /* FilterInterpre.swift in Sources */,
+				326BE8552B58D20C00CD3911 /* SyllabusView.swift in Sources */,
 				324A3A862B565F890026BB79 /* DataDict_stu.swift in Sources */,
-				324A3A882B56671A0026BB79 /* TeacherView.swift in Sources */,
+				320DDC2A2B58EF250077E50B /* AttendLectureView.swift in Sources */,
+				32B420682B5A94160029046D /* FilterInfo.swift in Sources */,
+				3206A4062B56A31500E35D90 /* AppDelegate.swift in Sources */,
+				32CDDDCE2B5A03B300931E9D /* AttendSheet.swift in Sources */,
+				32A0B7472B77809F00CB3E76 /* BackButton.swift in Sources */,
+				320DDC262B58EE8B0077E50B /* GradeManageView.swift in Sources */,
+				320DDC322B58EFD40077E50B /* GradeCheckView.swift in Sources */,
+				3296FBE62B79FA0F0083FBC2 /* Interface_sql_server.cpp in Sources */,
+				320DDC2E2B58EF490077E50B /* SchoolManageView.swift in Sources */,
+				32CDDDD82B5A4B2F00931E9D /* CampusGuide.swift in Sources */,
+				326BE8592B58D48400CD3911 /* CriticManageView.swift in Sources */,
+				320DDC382B58F1F20077E50B /* AttendView.swift in Sources */,
+				320DDC342B58F0A60077E50B /* InstructManageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,9 +753,11 @@
 		};
 		324A3A742B564E2F0026BB79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40213EAA43BC66D1EAA8E1B /* Pods-MISforEdu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MISforEdu/MISforEdu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -471,6 +766,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MISforEdu/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -481,26 +777,32 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = channingTong.MISforEdu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MISforEdu/DatabaseQuery/MISforEdu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		324A3A752B564E2F0026BB79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA81E598A430457AF53FD36D /* Pods-MISforEdu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MISforEdu/MISforEdu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -509,6 +811,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MISforEdu/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -519,23 +822,27 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = channingTong.MISforEdu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MISforEdu/DatabaseQuery/MISforEdu-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 		324A3A772B564E2F0026BB79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FA8127142E8620D6CFDE35 /* Pods-MISforEduTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +866,7 @@
 		};
 		324A3A782B564E2F0026BB79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 188914FB6CD30B261B9B3802 /* Pods-MISforEduTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,6 +890,7 @@
 		};
 		324A3A7A2B564E2F0026BB79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C1F0B5155F1495688BB6A3 /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -604,6 +913,7 @@
 		};
 		324A3A7B2B564E2F0026BB79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6074905315CB4237A47BFE8F /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
