@@ -40,7 +40,7 @@ struct LoginView: View {
                     VStack{
                         
                         TextField("学号/职工号", text: self.$emailAddress)
-                            .frame(width: geometry.size.width - 200, height: 50)
+                            .frame(width: geometry.size.width - 400, height: 50)
                             .textContentType(.emailAddress)
                             .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 0))
                             .accentColor(.red)
@@ -49,7 +49,7 @@ struct LoginView: View {
                         
                         
                         TextField("密码", text: self.$password)
-                            .frame(width: geometry.size.width - 200, height: 50)
+                            .frame(width: geometry.size.width - 400, height: 50)
                             .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 0))
                             .foregroundColor(.gray)
                             .background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
