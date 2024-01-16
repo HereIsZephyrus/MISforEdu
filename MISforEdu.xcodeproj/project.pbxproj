@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		324A3A522B564E2D0026BB79 /* MISforEduApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A512B564E2D0026BB79 /* MISforEduApp.swift */; };
+		324A3A542B564E2D0026BB79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A532B564E2D0026BB79 /* ContentView.swift */; };
 		324A3A5A2B564E2F0026BB79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324A3A592B564E2F0026BB79 /* Preview Assets.xcassets */; };
 		324A3A642B564E2F0026BB79 /* MISforEduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A632B564E2F0026BB79 /* MISforEduTests.swift */; };
 		324A3A6E2B564E2F0026BB79 /* MISforEduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A6D2B564E2F0026BB79 /* MISforEduUITests.swift */; };
@@ -20,9 +21,6 @@
 		324A3A8A2B5667A50026BB79 /* SecretaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A892B5667A50026BB79 /* SecretaryView.swift */; };
 		324A3A8C2B5668B80026BB79 /* HRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A8B2B5668B70026BB79 /* HRView.swift */; };
 		324A3A8E2B5669730026BB79 /* DeanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A8D2B5669730026BB79 /* DeanView.swift */; };
-		324A3A942B567AF50026BB79 /* UIScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A932B567AF50026BB79 /* UIScrollViewController.swift */; };
-		32BF59792B569827004F81BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF59782B569826004F81BF /* AppDelegate.swift */; };
-		32DDC5322B56819E00AADE83 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DDC5312B56819E00AADE83 /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +43,7 @@
 /* Begin PBXFileReference section */
 		324A3A4E2B564E2D0026BB79 /* MISforEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MISforEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A3A512B564E2D0026BB79 /* MISforEduApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MISforEduApp.swift; sourceTree = "<group>"; };
+		324A3A532B564E2D0026BB79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		324A3A572B564E2F0026BB79 /* MISforEdu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MISforEdu.entitlements; sourceTree = "<group>"; };
 		324A3A592B564E2F0026BB79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		324A3A5F2B564E2F0026BB79 /* MISforEduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MISforEduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,9 +59,6 @@
 		324A3A892B5667A50026BB79 /* SecretaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretaryView.swift; sourceTree = "<group>"; };
 		324A3A8B2B5668B70026BB79 /* HRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRView.swift; sourceTree = "<group>"; };
 		324A3A8D2B5669730026BB79 /* DeanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeanView.swift; sourceTree = "<group>"; };
-		324A3A932B567AF50026BB79 /* UIScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewController.swift; sourceTree = "<group>"; };
-		32BF59782B569826004F81BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32DDC5312B56819E00AADE83 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,15 +109,14 @@
 		324A3A502B564E2D0026BB79 /* MISforEdu */ = {
 			isa = PBXGroup;
 			children = (
-				32BF59782B569826004F81BF /* AppDelegate.swift */,
 				324A3A842B565F680026BB79 /* DataDict */,
 				324A3A512B564E2D0026BB79 /* MISforEduApp.swift */,
 				324A3A7F2B56526A0026BB79 /* Assets.xcassets */,
 				324A3A812B5658B20026BB79 /* Accounts */,
 				324A3A7C2B564F750026BB79 /* LoginControl */,
+				324A3A532B564E2D0026BB79 /* ContentView.swift */,
 				324A3A572B564E2F0026BB79 /* MISforEdu.entitlements */,
 				324A3A582B564E2F0026BB79 /* Preview Content */,
-				324A3A932B567AF50026BB79 /* UIScrollViewController.swift */,
 			);
 			path = MISforEdu;
 			sourceTree = "<group>";
@@ -155,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				324A3A7D2B564F850026BB79 /* LoginView.swift */,
-				32DDC5312B56819E00AADE83 /* AuthManager.swift */,
 			);
 			path = LoginControl;
 			sourceTree = "<group>";
@@ -260,7 +254,7 @@
 				};
 			};
 			buildConfigurationList = 324A3A492B564E2D0026BB79 /* Build configuration list for PBXProject "MISforEdu" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -310,17 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BF59792B569827004F81BF /* AppDelegate.swift in Sources */,
 				324A3A7E2B564F850026BB79 /* LoginView.swift in Sources */,
 				324A3A8A2B5667A50026BB79 /* SecretaryView.swift in Sources */,
 				324A3A8E2B5669730026BB79 /* DeanView.swift in Sources */,
+				324A3A542B564E2D0026BB79 /* ContentView.swift in Sources */,
 				324A3A522B564E2D0026BB79 /* MISforEduApp.swift in Sources */,
-				324A3A942B567AF50026BB79 /* UIScrollViewController.swift in Sources */,
 				324A3A8C2B5668B80026BB79 /* HRView.swift in Sources */,
 				324A3A832B5659320026BB79 /* StudentView.swift in Sources */,
 				324A3A862B565F890026BB79 /* DataDict_stu.swift in Sources */,
 				324A3A882B56671A0026BB79 /* TeacherView.swift in Sources */,
-				32DDC5322B56819E00AADE83 /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +464,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MISforEdu/MISforEdu.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MISforEdu/Preview Content\"";
@@ -490,7 +481,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -528,7 +519,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -643,7 +634,7 @@
 				324A3A722B564E2F0026BB79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		324A3A732B564E2F0026BB79 /* Build configuration list for PBXNativeTarget "MISforEdu" */ = {
 			isa = XCConfigurationList;
@@ -652,7 +643,7 @@
 				324A3A752B564E2F0026BB79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		324A3A762B564E2F0026BB79 /* Build configuration list for PBXNativeTarget "MISforEduTests" */ = {
 			isa = XCConfigurationList;
@@ -661,7 +652,7 @@
 				324A3A782B564E2F0026BB79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		324A3A792B564E2F0026BB79 /* Build configuration list for PBXNativeTarget "MISforEduUITests" */ = {
 			isa = XCConfigurationList;
@@ -670,7 +661,7 @@
 				324A3A7B2B564E2F0026BB79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

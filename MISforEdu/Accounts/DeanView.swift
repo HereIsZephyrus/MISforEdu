@@ -15,7 +15,7 @@ struct DeanView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack(spacing:15) {
-                Image("portarit")
+                Image("italy")
                     .resizable()
                     .frame(width: 100, height: 100)
                     .background(Color.yellow)
