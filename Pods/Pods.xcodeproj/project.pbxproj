@@ -1,0 +1,1162 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7B477CE8D2D113130415CA0F66B659F6 /* Build configuration list for PBXAggregateTarget "AppCenter" */;
+			buildPhases = (
+				9144BB6C83CC0C1FAC46C8FCC31F1BCC /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				B957DC6038A903FDAFBCB00EF92DFB74 /* PBXTargetDependency */,
+			);
+			name = AppCenter;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		13EE2AAC85F7D07C0639065D8A47D2C9 /* Pods-MISforEdu-MISforEduUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F0DB992413D4AC75C3748182B70DE03 /* Pods-MISforEdu-MISforEduUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		260DD658FAB9B75753B44E68999E669A /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE13C09F85C762049A9D59D8417977 /* ko.lproj */; };
+		3417AE1CACD6AFB6C7FEDDCB0A5D19A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		39B88162E4ADA7E53FFF07738BC3E7EF /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 60C85E0433E430584E68A778CD989B79 /* zh-Hant.lproj */; };
+		4366B2D209C26FCE19E3DD4288F03E60 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5B07655523CDB4CDA7D4A197D110F159 /* ja.lproj */; };
+		4F62BF9DFE318199434943277A7FCE1C /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D0CEE4CF4D69DE2B8B4856A0275B532B /* es.lproj */; };
+		52241B0C30F8531E3946E9100AD225F2 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C8D0F211F2DA0342F974E85C0139D508 /* pt.lproj */; };
+		5ED55FC38214BD6E5F5DD80098E8104C /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E10AEEC7B978CC45DC569C062052775C /* cs.lproj */; };
+		7BF29127DAE8770DFC3DE8CA418583CF /* Pods-MISforEdu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 787B617F667237B6E7CE415043E13BDB /* Pods-MISforEdu-dummy.m */; };
+		917200C40590D25842F0FE8B46C979DB /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E219D1D8FB76AE857173C2356C2E64DC /* tr.lproj */; };
+		9F65BE4CF1B511845F96683BDA015BCE /* Pods-MISforEduTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3C4940B93D0E10FD568B4FFA21757B /* Pods-MISforEduTests-dummy.m */; };
+		A52783ED5997F208063BE4D43354E903 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 66FC55F5B2E8569568561FC1CDEA0989 /* pl.lproj */; };
+		ACD1B2856B60FA5ED96A4C1090D41226 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0FCFB443211DAB39B667B4C3A3DCE70A /* zh-Hans.lproj */; };
+		BAF54CBBBB1859698C019E6FE35FD71B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BBA863A0B05DEFEF8281E8B25A169106 /* Pods-MISforEdu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68EBE6591A0F7F1D1D39F2AAEAB9387D /* Pods-MISforEdu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDAC7C60EE19FAD0749D554F4AE728BE /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8D60D24E9C3C295215262C25F4D7C9F3 /* ru.lproj */; };
+		BE6C1344E212C632956156AD532B18CF /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BD5ACB78DE45772E1D25C750556DC9B8 /* de.lproj */; };
+		C0F92E9D1C3D653CBE9060893A042AA6 /* Pods-MISforEdu-MISforEduUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B31B87156A822F8A21DB0AD57A8C187 /* Pods-MISforEdu-MISforEduUITests-dummy.m */; };
+		C1B64CF36E429671A40687DC43D25B4E /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F3EC11EDB9F5951172DD1054D94D2AF0 /* it.lproj */; };
+		CA692F424EDA705A514C92B366C42D00 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0F97F417F8CEF438686867BD74898F2D /* en.lproj */; };
+		CFC696159E2AE3357B921FF5BE81570C /* Pods-MISforEduTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 463EA4C183D5491D7CC55A33F85532B1 /* Pods-MISforEduTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D10D74448F0C119041EF032D54EEAB4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E48D8BFCFD2D86F783FDCE2F0512B1B0 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 98CF91B44A4B9CA498D454E20A450391 /* fr.lproj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		098257C82AFF4A4814790D38D9FED0CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3282A5B2437E609EEB85861D7ECE717;
+			remoteInfo = AppCenter;
+		};
+		4172E2AE2328688C38A05514F887039B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6AD42551A3E183DD79F9E0E66050544;
+			remoteInfo = "Pods-MISforEdu";
+		};
+		AD1172B0593E578257D56CD076E31BF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCD9915FE83842AE0201096155515772;
+			remoteInfo = "AppCenter-AppCenterDistributeResources";
+		};
+		B22EE10C34C6E91053ADB19A285727B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3282A5B2437E609EEB85861D7ECE717;
+			remoteInfo = AppCenter;
+		};
+		CA23A2BE6E68DAD9E915E2FFB7C212CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3282A5B2437E609EEB85861D7ECE717;
+			remoteInfo = AppCenter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C6A393259626439A93CA8D0AD1C74FB /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu-MISforEduUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F97F417F8CEF438686867BD74898F2D /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/en.lproj"; sourceTree = "<group>"; };
+		0FCFB443211DAB39B667B4C3A3DCE70A /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/zh-Hans.lproj"; sourceTree = "<group>"; };
+		11AF731E4071DCD5E34B4CA294302B92 /* AppCenter-AppCenterDistributeResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "AppCenter-AppCenterDistributeResources"; path = AppCenterDistributeResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		194AB29DC97EA93DC27924A1C34F641B /* Pods-MISforEduTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEduTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B264324E0126A3349D3DB41164C22F2 /* AppCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppCenter.release.xcconfig; sourceTree = "<group>"; };
+		220150BDF4B7FBF22E96C54012AB91AF /* Pods-MISforEdu-MISforEduUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MISforEdu-MISforEduUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		253DDC83FC9C0AC25FE610C81AA48D49 /* Pods-MISforEduTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MISforEduTests.modulemap"; sourceTree = "<group>"; };
+		29C0B0E1FD300593384E71FA699572C9 /* Pods-MISforEdu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MISforEdu.modulemap"; sourceTree = "<group>"; };
+		3A0C5004726D93BA768A9894E2DB3E73 /* Pods-MISforEdu-MISforEduUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MISforEdu-MISforEduUITests"; path = Pods_MISforEdu_MISforEduUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		428A44F0B618BBA1A3B7ACFB06B3A17D /* AppCenter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppCenter-xcframeworks.sh"; sourceTree = "<group>"; };
+		44BA1D1198470B8E0A8E693883C66ACF /* AppCenterAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenterAnalytics.xcframework; path = "AppCenter-SDK-Apple/AppCenterAnalytics.xcframework"; sourceTree = "<group>"; };
+		455C9A244F1DAB188EF9BC500BD5EBC6 /* Pods-MISforEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu.release.xcconfig"; sourceTree = "<group>"; };
+		463EA4C183D5491D7CC55A33F85532B1 /* Pods-MISforEduTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MISforEduTests-umbrella.h"; sourceTree = "<group>"; };
+		497CE12D80BB53B39F9A5F47E8D8656F /* Pods-MISforEdu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MISforEdu"; path = Pods_MISforEdu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E76F7F6FD12B3427840910D19DCEF7D /* Pods-MISforEduTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MISforEduTests-resources.sh"; sourceTree = "<group>"; };
+		4F0DB992413D4AC75C3748182B70DE03 /* Pods-MISforEdu-MISforEduUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MISforEdu-MISforEduUITests-umbrella.h"; sourceTree = "<group>"; };
+		5049F9562EB2A2EF8871AF3CBC5F2A18 /* Pods-MISforEdu-MISforEduUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-MISforEduUITests-Info.plist"; sourceTree = "<group>"; };
+		5A3C4940B93D0E10FD568B4FFA21757B /* Pods-MISforEduTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MISforEduTests-dummy.m"; sourceTree = "<group>"; };
+		5B07655523CDB4CDA7D4A197D110F159 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/ja.lproj"; sourceTree = "<group>"; };
+		60C85E0433E430584E68A778CD989B79 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/zh-Hant.lproj"; sourceTree = "<group>"; };
+		66FC55F5B2E8569568561FC1CDEA0989 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/pl.lproj"; sourceTree = "<group>"; };
+		68EBE6591A0F7F1D1D39F2AAEAB9387D /* Pods-MISforEdu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MISforEdu-umbrella.h"; sourceTree = "<group>"; };
+		719F25283F601FCFD0782377273CDC98 /* Pods-MISforEdu-MISforEduUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-MISforEduUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		787B617F667237B6E7CE415043E13BDB /* Pods-MISforEdu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MISforEdu-dummy.m"; sourceTree = "<group>"; };
+		7C6A669CF3B7EA7796EFCB43857AB53B /* Pods-MISforEdu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MISforEdu-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D1D5F325CF3592BFB8984A7066101C2 /* Pods-MISforEdu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-acknowledgements.plist"; sourceTree = "<group>"; };
+		7DADCE878287FB4E0564525A967D6B53 /* Pods-MISforEdu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu.debug.xcconfig"; sourceTree = "<group>"; };
+		7DAEEA5CDBC18502740B3A82D3486DE6 /* Pods-MISforEdu-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MISforEdu-resources.sh"; sourceTree = "<group>"; };
+		8B31B87156A822F8A21DB0AD57A8C187 /* Pods-MISforEdu-MISforEduUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MISforEdu-MISforEduUITests-dummy.m"; sourceTree = "<group>"; };
+		8BD831EE52F4B293985678E0A24FF06D /* Pods-MISforEdu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-Info.plist"; sourceTree = "<group>"; };
+		8D60D24E9C3C295215262C25F4D7C9F3 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/ru.lproj"; sourceTree = "<group>"; };
+		8D80BD91452E69853AB7805409AD6983 /* Pods-MISforEduTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MISforEduTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93297D4B0DA3AA60D964186CDA7B935B /* AppCenterCrashes.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenterCrashes.xcframework; path = "AppCenter-SDK-Apple/AppCenterCrashes.xcframework"; sourceTree = "<group>"; };
+		98CF91B44A4B9CA498D454E20A450391 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/fr.lproj"; sourceTree = "<group>"; };
+		98E03D914B96B542B1AEFBF0A95B963F /* ResourceBundle-AppCenterDistributeResources-AppCenter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AppCenterDistributeResources-AppCenter-Info.plist"; sourceTree = "<group>"; };
+		9ADE13C09F85C762049A9D59D8417977 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/ko.lproj"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A08F94721C859FF505090D07B775CC4C /* AppCenterDistribute.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenterDistribute.xcframework; path = "AppCenter-SDK-Apple/AppCenterDistribute.xcframework"; sourceTree = "<group>"; };
+		A0D0322893D6C01E9CC32C237B90BDD1 /* AppCenter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenter.xcframework; path = "AppCenter-SDK-Apple/AppCenter.xcframework"; sourceTree = "<group>"; };
+		AE5CBBB7143BB98313585AE068A86199 /* Pods-MISforEduTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEduTests.release.xcconfig"; sourceTree = "<group>"; };
+		B234B52B568E978176F55DF94AFFA348 /* Pods-MISforEdu-MISforEduUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MISforEdu-MISforEduUITests-resources.sh"; sourceTree = "<group>"; };
+		BAD31A57E21E915F29CF30B8E998A3AA /* AppCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppCenter.debug.xcconfig; sourceTree = "<group>"; };
+		BD5ACB78DE45772E1D25C750556DC9B8 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/de.lproj"; sourceTree = "<group>"; };
+		C802588FF6412AB95086D2919FC73012 /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu-MISforEduUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C8D0F211F2DA0342F974E85C0139D508 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/pt.lproj"; sourceTree = "<group>"; };
+		C9E1C7DF935DFF802786484713BC3E4D /* Pods-MISforEduTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEduTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D0CEE4CF4D69DE2B8B4856A0275B532B /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/es.lproj"; sourceTree = "<group>"; };
+		D1E059ED78FFD3153D98C448FA98F723 /* Pods-MISforEduTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEduTests-Info.plist"; sourceTree = "<group>"; };
+		E10AEEC7B978CC45DC569C062052775C /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = cs.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/cs.lproj"; sourceTree = "<group>"; };
+		E219D1D8FB76AE857173C2356C2E64DC /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/tr.lproj"; sourceTree = "<group>"; };
+		E43A86DFA4A7AFB42269F950116CE1DA /* Pods-MISforEduTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MISforEduTests"; path = Pods_MISforEduTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3EC11EDB9F5951172DD1054D94D2AF0 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = "AppCenter-SDK-Apple/AppCenterDistributeResources.bundle/it.lproj"; sourceTree = "<group>"; };
+		F56876FF79393A4DBEC2DD417868B2F9 /* Pods-MISforEdu-MISforEduUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MISforEdu-MISforEduUITests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15084D055436E4DEE8B86833AB01DA3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10D74448F0C119041EF032D54EEAB4B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192BCC32F3E2E2524BDC39CD0E3C5528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF54CBBBB1859698C019E6FE35FD71B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2106E7BEE4F662EC0CBA65DE9A79DB79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748B8D0EBCD2CAB21BECD625B4203093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3417AE1CACD6AFB6C7FEDDCB0A5D19A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0009956356796C7B23572A1566C0771E /* Distribute */ = {
+			isa = PBXGroup;
+			children = (
+				7365BE879BAD8F1CCAC6EFE4E2045990 /* Frameworks */,
+				8EA4458BADE560AE325E65B932F7DE5A /* Resources */,
+			);
+			name = Distribute;
+			sourceTree = "<group>";
+		};
+		23905BA80D06B1D71BFFB0C57AF4C8BA /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A172D5D2D58CBAC64588B4F7785F1 /* Frameworks */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		33FF6AD04F134EFA9587225424860242 /* Pods-MISforEdu-MISforEduUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F56876FF79393A4DBEC2DD417868B2F9 /* Pods-MISforEdu-MISforEduUITests.modulemap */,
+				220150BDF4B7FBF22E96C54012AB91AF /* Pods-MISforEdu-MISforEduUITests-acknowledgements.markdown */,
+				719F25283F601FCFD0782377273CDC98 /* Pods-MISforEdu-MISforEduUITests-acknowledgements.plist */,
+				8B31B87156A822F8A21DB0AD57A8C187 /* Pods-MISforEdu-MISforEduUITests-dummy.m */,
+				5049F9562EB2A2EF8871AF3CBC5F2A18 /* Pods-MISforEdu-MISforEduUITests-Info.plist */,
+				B234B52B568E978176F55DF94AFFA348 /* Pods-MISforEdu-MISforEduUITests-resources.sh */,
+				4F0DB992413D4AC75C3748182B70DE03 /* Pods-MISforEdu-MISforEduUITests-umbrella.h */,
+				0C6A393259626439A93CA8D0AD1C74FB /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */,
+				C802588FF6412AB95086D2919FC73012 /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */,
+			);
+			name = "Pods-MISforEdu-MISforEduUITests";
+			path = "Target Support Files/Pods-MISforEdu-MISforEduUITests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5EFFC132D9755E90E802BB5F9F49A4BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11AF731E4071DCD5E34B4CA294302B92 /* AppCenter-AppCenterDistributeResources */,
+				497CE12D80BB53B39F9A5F47E8D8656F /* Pods-MISforEdu */,
+				3A0C5004726D93BA768A9894E2DB3E73 /* Pods-MISforEdu-MISforEduUITests */,
+				E43A86DFA4A7AFB42269F950116CE1DA /* Pods-MISforEduTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7365BE879BAD8F1CCAC6EFE4E2045990 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A08F94721C859FF505090D07B775CC4C /* AppCenterDistribute.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		749FADD90C38F73499DFBFD5BE34E379 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0D0322893D6C01E9CC32C237B90BDD1 /* AppCenter.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		790CCA443824ABC2CC4BB487A3F975BF /* AppCenter */ = {
+			isa = PBXGroup;
+			children = (
+				23905BA80D06B1D71BFFB0C57AF4C8BA /* Analytics */,
+				920FFBFEA2A63B576EB83D4A3D67BB19 /* Core */,
+				A9B80AB71BF32FD9E28F837CB6D0BF09 /* Crashes */,
+				0009956356796C7B23572A1566C0771E /* Distribute */,
+				D97C531E334608DB100C0D6BDE8A50E0 /* Support Files */,
+			);
+			name = AppCenter;
+			path = AppCenter;
+			sourceTree = "<group>";
+		};
+		82D34054C167FA30BB40D2EE21E92FCB /* Pods-MISforEdu */ = {
+			isa = PBXGroup;
+			children = (
+				29C0B0E1FD300593384E71FA699572C9 /* Pods-MISforEdu.modulemap */,
+				7C6A669CF3B7EA7796EFCB43857AB53B /* Pods-MISforEdu-acknowledgements.markdown */,
+				7D1D5F325CF3592BFB8984A7066101C2 /* Pods-MISforEdu-acknowledgements.plist */,
+				787B617F667237B6E7CE415043E13BDB /* Pods-MISforEdu-dummy.m */,
+				8BD831EE52F4B293985678E0A24FF06D /* Pods-MISforEdu-Info.plist */,
+				7DAEEA5CDBC18502740B3A82D3486DE6 /* Pods-MISforEdu-resources.sh */,
+				68EBE6591A0F7F1D1D39F2AAEAB9387D /* Pods-MISforEdu-umbrella.h */,
+				7DADCE878287FB4E0564525A967D6B53 /* Pods-MISforEdu.debug.xcconfig */,
+				455C9A244F1DAB188EF9BC500BD5EBC6 /* Pods-MISforEdu.release.xcconfig */,
+			);
+			name = "Pods-MISforEdu";
+			path = "Target Support Files/Pods-MISforEdu";
+			sourceTree = "<group>";
+		};
+		8CB0F78E486F7BB6A11935EF460908ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				790CCA443824ABC2CC4BB487A3F975BF /* AppCenter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8EA4458BADE560AE325E65B932F7DE5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E10AEEC7B978CC45DC569C062052775C /* cs.lproj */,
+				BD5ACB78DE45772E1D25C750556DC9B8 /* de.lproj */,
+				0F97F417F8CEF438686867BD74898F2D /* en.lproj */,
+				D0CEE4CF4D69DE2B8B4856A0275B532B /* es.lproj */,
+				98CF91B44A4B9CA498D454E20A450391 /* fr.lproj */,
+				F3EC11EDB9F5951172DD1054D94D2AF0 /* it.lproj */,
+				5B07655523CDB4CDA7D4A197D110F159 /* ja.lproj */,
+				9ADE13C09F85C762049A9D59D8417977 /* ko.lproj */,
+				66FC55F5B2E8569568561FC1CDEA0989 /* pl.lproj */,
+				C8D0F211F2DA0342F974E85C0139D508 /* pt.lproj */,
+				8D60D24E9C3C295215262C25F4D7C9F3 /* ru.lproj */,
+				E219D1D8FB76AE857173C2356C2E64DC /* tr.lproj */,
+				0FCFB443211DAB39B667B4C3A3DCE70A /* zh-Hans.lproj */,
+				60C85E0433E430584E68A778CD989B79 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		920FFBFEA2A63B576EB83D4A3D67BB19 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				749FADD90C38F73499DFBFD5BE34E379 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		A9B80AB71BF32FD9E28F837CB6D0BF09 /* Crashes */ = {
+			isa = PBXGroup;
+			children = (
+				F9F8C173D77D37FD10E5FCA0B9722B6E /* Frameworks */,
+			);
+			name = Crashes;
+			sourceTree = "<group>";
+		};
+		AE8A25B680F6B8029F5657EF3E0593F5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				82D34054C167FA30BB40D2EE21E92FCB /* Pods-MISforEdu */,
+				33FF6AD04F134EFA9587225424860242 /* Pods-MISforEdu-MISforEduUITests */,
+				DCEC335125E30BB379DFB26D7810269C /* Pods-MISforEduTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				8CB0F78E486F7BB6A11935EF460908ED /* Pods */,
+				5EFFC132D9755E90E802BB5F9F49A4BE /* Products */,
+				AE8A25B680F6B8029F5657EF3E0593F5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D97C531E334608DB100C0D6BDE8A50E0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				428A44F0B618BBA1A3B7ACFB06B3A17D /* AppCenter-xcframeworks.sh */,
+				BAD31A57E21E915F29CF30B8E998A3AA /* AppCenter.debug.xcconfig */,
+				1B264324E0126A3349D3DB41164C22F2 /* AppCenter.release.xcconfig */,
+				98E03D914B96B542B1AEFBF0A95B963F /* ResourceBundle-AppCenterDistributeResources-AppCenter-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppCenter";
+			sourceTree = "<group>";
+		};
+		DCEC335125E30BB379DFB26D7810269C /* Pods-MISforEduTests */ = {
+			isa = PBXGroup;
+			children = (
+				253DDC83FC9C0AC25FE610C81AA48D49 /* Pods-MISforEduTests.modulemap */,
+				8D80BD91452E69853AB7805409AD6983 /* Pods-MISforEduTests-acknowledgements.markdown */,
+				C9E1C7DF935DFF802786484713BC3E4D /* Pods-MISforEduTests-acknowledgements.plist */,
+				5A3C4940B93D0E10FD568B4FFA21757B /* Pods-MISforEduTests-dummy.m */,
+				D1E059ED78FFD3153D98C448FA98F723 /* Pods-MISforEduTests-Info.plist */,
+				4E76F7F6FD12B3427840910D19DCEF7D /* Pods-MISforEduTests-resources.sh */,
+				463EA4C183D5491D7CC55A33F85532B1 /* Pods-MISforEduTests-umbrella.h */,
+				194AB29DC97EA93DC27924A1C34F641B /* Pods-MISforEduTests.debug.xcconfig */,
+				AE5CBBB7143BB98313585AE068A86199 /* Pods-MISforEduTests.release.xcconfig */,
+			);
+			name = "Pods-MISforEduTests";
+			path = "Target Support Files/Pods-MISforEduTests";
+			sourceTree = "<group>";
+		};
+		F9F8C173D77D37FD10E5FCA0B9722B6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93297D4B0DA3AA60D964186CDA7B935B /* AppCenterCrashes.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA0A172D5D2D58CBAC64588B4F7785F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44BA1D1198470B8E0A8E693883C66ACF /* AppCenterAnalytics.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		64CFD921B78546EE0768F4AF410BE71D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13EE2AAC85F7D07C0639065D8A47D2C9 /* Pods-MISforEdu-MISforEduUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66FDC7B85494B58C22BCE2803B9017C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC696159E2AE3357B921FF5BE81570C /* Pods-MISforEduTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6294EB2325C56D0C89BBD3211301FB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA863A0B05DEFEF8281E8B25A169106 /* Pods-MISforEdu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		36DFF006921509598FA3006632EF0B2B /* Pods-MISforEdu-MISforEduUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71B532DC86CC36B459962E3DA4B93495 /* Build configuration list for PBXNativeTarget "Pods-MISforEdu-MISforEduUITests" */;
+			buildPhases = (
+				64CFD921B78546EE0768F4AF410BE71D /* Headers */,
+				4A005068A7798AC9828345C6EF7FC610 /* Sources */,
+				192BCC32F3E2E2524BDC39CD0E3C5528 /* Frameworks */,
+				0D24187618C400D719E3F637313C8BC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				387FDFE60A15347E646C3A2ED33C3F6A /* PBXTargetDependency */,
+			);
+			name = "Pods-MISforEdu-MISforEduUITests";
+			productName = Pods_MISforEdu_MISforEduUITests;
+			productReference = 3A0C5004726D93BA768A9894E2DB3E73 /* Pods-MISforEdu-MISforEduUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A306575E55837238EECA9D727E04E2D /* Pods-MISforEduTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A31D43206BC0368D630B3C515E2CF9 /* Build configuration list for PBXNativeTarget "Pods-MISforEduTests" */;
+			buildPhases = (
+				66FDC7B85494B58C22BCE2803B9017C4 /* Headers */,
+				3A9A3B2F4A200D3C602E7113D6835FD5 /* Sources */,
+				748B8D0EBCD2CAB21BECD625B4203093 /* Frameworks */,
+				CA1E5F810E3BD707C7179CBB100DA6C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C72070BA02C6F9211DF0B8DBE5FCEBD /* PBXTargetDependency */,
+				3AE12858870EED080FDC7D6B3EB6937E /* PBXTargetDependency */,
+			);
+			name = "Pods-MISforEduTests";
+			productName = Pods_MISforEduTests;
+			productReference = E43A86DFA4A7AFB42269F950116CE1DA /* Pods-MISforEduTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6AD42551A3E183DD79F9E0E66050544 /* Pods-MISforEdu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3C5B49A451DE590BC6A65850E52BC88 /* Build configuration list for PBXNativeTarget "Pods-MISforEdu" */;
+			buildPhases = (
+				D6294EB2325C56D0C89BBD3211301FB9 /* Headers */,
+				672190486DEFC248638778C098CAC38C /* Sources */,
+				15084D055436E4DEE8B86833AB01DA3D /* Frameworks */,
+				6AD411272EBF0FEC331102AF3B268D88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62680D78092ECE87498ADACF804011E3 /* PBXTargetDependency */,
+			);
+			name = "Pods-MISforEdu";
+			productName = Pods_MISforEdu;
+			productReference = 497CE12D80BB53B39F9A5F47E8D8656F /* Pods-MISforEdu */;
+			productType = "com.apple.product-type.framework";
+		};
+		FCD9915FE83842AE0201096155515772 /* AppCenter-AppCenterDistributeResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CBDB7261B48B3B5E051FF3C61DE5EAC /* Build configuration list for PBXNativeTarget "AppCenter-AppCenterDistributeResources" */;
+			buildPhases = (
+				7CB760A58277EDC62D36EC76B3836861 /* Sources */,
+				2106E7BEE4F662EC0CBA65DE9A79DB79 /* Frameworks */,
+				0674066465697E5BF496D914038BEC25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppCenter-AppCenterDistributeResources";
+			productName = AppCenterDistributeResources;
+			productReference = 11AF731E4071DCD5E34B4CA294302B92 /* AppCenter-AppCenterDistributeResources */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				cs,
+				de,
+				en,
+				es,
+				fr,
+				it,
+				ja,
+				ko,
+				pl,
+				pt,
+				ru,
+				tr,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5EFFC132D9755E90E802BB5F9F49A4BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */,
+				FCD9915FE83842AE0201096155515772 /* AppCenter-AppCenterDistributeResources */,
+				A6AD42551A3E183DD79F9E0E66050544 /* Pods-MISforEdu */,
+				36DFF006921509598FA3006632EF0B2B /* Pods-MISforEdu-MISforEduUITests */,
+				7A306575E55837238EECA9D727E04E2D /* Pods-MISforEduTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0674066465697E5BF496D914038BEC25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED55FC38214BD6E5F5DD80098E8104C /* cs.lproj in Resources */,
+				BE6C1344E212C632956156AD532B18CF /* de.lproj in Resources */,
+				CA692F424EDA705A514C92B366C42D00 /* en.lproj in Resources */,
+				4F62BF9DFE318199434943277A7FCE1C /* es.lproj in Resources */,
+				E48D8BFCFD2D86F783FDCE2F0512B1B0 /* fr.lproj in Resources */,
+				C1B64CF36E429671A40687DC43D25B4E /* it.lproj in Resources */,
+				4366B2D209C26FCE19E3DD4288F03E60 /* ja.lproj in Resources */,
+				260DD658FAB9B75753B44E68999E669A /* ko.lproj in Resources */,
+				A52783ED5997F208063BE4D43354E903 /* pl.lproj in Resources */,
+				52241B0C30F8531E3946E9100AD225F2 /* pt.lproj in Resources */,
+				BDAC7C60EE19FAD0749D554F4AE728BE /* ru.lproj in Resources */,
+				917200C40590D25842F0FE8B46C979DB /* tr.lproj in Resources */,
+				ACD1B2856B60FA5ED96A4C1090D41226 /* zh-Hans.lproj in Resources */,
+				39B88162E4ADA7E53FFF07738BC3E7EF /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D24187618C400D719E3F637313C8BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD411272EBF0FEC331102AF3B268D88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1E5F810E3BD707C7179CBB100DA6C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9144BB6C83CC0C1FAC46C8FCC31F1BCC /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppCenter/AppCenter-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/AppCenter/AppCenter-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppCenter/AppCenter-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A9A3B2F4A200D3C602E7113D6835FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F65BE4CF1B511845F96683BDA015BCE /* Pods-MISforEduTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A005068A7798AC9828345C6EF7FC610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F92E9D1C3D653CBE9060893A042AA6 /* Pods-MISforEdu-MISforEduUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		672190486DEFC248638778C098CAC38C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF29127DAE8770DFC3DE8CA418583CF /* Pods-MISforEdu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB760A58277EDC62D36EC76B3836861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		387FDFE60A15347E646C3A2ED33C3F6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppCenter;
+			target = A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */;
+			targetProxy = CA23A2BE6E68DAD9E915E2FFB7C212CF /* PBXContainerItemProxy */;
+		};
+		3AE12858870EED080FDC7D6B3EB6937E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MISforEdu";
+			target = A6AD42551A3E183DD79F9E0E66050544 /* Pods-MISforEdu */;
+			targetProxy = 4172E2AE2328688C38A05514F887039B /* PBXContainerItemProxy */;
+		};
+		4C72070BA02C6F9211DF0B8DBE5FCEBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppCenter;
+			target = A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */;
+			targetProxy = 098257C82AFF4A4814790D38D9FED0CC /* PBXContainerItemProxy */;
+		};
+		62680D78092ECE87498ADACF804011E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppCenter;
+			target = A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */;
+			targetProxy = B22EE10C34C6E91053ADB19A285727B5 /* PBXContainerItemProxy */;
+		};
+		B957DC6038A903FDAFBCB00EF92DFB74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AppCenter-AppCenterDistributeResources";
+			target = FCD9915FE83842AE0201096155515772 /* AppCenter-AppCenterDistributeResources */;
+			targetProxy = AD1172B0593E578257D56CD076E31BF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		232C444C6F32EF80D3CB02FDD21C6442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C802588FF6412AB95086D2919FC73012 /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		291B404D3577D96BBF646CDF325CF7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5CBBB7143BB98313585AE068A86199 /* Pods-MISforEduTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MISforEduTests/Pods-MISforEduTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MISforEduTests/Pods-MISforEduTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		34470F39A418DEE5694B48799B8CF839 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455C9A244F1DAB188EF9BC500BD5EBC6 /* Pods-MISforEdu.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MISforEdu/Pods-MISforEdu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MISforEdu/Pods-MISforEdu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		529F5BE286267589F163FF73A45D6EA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD31A57E21E915F29CF30B8E998A3AA /* AppCenter.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AppCenter";
+				IBSC_MODULE = AppCenter;
+				INFOPLIST_FILE = "Target Support Files/AppCenter/ResourceBundle-AppCenterDistributeResources-AppCenter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = AppCenterDistributeResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		7415C006877551A800DB1F74BD2286D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C6A393259626439A93CA8D0AD1C74FB /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		818F2718C107D58F73135BDA724500DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B264324E0126A3349D3DB41164C22F2 /* AppCenter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A81E91CA3EB67C198D87041052BD542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DADCE878287FB4E0564525A967D6B53 /* Pods-MISforEdu.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MISforEdu/Pods-MISforEdu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MISforEdu/Pods-MISforEdu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD9279A522AEEA437B1E2F3435437AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 194AB29DC97EA93DC27924A1C34F641B /* Pods-MISforEduTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MISforEduTests/Pods-MISforEduTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MISforEduTests/Pods-MISforEduTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1167364146C01FBE2C35F3EA3D7C257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B264324E0126A3349D3DB41164C22F2 /* AppCenter.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AppCenter";
+				IBSC_MODULE = AppCenter;
+				INFOPLIST_FILE = "Target Support Files/AppCenter/ResourceBundle-AppCenterDistributeResources-AppCenter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = AppCenterDistributeResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F4FF6A0D1970CA9705974E3CB2134802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F525792CDB5CCD82ED39CE2807E66BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD31A57E21E915F29CF30B8E998A3AA /* AppCenter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23A31D43206BC0368D630B3C515E2CF9 /* Build configuration list for PBXNativeTarget "Pods-MISforEduTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9279A522AEEA437B1E2F3435437AA9 /* Debug */,
+				291B404D3577D96BBF646CDF325CF7B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CBDB7261B48B3B5E051FF3C61DE5EAC /* Build configuration list for PBXNativeTarget "AppCenter-AppCenterDistributeResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529F5BE286267589F163FF73A45D6EA5 /* Debug */,
+				F1167364146C01FBE2C35F3EA3D7C257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4FF6A0D1970CA9705974E3CB2134802 /* Debug */,
+				30E0B9EFD9A5C45D0D351231E81B30B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71B532DC86CC36B459962E3DA4B93495 /* Build configuration list for PBXNativeTarget "Pods-MISforEdu-MISforEduUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7415C006877551A800DB1F74BD2286D9 /* Debug */,
+				232C444C6F32EF80D3CB02FDD21C6442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B477CE8D2D113130415CA0F66B659F6 /* Build configuration list for PBXAggregateTarget "AppCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F525792CDB5CCD82ED39CE2807E66BBA /* Debug */,
+				818F2718C107D58F73135BDA724500DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3C5B49A451DE590BC6A65850E52BC88 /* Build configuration list for PBXNativeTarget "Pods-MISforEdu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A81E91CA3EB67C198D87041052BD542 /* Debug */,
+				34470F39A418DEE5694B48799B8CF839 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
