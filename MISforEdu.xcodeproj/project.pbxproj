@@ -21,6 +21,11 @@
 		320DDC412B592E060077E50B /* ClassTimeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC402B592E060077E50B /* ClassTimeSheet.swift */; };
 		320DDC452B5937300077E50B /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC442B5937300077E50B /* Filter.swift */; };
 		320DDC492B5963FC0077E50B /* CriticSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320DDC482B5963FC0077E50B /* CriticSheet.swift */; };
+		3234BF282B7B1A1200E24DF3 /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3234BF242B7B1A1100E24DF3 /* Interface.swift */; };
+		3234BF292B7B1A1200E24DF3 /* Behaviorgroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3234BF252B7B1A1200E24DF3 /* Behaviorgroup.swift */; };
+		3234BF2A2B7B1A1200E24DF3 /* Lecturegroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3234BF262B7B1A1200E24DF3 /* Lecturegroup.swift */; };
+		3234BF2B2B7B1A1200E24DF3 /* Usergroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3234BF272B7B1A1200E24DF3 /* Usergroup.swift */; };
+		3234BF2D2B7B1A3400E24DF3 /* GlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3234BF2C2B7B1A3400E24DF3 /* GlobalDefinition.swift */; };
 		324A3A522B564E2D0026BB79 /* MISforEduApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A512B564E2D0026BB79 /* MISforEduApp.swift */; };
 		324A3A5A2B564E2F0026BB79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324A3A592B564E2F0026BB79 /* Preview Assets.xcassets */; };
 		324A3A642B564E2F0026BB79 /* MISforEduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A632B564E2F0026BB79 /* MISforEduTests.swift */; };
@@ -34,7 +39,6 @@
 		326BE8592B58D48400CD3911 /* CriticManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326BE8582B58D48400CD3911 /* CriticManageView.swift */; };
 		326BE85C2B58D4EE00CD3911 /* DataInputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326BE85B2B58D4EE00CD3911 /* DataInputInterface.swift */; };
 		327042872B58128300A8750C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327042862B58128300A8750C /* AccountView.swift */; };
-		3270428E2B582B5A00A8750C /* GlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270428D2B582B5A00A8750C /* GlobalDefinition.swift */; };
 		327042902B58B96300A8750C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270428F2B58B96300A8750C /* LoginView.swift */; };
 		3296FBE62B79FA0F0083FBC2 /* Interface_sql_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */; };
 		32A0B7472B77809F00CB3E76 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0B7462B77809F00CB3E76 /* BackButton.swift */; };
@@ -92,6 +96,11 @@
 		320DDC402B592E060077E50B /* ClassTimeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTimeSheet.swift; sourceTree = "<group>"; };
 		320DDC442B5937300077E50B /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		320DDC482B5963FC0077E50B /* CriticSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticSheet.swift; sourceTree = "<group>"; };
+		3234BF242B7B1A1100E24DF3 /* Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
+		3234BF252B7B1A1200E24DF3 /* Behaviorgroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Behaviorgroup.swift; sourceTree = "<group>"; };
+		3234BF262B7B1A1200E24DF3 /* Lecturegroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lecturegroup.swift; sourceTree = "<group>"; };
+		3234BF272B7B1A1200E24DF3 /* Usergroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usergroup.swift; sourceTree = "<group>"; };
+		3234BF2C2B7B1A3400E24DF3 /* GlobalDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalDefinition.swift; sourceTree = "<group>"; };
 		324A3A4E2B564E2D0026BB79 /* MISforEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MISforEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324A3A512B564E2D0026BB79 /* MISforEduApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MISforEduApp.swift; sourceTree = "<group>"; };
 		324A3A572B564E2F0026BB79 /* MISforEdu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MISforEdu.entitlements; sourceTree = "<group>"; };
@@ -109,7 +118,6 @@
 		326BE8582B58D48400CD3911 /* CriticManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CriticManageView.swift; path = MISforEdu/CriticManageView.swift; sourceTree = SOURCE_ROOT; };
 		326BE85B2B58D4EE00CD3911 /* DataInputInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInputInterface.swift; sourceTree = "<group>"; };
 		327042862B58128300A8750C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		3270428D2B582B5A00A8750C /* GlobalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefinition.swift; sourceTree = "<group>"; };
 		3270428F2B58B96300A8750C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3296FBE32B79FA0E0083FBC2 /* MISforEdu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MISforEdu-Bridging-Header.h"; sourceTree = "<group>"; };
 		3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Interface_sql_server.cpp; sourceTree = "<group>"; };
@@ -246,6 +254,7 @@
 				324A3A7F2B56526A0026BB79 /* Assets.xcassets */,
 				327042862B58128300A8750C /* AccountView.swift */,
 				3270428F2B58B96300A8750C /* LoginView.swift */,
+				3234BF2C2B7B1A3400E24DF3 /* GlobalDefinition.swift */,
 				324A3A572B564E2F0026BB79 /* MISforEdu.entitlements */,
 				324A3A582B564E2F0026BB79 /* Preview Content */,
 				3206A4052B56A31400E35D90 /* AppDelegate.swift */,
@@ -282,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				324A3A852B565F890026BB79 /* DataDict_stu.swift */,
-				3270428D2B582B5A00A8750C /* GlobalDefinition.swift */,
 				32B420672B5A94160029046D /* FilterInfo.swift */,
 			);
 			path = DataDict;
@@ -313,6 +321,10 @@
 			isa = PBXGroup;
 			children = (
 				326BE85B2B58D4EE00CD3911 /* DataInputInterface.swift */,
+				3234BF252B7B1A1200E24DF3 /* Behaviorgroup.swift */,
+				3234BF242B7B1A1100E24DF3 /* Interface.swift */,
+				3234BF262B7B1A1200E24DF3 /* Lecturegroup.swift */,
+				3234BF272B7B1A1200E24DF3 /* Usergroup.swift */,
 				32B420692B5A960E0029046D /* FilterInterpre.swift */,
 			);
 			path = FuncCore;
@@ -338,7 +350,6 @@
 				3C971885BE37031BACB4CCB9 /* [CP] Check Pods Manifest.lock */,
 				324A3A4A2B564E2D0026BB79 /* Sources */,
 				324A3A4C2B564E2D0026BB79 /* Resources */,
-				009F4A4A1F29979E2C59A834 /* [CP] Embed Pods Frameworks */,
 				5C3DFB0A673FC70C1935EB85 /* Frameworks */,
 			);
 			buildRules = (
@@ -377,7 +388,6 @@
 				324A3A652B564E2F0026BB79 /* Sources */,
 				324A3A662B564E2F0026BB79 /* Frameworks */,
 				324A3A672B564E2F0026BB79 /* Resources */,
-				9D703C9449CA546BC12A40F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -397,7 +407,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					324A3A4D2B564E2D0026BB79 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -422,8 +432,6 @@
 				Base,
 			);
 			mainGroup = 324A3A452B564E2D0026BB79;
-			packageReferences = (
-			);
 			productRefGroup = 324A3A4F2B564E2D0026BB79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -462,23 +470,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		009F4A4A1F29979E2C59A834 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MISforEdu/Pods-MISforEdu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MISforEdu/Pods-MISforEdu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MISforEdu/Pods-MISforEdu-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		0F5FB5EFED22ED49D885B3F1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -523,23 +514,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9D703C9449CA546BC12A40F3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D5B12D34F3F90846D68D1541 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -575,10 +549,12 @@
 				32CDDDD62B5A480100931E9D /* ClassRoomSheet.swift in Sources */,
 				320DDC412B592E060077E50B /* ClassTimeSheet.swift in Sources */,
 				32CDDDD22B5A07F300931E9D /* GradeSheet.swift in Sources */,
+				3234BF2A2B7B1A1200E24DF3 /* Lecturegroup.swift in Sources */,
+				3234BF292B7B1A1200E24DF3 /* Behaviorgroup.swift in Sources */,
 				326BE8532B58D1EC00CD3911 /* AccountManageView.swift in Sources */,
 				320DDC452B5937300077E50B /* Filter.swift in Sources */,
 				327042902B58B96300A8750C /* LoginView.swift in Sources */,
-				3270428E2B582B5A00A8750C /* GlobalDefinition.swift in Sources */,
+				3234BF282B7B1A1200E24DF3 /* Interface.swift in Sources */,
 				32B420642B5A8E500029046D /* CampusView.swift in Sources */,
 				32CDDDD02B5A042E00931E9D /* CheckboxButton.swift in Sources */,
 				32CDDDCC2B59FDCB00931E9D /* Loading.swift in Sources */,
@@ -593,11 +569,13 @@
 				32B4206A2B5A960E0029046D /* FilterInterpre.swift in Sources */,
 				326BE8552B58D20C00CD3911 /* SyllabusView.swift in Sources */,
 				324A3A862B565F890026BB79 /* DataDict_stu.swift in Sources */,
+				3234BF2D2B7B1A3400E24DF3 /* GlobalDefinition.swift in Sources */,
 				320DDC2A2B58EF250077E50B /* AttendLectureView.swift in Sources */,
 				32B420682B5A94160029046D /* FilterInfo.swift in Sources */,
 				3206A4062B56A31500E35D90 /* AppDelegate.swift in Sources */,
 				32CDDDCE2B5A03B300931E9D /* AttendSheet.swift in Sources */,
 				32A0B7472B77809F00CB3E76 /* BackButton.swift in Sources */,
+				3234BF2B2B7B1A1200E24DF3 /* Usergroup.swift in Sources */,
 				320DDC262B58EE8B0077E50B /* GradeManageView.swift in Sources */,
 				320DDC322B58EFD40077E50B /* GradeCheckView.swift in Sources */,
 				3296FBE62B79FA0F0083FBC2 /* Interface_sql_server.cpp in Sources */,
@@ -675,9 +653,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -733,9 +713,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -761,6 +743,7 @@
 				CODE_SIGN_ENTITLEMENTS = MISforEdu/MISforEdu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MISforEdu/Preview Content\"";
 				DEVELOPMENT_TEAM = 379P4X5DA9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -806,6 +789,7 @@
 				CODE_SIGN_ENTITLEMENTS = MISforEdu/MISforEdu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MISforEdu/Preview Content\"";
 				DEVELOPMENT_TEAM = 379P4X5DA9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -848,6 +832,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 379P4X5DA9;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
@@ -872,6 +857,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 379P4X5DA9;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
@@ -895,6 +881,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 379P4X5DA9;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
@@ -918,6 +905,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 379P4X5DA9;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;

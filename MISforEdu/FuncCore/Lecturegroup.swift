@@ -7,13 +7,17 @@ struct LectureInfo {
 }
 struct editLectureInterface : editInterface{
     var ID : String
-    func Push() -> update_status
-    func Fatch(ID : String) -> LectureInfo
-    func Credential() -> Bool{
-
+    func Push(execution: String) -> update_status{
+        return .successful
+    }
+    func Fatch(ID : String) -> LectureInfo{
+        return .init(name: "", school: "", type: .basic, assessment: .exam)
+    }
+    func Credential() -> String{
+        return ""
     }
     func SyncWithDatabase() -> Bool{
-
+        return true
     }
 }
 struct Lecture{
@@ -30,13 +34,17 @@ struct ClassInfo {
 }
 struct editClassInterface : editInterface{
     var ID : String
-    func Push() -> update_status
-    func Fatch(ID : String) -> ClassInfo
-    func Credential() -> Bool{
-
+    func Push(execution: String) -> update_status{
+        return .successful
+    }
+    func Fatch(ID : String) -> ClassInfo{
+        return .init(firstWeek: 1, lastWeek: 20, belongedLec: .init(name: "", school: "", type: .basic, assessment: .exam), classTime: [], classRoom: " ")
+    }
+    func Credential() -> String{
+        return ""
     }
     func SyncWithDatabase() -> Bool{
-
+        return true
     }
 }
 struct Class{
@@ -50,16 +58,20 @@ struct SchoolInfo {
 }
 struct editSchoolInterface : editInterface{
     var ID : String
-    func Push() -> update_status
-    func Fatch(ID : String) -> SchoolInfo
-    func Credential() -> Bool{
-
+    func Push(execution: String) -> update_status{
+        return .successful
+    }
+    func Fatch(ID : String) -> SchoolInfo{
+        return .init(name: "", building: "")
+    }
+    func Credential() -> String{
+        return ""
     }
     func SyncWithDatabase() -> Bool{
-
+        return true
     }
 }
-struct Class{
+struct School{
     let interface : editClassInterface
     var info : SchoolInfo
 }
@@ -68,18 +80,22 @@ struct SubjectInfo {
     var name : String
     var code : String
 }
-struct editSchoolInterface : editInterface{
+struct editSubjectInterface : editInterface{
     var ID : String
-    func Push() -> update_status
-    func Fatch(ID : String) -> SubjectInfo
-    func Credential() -> Bool{
-
+    func Push(execution: String) -> update_status {
+        return .successful
+    }
+    func Fatch(ID : String) -> SubjectInfo{
+        return .init(name: "", code: "")
+    }
+    func Credential() -> String{
+        return ""
     }
     func SyncWithDatabase() -> Bool{
-
+        return true
     }
 }
-struct Class{
+struct Subject{
     let interface : editClassInterface
     var info : SubjectInfo
 }

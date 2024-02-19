@@ -37,30 +37,30 @@ struct SecretaryInfo : BasicUserInfo {
 }
 
 struct Student{
-    var interface : UserInterface<StudentInfo>
+    var interface : StudentInterface
     var info : StudentInfo
-    init(user : UserInterface){
+    init(user : StudentInterface){
         self.interface = user
-        self.info = user.Fatch(user.ID)
+        self.info = user.Fatch(ID : user.ID)
     }
     func AddSubjectToSchool(school : String) -> String{
-        return school + '-' + subject
+        return school + "-" + info.subject
      }
 }
 
 struct Teacher{
-    var interface : UserInterface<TeacherInfo>
+    var interface : TeacherInterface
     var info : TeacherInfo
-    init(user : UserInterface){
+    init(user : TeacherInterface){
         self.interface = user
-        self.info = user.Fatch(user.ID)
+        self.info = user.Fatch(ID : user.ID)
     }
 }
 struct Secretary{
-    var interface : UserInterface<SecretaryInfo>
+    var interface : SecretaryInterface
     var info : SecretaryInfo
-    init(user : UserInterface){
+    init(user : SecretaryInterface){
         self.interface = user
-        self.info = user.Fatch(user.ID)
+        self.info = user.Fatch(ID : user.ID)
     }
 }

@@ -5,8 +5,8 @@ protocol editInterface {
     var ID : String {get set}
     func Push(execution : String) -> update_status
     mutating func Fatch(ID : String) -> returnType
-    func Credential() -> Bool
-    mutating func SyncWithDatabase() ->
+    func Credential() -> String
+    mutating func SyncWithDatabase() -> Bool
 }
 
 protocol queryInterface{
@@ -20,48 +20,243 @@ protocol DisplayFormat{
     var style : style_format {get set}
     func Displayinfo(type : displayType) -> [String : String]
 }
-struct DisplayList<T> : DisplayList,queryInterface{
+struct DisplayList<T> : DisplayFormat,queryInterface{
     var ID : [String]
     var style : style_format
     func Fatch(filter : Filter) -> T{
-
+            return AttendenceInfo(classId: "", studentId: "", score: 0) as! T
     }
     func Displayinfo(type : T) -> [String : String]{
-        
+        return [:]
     }
 }
 
-struct UserInterface<T> : editInterface{
-    associatedtype returnType
+class UserInterface{
     var ID : String
-    var role : user_role
     var password : String
     var logged : Bool
     var sync : Bool
-    func Fatch(ID : String) -> T{
-        switch role {
-        case .Student do:{
-            //
-        }
-        case .Teacher do:{
-
-        }
-        case .Secretary do:{
-
-        }   
-        case .Dean do:{
-
-        } 
-        case .HR do :{
-
-        }
-        }
-    }
-    func Push(execution : String) -> update_status
-    func Credential() -> Bool{
-
-    }
     func SyncWithDatabase() -> Bool{
+        return true
+    }
+    func Credential() -> String{
+        return ""
+    }
+    func Push(execution : String) -> update_status{
+        return .successful
+    }
+    init(){
+        self.ID = ""
+        self.password = ""
+        self.logged = false
+        self.sync = true
+    }
+    init(ID : String, password : String){
+        self.ID = ID
+        self.password = password
+        self.logged = false
+        self.sync = true
+    }
 
+}
+class StudentInterface : UserInterface{
+    override func Credential() -> String{
+        var errorMessage = ""
+        if (ID.count == 0){
+            errorMessage = "请输入账号密码"
+        }
+        else{
+            if (ID.count != 10){
+                errorMessage = "登录失败,用户名错误"
+            }
+        }
+        if (ID != password){
+            errorMessage = "登录失败,密码错误"
+        }
+        return errorMessage
+    }
+    func Fatch(ID : String)  ->  StudentInfo{
+        //var info = StudentInfo(name: "", school: "", enrollment: "", subject: "", email: "", sex: .famale, birth: Date())
+        var info = ex_student_info
+        return info
+    }
+    override func Push(execution : String) -> update_status{
+        return .successful
+    }
+    init(interface : UserInterface){
+        super.init()
+        self.ID = interface.ID
+        self.password = interface.password
+        self.logged = interface.logged
+        self.sync = interface.sync
+    }
+    override init(ID : String, password : String){
+        super.init()
+        self.ID = ID
+        self.password = password
+        self.logged = false
+        self.sync = true
     }
 }
+
+class TeacherInterface : UserInterface{
+    override func Credential() -> String{
+        var errorMessage = ""
+        if (ID.count == 0){
+            errorMessage = "请输入账号密码"
+        }
+        else{
+            if (ID.count != 8){
+                errorMessage = "登录失败,用户名错误"
+            }
+        }
+        if (ID != password){
+            errorMessage = "登录失败,密码错误"
+        }
+        return errorMessage
+    }
+    func Fatch(ID : String)  ->  TeacherInfo{
+        //var info = TeacherInfo(name: "", school: "", enrollment: "", email: "", office: "", sex: .famale, birth: Date(), title: .associate_professor)
+        var info = ex_teacher_info
+        return info
+    }
+    override func Push(execution : String) -> update_status{
+        return .successful
+    }
+    init(interface : UserInterface){
+        super.init()
+        self.ID = interface.ID
+        self.password = interface.password
+        self.logged = interface.logged
+        self.sync = interface.sync
+    }
+    override init(ID : String, password : String){
+        super.init()
+        self.ID = ID
+        self.password = password
+        self.logged = false
+        self.sync = true
+    }
+}
+
+class SecretaryInterface : UserInterface{
+    override func Credential() -> String{
+        var errorMessage = ""
+        if (ID.count == 0){
+            errorMessage = "请输入账号密码"
+        }
+        else{
+            if (ID.count != 6){
+                errorMessage = "登录失败,用户名错误"
+            }
+        }
+        if (ID != password){
+            errorMessage = "登录失败,密码错误"
+        }
+        return errorMessage
+    }
+    func Fatch(ID : String)  ->  SecretaryInfo{
+        //var info = SecretaryInfo(name: "", school: "", enrollment: "", email: "", sex: .famale, birth: Date())
+        var info = ex_secretary_info
+        return info
+    }
+    override func Push(execution : String) -> update_status{
+        return .successful
+    }
+    init(interface : UserInterface){
+        super.init()
+        self.ID = interface.ID
+        self.password = interface.password
+        self.logged = interface.logged
+        self.sync = interface.sync
+    }
+    override init(ID : String, password : String){
+        super.init()
+        self.ID = ID
+        self.password = password
+        self.logged = false
+        self.sync = true
+    }
+}
+class DeanInterface : UserInterface{
+    override func Credential() -> String{
+        var errorMessage = ""
+        if (ID.count == 0){
+            errorMessage = "请输入账号密码"
+        }
+        else{
+            if (ID.count != 5 && ID[ID.startIndex] != "D"){
+                errorMessage = "登录失败,用户名错误"
+            }
+        }
+        if (ID != password){
+            errorMessage = "登录失败,密码错误"
+        }
+        return errorMessage
+    }
+    func Fatch(ID : String)  ->  SecretaryInfo{
+        var info = SecretaryInfo(name: "", school: "", enrollment: "", email: "", sex: .famale, birth: Date())
+        return info
+    }
+    override func Push(execution : String) -> update_status{
+        return .successful
+    }
+    init(interface : UserInterface){
+        super.init()
+        self.ID = interface.ID
+        self.password = interface.password
+        self.logged = interface.logged
+        self.sync = interface.sync
+    }
+    override init(ID : String, password : String){
+        super.init()
+        self.ID = ID
+        self.password = password
+        self.logged = false
+        self.sync = true
+    }
+}
+class HRInterface : UserInterface{
+    override func Credential() -> String{
+        var errorMessage = ""
+        if (ID.count == 0){
+            errorMessage = "请输入账号密码"
+        }
+        else{
+            if (ID.count != 5 && ID[ID.startIndex] != "H"){
+                errorMessage = "登录失败,用户名错误"
+            }
+        }
+        if (ID != password){
+            errorMessage = "登录失败,密码错误"
+        }
+        return errorMessage
+    }
+    func Fatch(ID : String)  ->  SecretaryInfo{
+        var info = SecretaryInfo(name: "", school: "", enrollment: "", email: "", sex: .famale, birth: Date())
+        return info
+    }
+    override func Push(execution : String) -> update_status{
+        return .successful
+    }
+    init(interface : UserInterface){
+        super.init()
+        self.ID = interface.ID
+        self.password = interface.password
+        self.logged = interface.logged
+        self.sync = interface.sync
+    }
+    override init(ID : String, password : String){
+        super.init()
+        self.ID = ID
+        self.password = password
+        self.logged = false
+        self.sync = true
+    }
+}
+/*
+struct User<T> {
+    var ID : String
+    var role : user_role
+    var info : T
+}*/

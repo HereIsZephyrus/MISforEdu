@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State  private var userID: String = ""
-    @State  private var password: String = ""
+    //@State  private var userID: String = ""
+    //@State  private var password: String = ""
+    //@State var interface = UserInterface<Any>(ID: "", role: nil, password: "", logged: false, sync: true)
     var body: some View {
         ZStack{
-            Color.white.ignoresSafeArea(.all)
-                .navigationBarBackButtonHidden(true)
+            //Color.white.ignoresSafeArea(.all)
+                
             NavigationStack{
                 LoginHead()
-                MainLogView(userID: $userID, password: $password)
-            }
+                //MainLogView(userID: $userID, password: $password)
+                MainLogView()
+            }.navigationBarBackButtonHidden(true)
+                .background(
+                    Rectangle()
+                        .fill(Color.white)
+                        .ignoresSafeArea(.all)
+                )
         }
     }
 }
@@ -41,14 +48,18 @@ struct LoginView_Previews: PreviewProvider {
 }
 
 struct MainLogView: View {
-    let squeeze = 350.0
+    let option_board = 150.0
     //@Environment(\.presentationMode) var mode
-    @Binding   var userID: String
-    @Binding   var password: String
+    //@Binding   var userID: String
+    //@Binding   var password: String
+    //@Binding var interface : UserInterface<Any>
     @State var showLogin: Bool = false
     @State var errorMessage: String = ""
+    @State private var userRole: user_role = .Student
+    @State var interface = UserInterface()
     //@State var showLoginInfo = true
     @State var beLogged = false
+    
     var body: some View {
         GeometryReader {geometry in
             VStack(spacing :20) {
@@ -58,19 +69,35 @@ struct MainLogView: View {
                         .scaledToFit()
                     //.frame(height: 350)
                     //.padding(10)
-                    VStack{
+                    VStack(alignment: .leading){
+                        HStack{
+                            //var interface = UserInterface<T>
+                            TextField("学号/教工号/职工号", text: $interface.ID)
+                                .frame(width: geometry.size.width * 0.6 - option_board, height: 50)
+                                //.textContentType(.emailAddress)
+                                .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 0))
+                                .accentColor(.red)
+                                .background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
+                                .cornerRadius(5)
+                            
+                            VStack {
+                                Picker("User Role", selection: $userRole) {
+                                    ForEach(user_role.allCases) { role in
+                                        Text(role.rawValue).tag(role)
+                                    }
+                                }
+                                .pickerStyle(MenuPickerStyle())
+                                .padding(8)
+                                .frame(width: 140)
+                                .background(
+                                    RoundedRectangle(cornerRadius:  10)
+                                        .fill(.white)
+                                )
+                            }
+                        }
                         
-                        TextField("学号/教工号/职工号", text: self.$userID)
-                            .frame(width: geometry.size.width - squeeze, height: 50)
-                            .textContentType(.emailAddress)
-                            .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 0))
-                            .accentColor(.red)
-                            .background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
-                            .cornerRadius(5)
-                        
-                        
-                        TextField("密码", text: self.$password)
-                            .frame(width: geometry.size.width - squeeze, height: 50)
+                        SecureField("密码", text: $interface.password)
+                            .frame(width: geometry.size.width * 0.6, height: 50)
                             .padding(EdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 0))
                             .foregroundColor(.gray)
                             .background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
@@ -90,9 +117,17 @@ struct MainLogView: View {
                                 toValidAlert()
                             }
                             .navigationDestination(isPresented: $beLogged) {
-                                AccountView(userRole: .Student, userID: userID)
+                                //print("log in")
+                                //AccountView(userRole: .Student, userID: userID)
+                                //AccountView(interface: $interface)
                             }
-                            NavigationLink("忘记密码?",destination: infoView())
+                        NavigationLink {
+                            infoView()
+                        } label: {
+                            Text("忘记密码?")
+                        }
+
+                            //NavigationLink("忘记密码?",destination: infoView())
                         }
                     Text(errorMessage)
                         .foregroundColor(.red)
@@ -100,32 +135,38 @@ struct MainLogView: View {
             }
         }
     }
-    
     func toValidAlert() -> Alert
     {
-        let (credential,userRole) = isValidCredential(ID: userID, password:password)
-        let (validString,validButton) = getValid(beValid: credential)
-        return Alert(title: Text(validString),dismissButton: validButton)
+        //let (credential,userRole) = isValidCredential(ID: userID, password:password)
+        //var interface : UserInterface
+        switch userRole {
+        case .Student:
+            interface = StudentInterface(interface: interface)
+        case .Teacher:
+            interface = TeacherInterface(interface: interface)
+        case .Secretary:
+            interface = SecretaryInterface(interface: interface)
+        case .Dean :
+            interface = DeanInterface(interface: interface)
+        case .HR:
+            interface = HRInterface(interface: interface)
+        }
+        let (validTitle,validMessage,validButton) = getValid(validString: interface.Credential())
+        return Alert(title: Text(validTitle),message: Text(validMessage),dismissButton: validButton)
     }
-    func getValid(beValid: Bool) ->(String, Alert.Button?)
+    func getValid(validString: String) ->(String, String,Alert.Button?)
     {
-        if (beValid == true){
-            return ("欢迎登录",
-                    .default(Text("好"),
-                             action: {
-                //Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
-                                    //showLoginInfo = false
-                               // }
-                beLogged = true
-                            }
-                            )
-            )
+        print(userRole)
+        if (validString == ""){
+            interface.logged = true
+            beLogged = true
+            return ("欢迎登录","你好" + interface.ID,.default(Text("好")/*,action: {interface.logged = true}*/))
         }
         else{
-            return ("验证失败",.destructive(Text("好")))
+            return ("验证失败",validString,.destructive(Text("好")))
         }
     }
-    
+    /*
     func isValidCredential(ID: String, password: String) -> (Bool, user_role?) {
         var Accepted : Bool = false
         var Role : user_role? = nil
@@ -162,7 +203,7 @@ struct MainLogView: View {
         //print(errorMessage)
         //print(Accepted)
         return (Accepted,Role)
-    }
+    }*/
 }
 
 struct LoginHead: View {

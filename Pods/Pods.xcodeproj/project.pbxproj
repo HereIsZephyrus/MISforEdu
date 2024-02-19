@@ -7,336 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04E4B76534AF53C3BEDE5489EE65B3A9 /* ResponseMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BA3AF2D5E626666DCD293D6805E52 /* ResponseMetadata.swift */; };
-		069686A459D91E611DC75BC4A9C14853 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070C2F8DA4D932666A3D7947508FDE8 /* Document.swift */; };
-		07065F46DD5B5B1C09A2C7006EF0D2CA /* AzureCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0BFAB89310D3622883F45AD2306042 /* AzureCore-dummy.m */; };
-		077FA4B5894563AE795759E67A3F2542 /* AzureKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064AF1CF5059BCB3541850F57FB4A382 /* AzureKeys.swift */; };
-		085EC51689B5C6303DC676DA7A346763 /* LogModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A75DAC0BF46F06A47FEF4B591CC02BA /* LogModifier.swift */; };
-		09A886E52B245A1B6565CCCCCCBD6716 /* AzureData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B43C1362320F1BB7DAF583A18FB784E /* AzureData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A114B2BDD785F60D27A4A7B8437F78A /* LogWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE054CE53C210048763134988E27F7 /* LogWriter.swift */; };
-		0AA05B0AC898E828A19E5FA45601B546 /* ResourceRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED6524EE582CDEF1F69453F00588444 /* ResourceRequestError.swift */; };
-		0C3583ED7D8D00B13E7A78037E7122EA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B029BBAEE6825C6C2AC862E21CDAA55F /* Response.swift */; };
-		0F5AD473B8ABE2EF9F784C64810283BA /* ResourceCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93632212DD81CCFBC742D1D441040160 /* ResourceCache.swift */; };
-		0F9C7C42D5EC2E71B1170FED70D76A86 /* LineString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE0F9436BD5A0C94FE003B12EC758F /* LineString.swift */; };
-		10B181615A07C2D6086D3D442E005F6D /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617EFDC48E3016C4302DADF553B4597 /* DateFormat.swift */; };
-		15129CE0725FFB58FE838EFF291E341E /* Pods-MISforEduTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE4DDAF622C02D770C5F567E55157EB /* Pods-MISforEduTests-dummy.m */; };
-		1B3D9AD2CE4E21C01B4B64D655084788 /* CryptoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 80361AC1A083633A10A27BE47F020E51 /* CryptoProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E31B644D6FB257B836AFECFBD946A71 /* AzureData-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB54979C6BDC2A8B50841EB534B810C /* AzureData-dummy.m */; };
-		1FAEA28BE486A39ED26AA07E674E1C37 /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807191D6D1B6284A20AF20C9CBC6E3C3 /* Attachment.swift */; };
-		23DAC5C18A12E05227B75941FE762446 /* Query+Intersects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71076252E3B76C89DA37A202B37137BC /* Query+Intersects.swift */; };
-		2429121B1BCA24972D71CECF646BD540 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB25E66DEF04F3EAD1589557F16B38D /* Trigger.swift */; };
-		27CB904388B2F5EA7470E4801915AD8A /* PermissionCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680A70C37C5D2D07EDB4768F1B144541 /* PermissionCache.swift */; };
-		2F0D4C4D5DC03D2F23EC9569E6220D72 /* Query+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748634922DCCC0112B7D94AE0FF46F1 /* Query+Distance.swift */; };
-		348EFFA939314591758A6F9C5B523BAA /* Pods-MISforEdu-MISforEduUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F03889E007A48248E63658E574AE39B2 /* Pods-MISforEdu-MISforEduUITests-dummy.m */; };
-		3688A07AEA85EEB11CD4F83174F40994 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41425B6F2BA3B3FC66FFC0073F57D697 /* Geometry.swift */; };
-		3B0678E7A12353DED422CEBF2CB620E0 /* PermissionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB76448B6D4257F0541B82FA1F787D /* PermissionMode.swift */; };
-		3B13248446F6C8873E2AC31D91A33225 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C6FB4CCD3305AF13C157429737264 /* Resources.swift */; };
-		3B6BD11000DACAD55F4EF03180AAEC20 /* StoredProcedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A17A45EDC272B68E42FB41FED52E1C /* StoredProcedure.swift */; };
-		42FD1FF8C3673F3746EB8AE322C29029 /* ResourceWriteOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4952098D573D8AFBC4A389CB3DF31E6D /* ResourceWriteOperationQueue.swift */; };
-		439AE9733F8370D8F9489CE1835E159A /* DocumentClientExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C520848ACF67B644A18E642BC6BB549 /* DocumentClientExtensions.swift */; };
-		44775E5A01206753574238F2E4DD7CEE /* PartitionKeyRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D5C1C7227548DFFDE0A058196B0578 /* PartitionKeyRange.swift */; };
-		4603A2798C27648585F610000BB16F14 /* ResourceOracle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD21734F23F9CB6A71AE51D5BB7CE5 /* ResourceOracle.swift */; };
-		4EA60E9DABE8872C204A1659C26419F2 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDC224FB0E38A2F2394C64AE613BA8 /* Polygon.swift */; };
-		4ECCB15C428C79B1970BE8AE96202126 /* ResponseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B826EFF51DD76AEB097FC8DF50AF36AB /* ResponseExtensions.swift */; };
-		4F0A1FB84106D829C25338A69A49E317 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3429A9BA18E963EAB1D2B847C7CB842 /* Logger.swift */; };
-		4F62DC2CA56C088E92F72C529D6FEF59 /* CodableResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908323922E6258005C465B8E4F22B46 /* CodableResource.swift */; };
-		52DF1A7F023AEF3D364B30E16241C405 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D24E5ED580BC00F23D1620F7F448A7 /* Database.swift */; };
-		55BF0C80E470654BF9DD02AE3E4CEEEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		572012C7094761D3DE9ED2ECE2170874 /* PermissionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6EE0496EE71AB493E2373F6A3B8EE /* PermissionProvider.swift */; };
-		57B3944201A16066B9F6AB8BD82040EB /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DAFC8023951493C83142870F45C253 /* ResourceType.swift */; };
-		5A2DF165DE7FCE3A83BC1732E641FB5E /* UtilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A13B1EDE066DE3A153EDAA5450CF00 /* UtilityExtensions.swift */; };
-		5B1169AB2E4B6595CB1C1D5DD61250B9 /* UserDefinedFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8131826FADFFDAEE1FAD197592D87D6B /* UserDefinedFunction.swift */; };
-		5B9C7C45925B06F30E076D3F1477D8B3 /* SupportsPermissionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5EB6C34E31217BCD419456E860BA57 /* SupportsPermissionToken.swift */; };
-		5D63334B556CF34F4CF2A017954EC3D2 /* PermissionProviderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEDF2301CB27922C5E1DE52DDF5B688 /* PermissionProviderConfiguration.swift */; };
-		5D7578E5C513B6C53DD31CD33BD8CC29 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53CDE03FD487D183634162AB3AF1CF /* Point.swift */; };
-		5DF8AD2369B6E25261F41F304E87B46B /* ConflictStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B35014F95F095CA4DC65A83199F27 /* ConflictStrategy.swift */; };
-		5EC68F0EE0CECE7282CE675962533E0D /* ResourceSystemProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2492B47AF9EA787376C0BAD6595FE /* ResourceSystemProperties.swift */; };
-		5F0CFF73B2AC3CF6581CD882C378FAC8 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C0E47625D338DB24419266B79EE32 /* Permission.swift */; };
-		61ED33807DC26F084D2F6A97124629AC /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27369A0FE832FB75477108D873BFD1FB /* Keychain.swift */; };
-		63D334FFD0E09AC0CB3B37E97438CAC3 /* ReachabilityManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0980F84BA0DEB2B823CDAA5307CE75 /* ReachabilityManagerType.swift */; };
-		65E7BFDCAF80194F5E459A1367E51E7C /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FE901482E3D6FE4148B10FCF555F8C /* Query.swift */; };
-		69E4D61EBF9FBA0C46A19F400A40C61B /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81FDFBF5664E7266869A0BE9234F92E5 /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C1E9BE432225272444AA6A2EC02A43C /* Pods-MISforEduTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94CE37E107BB467D8C598F41D5EA857A /* Pods-MISforEduTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DDC4BFB715237A85CAA23E9B77F1730 /* MSHttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5913EC2B16525090CFA3E77102CB3E99 /* MSHttpHeader.swift */; };
-		736AA573B3BF668EF681220E6FF7DCFE /* AzureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F12EB7B8081BF25485F3CECEB9EECD /* AzureData.swift */; };
-		804440901584EBAA28565FCD4CAA3FB6 /* Conflict.swift in Sources */ = {isa = PBXBuildFile; fileRef = C542002D87BB24745D774CA4A682A307 /* Conflict.swift */; };
-		82ED8C2A4F347CB2F0ABB08A87480DA7 /* PartitionKeyDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E65045834C57C2CD53A423321B8A0D /* PartitionKeyDefinition.swift */; };
-		8A7667A9CF7E41A3AD9D8B5CF4C01251 /* CryptoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 685E94C3E4E2C9DEFD870143A30AC011 /* CryptoProvider.m */; };
-		8B160AD622918962F59235C7040FC787 /* ResourceEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B667816C15B6510D752DC8F4FCD02D8 /* ResourceEncryptor.swift */; };
-		8B275B5A9723FE5FBDA9BCC0E5B0F2EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB1F314E0D7306DCDBE85E7835EDEE6 /* User.swift */; };
-		8B5989AA351C077EA962A9B05070CE26 /* DocumentClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C368EDFC8CAD7446C7955C4544A84D5 /* DocumentClient.swift */; };
-		8EAA07C439F1F8C72A3FAFF102CBB035 /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED46EE15C055760B3D978B36C710B03A /* LogLevel.swift */; };
-		8F46BDA8DA4125188A1B4972D9F45A41 /* Willow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC35C9C6FCFC310F41812BFD648EFF3 /* Willow-dummy.m */; };
-		95374F90A36D4F88CF8EB6C1D65E966C /* Pods-MISforEdu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A93D0485DF0803CD6A768C4E01C9C05 /* Pods-MISforEdu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08E629D676BAF1E3EA8C396964DF10D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		15129CE0725FFB58FE838EFF291E341E /* Pods-MISforEduTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A35E51C4E571F2981BA25CD96B81C3F4 /* Pods-MISforEduTests-dummy.m */; };
+		6C1E9BE432225272444AA6A2EC02A43C /* Pods-MISforEduTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3675449ABFC1D4EA29D4A3CD4BF44F00 /* Pods-MISforEduTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		983E80EFDFE75FE18E206FEF7863997C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		9CFE89DAA977D7D8211E1C78E069DA4F /* DocumentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB052F1BC529323E143E119E1E7C766E /* DocumentCollection.swift */; };
-		A0354A54FC607A76B4630C17261B1152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A5ADF0FB2817A58608B620145DAC9D92 /* GeometryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611A42D03777206D30B407C05FF10708 /* GeometryError.swift */; };
-		A8FA5271679F4E5C606025AABA3C8D96 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E25225FC504798D69704ED792CBB9E /* Logger.swift */; };
-		AA3BD99C233354EE033760F32F01B7B8 /* AzureCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF6AE2EDDAE2B864145B16F472EBFB6 /* AzureCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B09D4EB3AC252DA284F3624DF1FBF8A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B1E8E11464A72A6991AF5D665A3830CB /* ResourceTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978C9899518A490EC9C47FD4C3CE7A58 /* ResourceTokenProvider.swift */; };
-		B2331AF500BD9430D875D13AF737F703 /* AzureData-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9DFBCD05536B57BCF463BFDE5D9E2A /* AzureData-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B69400EAB68C23D9026862EA26BE0FCE /* HttpStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30C393510A77FC93EF235CFA5563020 /* HttpStatusCode.swift */; };
-		BAB5318D62EEAD199A7B94988007DB8D /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CDF91C72A9BC8A04723F84706BF3A /* Offer.swift */; };
-		BADA5292B57C90DCB9C93DDD7E67D848 /* Willow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 524EEC79E329E7FBF686CE0A244B4228 /* Willow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB569E16710163F8FA53B1B4E7535F71 /* LogMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6996B61208F0B63BD34A662D03947A5A /* LogMessage.swift */; };
-		BD3FB9E7177A70D8621365EE90A20B8D /* PermissionProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8F9876A26EB3CFD0FE538BD00CE69A /* PermissionProviderError.swift */; };
-		BF391884073C9CE1D33FFB4B3E3A6858 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B78D8FC0B17F439D18F8B8ADF0F6B /* HttpHeader.swift */; };
-		C0AEB4BC4A6F321B053B3F48506CB9F2 /* Pods-MISforEdu-MISforEduUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FB7CEDA8D3804A1B8C4034D36D1E988 /* Pods-MISforEdu-MISforEduUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CAC3D718BF26D45E8E931FA56B7A4C69 /* DocumentClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DF2169E3DD51F9F715924FBF813785 /* DocumentClientError.swift */; };
-		CCE133A0670404FDE94583D100B7A989 /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 022F83D3E8EFB4E6E262D77EF7402741 /* KeychainAccess-dummy.m */; };
-		CFA2C34028DDA2BEB19F460ACF7DC7E0 /* Query+Within.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98925B812903DA40E2A2DC6D7FF848C1 /* Query+Within.swift */; };
-		D3F34288337BE36FACE270118465C72B /* CLLocationCoordinate2D+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85640716843C7449D73C815F3470EA /* CLLocationCoordinate2D+Equatable.swift */; };
-		DCA073EC171A3A36A4EEC868B591F680 /* DocumentProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B3EB206CCC1EE34736D746E83DFD1 /* DocumentProperties.swift */; };
-		DD193C2DB7358B0CBCC2C1FA200C9C2E /* ResourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B17E8D33469912CB473A761DFC2BBF /* ResourceError.swift */; };
-		E04AD53EE813D50A80DB78B93A1EE55D /* ResourceWriteOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546A7A09AA12C396FDDB1D873CF8E2A /* ResourceWriteOperation.swift */; };
-		E15771BBA9E6FF6F61E661E10DF52E25 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8800DF822CB9F56CD37E4FDA2B194EB /* ReachabilityManager.swift */; };
-		E2A4D7279F47C00D28F68AA5FFFDBB7F /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8FCF5F1A27ED9A0E6BDD4BE57FCBB2 /* Keychain.swift */; };
-		E2D72C163CE2A927D465B6A4BA399CD7 /* AzureCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F7224811A20E3968BA3C53221FCA4F /* AzureCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3AE0A01CBB2A4683FE4FC0E96F05D24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E8A9F7C1D3DF0504DD65FB0ECCD247A1 /* Documents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11E79D8D78ED8DC0588E79815742AC0 /* Documents.swift */; };
-		ED9DBBA58C75AC49991966CD468F2B58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		EE30DACDD463CC028A7AF3A323BFD761 /* CodableResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A107CC141082BD97888F1D2D9825C6CE /* CodableResources.swift */; };
-		EFE605965F53A96EF371A89ECB07EF4A /* Pods-MISforEdu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB371BBA62D68A32E8B069F94F6EDDA5 /* Pods-MISforEdu-dummy.m */; };
-		F4D94B478F3D39F48832A5DE3D886303 /* ResourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE678D6A7C38E5662D54566DC2515EE5 /* ResourceLocation.swift */; };
-		F6021FC9BDD53C0B2B4BE067C2E87228 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B6468C7BD046F6731B279D4704C962 /* HttpMethod.swift */; };
-		F8FC74CE70ACEB0EA429C7B856BF5874 /* CodableDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7DF7B95685F34F40C6AB4525F7CE0F /* CodableDictionary.swift */; };
-		F90C96DF6A594C92AEEE214566ACEE0B /* AzureDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7836E60EE4D01D236F2C643067FE3 /* AzureDataExtensions.swift */; };
-		FE1C8D0F524BE60E193612D5914AABBD /* DatabaseAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D448E247519F92C44B40C229A7BADB9 /* DatabaseAccount.swift */; };
-		FE24559872C52F1A14230ED2CAF16EAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		FE47D8ABE10D1F26387B242D8726037A /* DocumentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B5F3A39AF4FDD157D726895F30E68 /* DocumentContainer.swift */; };
+		A042F26F0F8825807BD7AB5176D1AC7A /* Pods-MISforEdu-MISforEduUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E07D76AC85B5B7450D507B2D3D385691 /* Pods-MISforEdu-MISforEduUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2FE6FEC981ED693958BF06078D3C213 /* Pods-MISforEdu-MISforEduUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B3A37248C4D1A6722425D45B0F5D05 /* Pods-MISforEdu-MISforEduUITests-dummy.m */; };
+		C5C362DB32E479D0DAE7266545E9EE6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D87488371617D6D7C1199915AF271CD7 /* Pods-MISforEdu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A82DE6B6E47AA735A182831A81B184F /* Pods-MISforEdu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E66A5EFE62ECEFE70B1F09145124EF00 /* Pods-MISforEdu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A26C6C15FB983D8CF26BC356033B160 /* Pods-MISforEdu-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		026C0F6E7AA0E839440554B2488E2E45 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 615C831BCE925ED486B225B87E44926D;
-			remoteInfo = KeychainAccess;
-		};
-		07019D231692EC7BF6CEBBC4A1F477FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6693EB530C7E9ACCD96AEBDF3A5670CE;
-			remoteInfo = Willow;
-		};
-		16CA38DC611455FE5028B3C81E069C5C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 615C831BCE925ED486B225B87E44926D;
-			remoteInfo = KeychainAccess;
-		};
-		298A126726A406A3B2E3ECAFC5FF2E8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EF3D57598B2F6B611B951D5BC18E691F;
-			remoteInfo = AzureCore;
-		};
-		3F6AA5EA16374FD87CC9F9A83FD7325F /* PBXContainerItemProxy */ = {
+		04C49C7D9DACEE258F801553B1CBEF2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A6AD42551A3E183DD79F9E0E66050544;
 			remoteInfo = "Pods-MISforEdu";
 		};
-		5320038A3F8647FBB09574A112897010 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EF3D57598B2F6B611B951D5BC18E691F;
-			remoteInfo = AzureCore;
-		};
-		765796299820F996B72507056729B131 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6693EB530C7E9ACCD96AEBDF3A5670CE;
-			remoteInfo = Willow;
-		};
-		7F610D47F33FB3DCCAB944D21CE12172 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EF3D57598B2F6B611B951D5BC18E691F;
-			remoteInfo = AzureCore;
-		};
-		BF023D097A95E3145157E05D8BB832E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6693EB530C7E9ACCD96AEBDF3A5670CE;
-			remoteInfo = Willow;
-		};
-		DD8F50EA8F3CF021B54A27D3FFD76594 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 677F7AB62DF420A2BEE522AE316380C6;
-			remoteInfo = AzureData;
-		};
-		E56B7A7766F6EFDBAEE42628B5AB47C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 677F7AB62DF420A2BEE522AE316380C6;
-			remoteInfo = AzureData;
-		};
-		FA098E1D9EB9A2DCFD11E5EBA5CBCE3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 615C831BCE925ED486B225B87E44926D;
-			remoteInfo = KeychainAccess;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E65045834C57C2CD53A423321B8A0D /* PartitionKeyDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PartitionKeyDefinition.swift; path = AzureData/Source/Resources/Extensions/PartitionKeyDefinition.swift; sourceTree = "<group>"; };
-		022F83D3E8EFB4E6E262D77EF7402741 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
-		023B5F3A39AF4FDD157D726895F30E68 /* DocumentContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentContainer.swift; path = AzureData/Source/Resources/DocumentContainer.swift; sourceTree = "<group>"; };
-		033F0D7F0EDDBECE0E635DD7C8A5BBA0 /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu-MISforEduUITests.release.xcconfig"; sourceTree = "<group>"; };
-		064AF1CF5059BCB3541850F57FB4A382 /* AzureKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AzureKeys.swift; path = AzureCore/Source/AzureKeys.swift; sourceTree = "<group>"; };
-		0890E2EAE4F1E9DB56D2E12DD3A50A61 /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu-MISforEduUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0A9B3EB206CCC1EE34736D746E83DFD1 /* DocumentProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentProperties.swift; path = AzureData/Source/Resources/DocumentProperties.swift; sourceTree = "<group>"; };
-		0CE4DDAF622C02D770C5F567E55157EB /* Pods-MISforEduTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MISforEduTests-dummy.m"; sourceTree = "<group>"; };
-		0D8FCF5F1A27ED9A0E6BDD4BE57FCBB2 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
-		14DB35021887660956525365AD31FC22 /* Pods-MISforEduTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MISforEduTests.modulemap"; sourceTree = "<group>"; };
-		17E25225FC504798D69704ED792CBB9E /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = AzureCore/Source/Logger.swift; sourceTree = "<group>"; };
-		19D5C1C7227548DFFDE0A058196B0578 /* PartitionKeyRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PartitionKeyRange.swift; path = AzureData/Source/Resources/PartitionKeyRange.swift; sourceTree = "<group>"; };
-		19DAFC8023951493C83142870F45C253 /* ResourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceType.swift; path = AzureData/Source/ResourceType.swift; sourceTree = "<group>"; };
-		1A1CDF91C72A9BC8A04723F84706BF3A /* Offer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Offer.swift; path = AzureData/Source/Resources/Offer.swift; sourceTree = "<group>"; };
-		1C6B35014F95F095CA4DC65A83199F27 /* ConflictStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConflictStrategy.swift; path = AzureData/Source/ConflictStrategy.swift; sourceTree = "<group>"; };
-		1EE3EBC1A4C4A8955318F0A7BB06E85E /* Pods-MISforEdu-MISforEduUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MISforEdu-MISforEduUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1F7DF7B95685F34F40C6AB4525F7CE0F /* CodableDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableDictionary.swift; path = AzureData/Source/Resources/CodableDictionary.swift; sourceTree = "<group>"; };
-		1FEA596A6E92848808917C8745577FA5 /* Pods-MISforEduTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEduTests-Info.plist"; sourceTree = "<group>"; };
-		24F7224811A20E3968BA3C53221FCA4F /* AzureCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AzureCore.h; path = AzureCore/Source/AzureCore.h; sourceTree = "<group>"; };
-		2546A7A09AA12C396FDDB1D873CF8E2A /* ResourceWriteOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceWriteOperation.swift; path = AzureData/Source/ResourceWriteOperation.swift; sourceTree = "<group>"; };
-		25B8D93AFAD55AC87FBA7E4B581FDACA /* Pods-MISforEdu-MISforEduUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-MISforEduUITests-Info.plist"; sourceTree = "<group>"; };
-		27369A0FE832FB75477108D873BFD1FB /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = AzureCore/Source/Keychain.swift; sourceTree = "<group>"; };
-		2A0569FC6542319D29A5F4C7D66F6F5C /* AzureCore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AzureCore; path = AzureCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A75DAC0BF46F06A47FEF4B591CC02BA /* LogModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogModifier.swift; path = Source/LogModifier.swift; sourceTree = "<group>"; };
-		2BE748E2FD4E77F075A6C3338104143C /* Pods-MISforEdu-MISforEduUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MISforEdu-MISforEduUITests-frameworks.sh"; sourceTree = "<group>"; };
-		2D8C0E47625D338DB24419266B79EE32 /* Permission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Permission.swift; path = AzureData/Source/Resources/Permission.swift; sourceTree = "<group>"; };
-		2D8CB976CC49B5F901407449B907A201 /* AzureData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AzureData.release.xcconfig; sourceTree = "<group>"; };
-		37B6468C7BD046F6731B279D4704C962 /* HttpMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpMethod.swift; path = AzureCore/Source/HttpMethod.swift; sourceTree = "<group>"; };
+		006996E58729BCF98E797E23453027E5 /* Pods-MISforEdu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MISforEdu-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A0F4D7C1430C7D50F2BED7EBF698200 /* Pods-MISforEdu-MISforEduUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-MISforEduUITests-Info.plist"; sourceTree = "<group>"; };
+		1A706FAE8AC7363D5E1056EE6AF22558 /* Pods-MISforEdu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MISforEdu.modulemap"; sourceTree = "<group>"; };
+		1FD78C476D2FF20F8D17646248FF0BE3 /* Pods-MISforEdu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-acknowledgements.plist"; sourceTree = "<group>"; };
+		2582DFC5C367F62342045F7B6EC0585C /* Pods-MISforEdu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-Info.plist"; sourceTree = "<group>"; };
+		2A26C6C15FB983D8CF26BC356033B160 /* Pods-MISforEdu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MISforEdu-dummy.m"; sourceTree = "<group>"; };
+		2A82DE6B6E47AA735A182831A81B184F /* Pods-MISforEdu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MISforEdu-umbrella.h"; sourceTree = "<group>"; };
+		3675449ABFC1D4EA29D4A3CD4BF44F00 /* Pods-MISforEduTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MISforEduTests-umbrella.h"; sourceTree = "<group>"; };
+		38186D75E3BF97CAC7FD90099CCC2EBE /* Pods-MISforEdu-MISforEduUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MISforEdu-MISforEduUITests.modulemap"; sourceTree = "<group>"; };
 		3A0C5004726D93BA768A9894E2DB3E73 /* Pods-MISforEdu-MISforEduUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MISforEdu-MISforEduUITests"; path = Pods_MISforEdu_MISforEduUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E9E0B7389204022244E2048195794F4 /* AzureData */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AzureData; path = AzureData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F53CDE03FD487D183634162AB3AF1CF /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = AzureData/Source/Geometry/Point.swift; sourceTree = "<group>"; };
-		41425B6F2BA3B3FC66FFC0073F57D697 /* Geometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Geometry.swift; path = AzureData/Source/Geometry/Geometry.swift; sourceTree = "<group>"; };
-		420368D7836D22AEAEDD5DDEDFACA65F /* Pods-MISforEdu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MISforEdu-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4952098D573D8AFBC4A389CB3DF31E6D /* ResourceWriteOperationQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceWriteOperationQueue.swift; path = AzureData/Source/ResourceWriteOperationQueue.swift; sourceTree = "<group>"; };
+		3DF035BB1806C28E2EF11FF301C67439 /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu-MISforEduUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4216134E5B01C850BCA5D8D830F15A33 /* Pods-MISforEdu-MISforEduUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-MISforEduUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		497CE12D80BB53B39F9A5F47E8D8656F /* Pods-MISforEdu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MISforEdu"; path = Pods_MISforEdu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BE31FB71E7AB50007CE553BB22AD4DD /* Pods-MISforEdu-MISforEduUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MISforEdu-MISforEduUITests.modulemap"; sourceTree = "<group>"; };
-		4D448E247519F92C44B40C229A7BADB9 /* DatabaseAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseAccount.swift; path = AzureData/Source/Resources/DatabaseAccount.swift; sourceTree = "<group>"; };
-		524EEC79E329E7FBF686CE0A244B4228 /* Willow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Willow-umbrella.h"; sourceTree = "<group>"; };
-		52CD21734F23F9CB6A71AE51D5BB7CE5 /* ResourceOracle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceOracle.swift; path = AzureData/Source/ResourceOracle.swift; sourceTree = "<group>"; };
-		53FDC224FB0E38A2F2394C64AE613BA8 /* Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polygon.swift; path = AzureData/Source/Geometry/Polygon.swift; sourceTree = "<group>"; };
-		544033D723CE8D03CA1A928AD26F0AF6 /* Pods-MISforEdu-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MISforEdu-frameworks.sh"; sourceTree = "<group>"; };
-		57F3E2EB3A96663A8B14346898C6CD8A /* Willow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Willow.debug.xcconfig; sourceTree = "<group>"; };
-		5913EC2B16525090CFA3E77102CB3E99 /* MSHttpHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MSHttpHeader.swift; path = AzureData/Source/MSHttpHeader.swift; sourceTree = "<group>"; };
-		5CB7858DC3C355DCAA8EF63A9DAF7933 /* Pods-MISforEdu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu.debug.xcconfig"; sourceTree = "<group>"; };
-		5E0F7FABADC6FE9EF0EA97D94930F4CD /* AzureData.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AzureData.modulemap; sourceTree = "<group>"; };
-		5ED6524EE582CDEF1F69453F00588444 /* ResourceRequestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceRequestError.swift; path = AzureData/Source/Resources/ResourceRequestError.swift; sourceTree = "<group>"; };
-		611A42D03777206D30B407C05FF10708 /* GeometryError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeometryError.swift; path = AzureData/Source/Geometry/GeometryError.swift; sourceTree = "<group>"; };
-		61CFC446892938460FBFC4DE8BB6EBA4 /* Willow-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Willow-Info.plist"; sourceTree = "<group>"; };
-		6443CA7DEB23FA44C522B2516291DDC1 /* Pods-MISforEduTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEduTests.debug.xcconfig"; sourceTree = "<group>"; };
-		680A70C37C5D2D07EDB4768F1B144541 /* PermissionCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionCache.swift; path = AzureData/Source/PermissionCache.swift; sourceTree = "<group>"; };
-		685E94C3E4E2C9DEFD870143A30AC011 /* CryptoProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CryptoProvider.m; path = AzureCore/Source/CryptoProvider.m; sourceTree = "<group>"; };
-		6996B61208F0B63BD34A662D03947A5A /* LogMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogMessage.swift; path = Source/LogMessage.swift; sourceTree = "<group>"; };
-		6A93D0485DF0803CD6A768C4E01C9C05 /* Pods-MISforEdu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MISforEdu-umbrella.h"; sourceTree = "<group>"; };
-		6AB2492B47AF9EA787376C0BAD6595FE /* ResourceSystemProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceSystemProperties.swift; path = AzureData/Source/Resources/ResourceSystemProperties.swift; sourceTree = "<group>"; };
-		6FBA427FAA0FFF60CAEA129689DB0AA5 /* AzureCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AzureCore.debug.xcconfig; sourceTree = "<group>"; };
-		71076252E3B76C89DA37A202B37137BC /* Query+Intersects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Query+Intersects.swift"; path = "AzureData/Source/Geometry/Query/Query+Intersects.swift"; sourceTree = "<group>"; };
-		725AD92A812B0CEDFD90C39AF06DE485 /* Willow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Willow.release.xcconfig; sourceTree = "<group>"; };
+		54409CD36B5081A7D49532B5F35B5EDD /* Pods-MISforEdu-MISforEduUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MISforEdu-MISforEduUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5FC197C04C61BFF5D8B92CA98B0A71EF /* Pods-MISforEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu.release.xcconfig"; sourceTree = "<group>"; };
+		5FE24FAC8E81D031522F08498D75060B /* Pods-MISforEduTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEduTests.release.xcconfig"; sourceTree = "<group>"; };
+		6837FEF500CA5B87324CCB90D7AE4D35 /* Pods-MISforEduTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEduTests-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		74267FE8C606C2D65E352E99A6ECDAEE /* AzureData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AzureData.debug.xcconfig; sourceTree = "<group>"; };
-		79B734C086E8E8CBF6AF442332E184AC /* AzureCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AzureCore-Info.plist"; sourceTree = "<group>"; };
-		7BCF03ED1454CF04BE743F653E609A87 /* Willow */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Willow; path = Willow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C368EDFC8CAD7446C7955C4544A84D5 /* DocumentClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentClient.swift; path = AzureData/Source/DocumentClient.swift; sourceTree = "<group>"; };
-		7E15389E228048897368E1150C62FE99 /* Pods-MISforEdu-MISforEduUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-MISforEduUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		80361AC1A083633A10A27BE47F020E51 /* CryptoProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CryptoProvider.h; path = AzureCore/Source/CryptoProvider.h; sourceTree = "<group>"; };
-		807191D6D1B6284A20AF20C9CBC6E3C3 /* Attachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attachment.swift; path = AzureData/Source/Resources/Attachment.swift; sourceTree = "<group>"; };
-		8131826FADFFDAEE1FAD197592D87D6B /* UserDefinedFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDefinedFunction.swift; path = AzureData/Source/Resources/UserDefinedFunction.swift; sourceTree = "<group>"; };
-		81FDFBF5664E7266869A0BE9234F92E5 /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
-		84B7836E60EE4D01D236F2C643067FE3 /* AzureDataExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AzureDataExtensions.swift; path = AzureData/Source/AzureDataExtensions.swift; sourceTree = "<group>"; };
-		8B667816C15B6510D752DC8F4FCD02D8 /* ResourceEncryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceEncryptor.swift; path = AzureData/Source/ResourceEncryptor.swift; sourceTree = "<group>"; };
-		8BA06F165DE963EB4F07C53038FC816F /* Pods-MISforEduTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MISforEduTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8BD6EE0496EE71AB493E2373F6A3B8EE /* PermissionProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionProvider.swift; path = AzureData/Source/PermissionProvider.swift; sourceTree = "<group>"; };
-		8C520848ACF67B644A18E642BC6BB549 /* DocumentClientExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentClientExtensions.swift; path = AzureData/Source/DocumentClientExtensions.swift; sourceTree = "<group>"; };
-		93632212DD81CCFBC742D1D441040160 /* ResourceCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceCache.swift; path = AzureData/Source/ResourceCache.swift; sourceTree = "<group>"; };
-		94CE37E107BB467D8C598F41D5EA857A /* Pods-MISforEduTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MISforEduTests-umbrella.h"; sourceTree = "<group>"; };
-		95A17A45EDC272B68E42FB41FED52E1C /* StoredProcedure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoredProcedure.swift; path = AzureData/Source/Resources/StoredProcedure.swift; sourceTree = "<group>"; };
-		962194EEAC932E04105ACC96897CB402 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
-		978C9899518A490EC9C47FD4C3CE7A58 /* ResourceTokenProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceTokenProvider.swift; path = AzureData/Source/ResourceTokenProvider.swift; sourceTree = "<group>"; };
-		97FE901482E3D6FE4148B10FCF555F8C /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = AzureData/Source/Query.swift; sourceTree = "<group>"; };
-		981C6FB4CCD3305AF13C157429737264 /* Resources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resources.swift; path = AzureData/Source/Resources/Resources.swift; sourceTree = "<group>"; };
-		983F8710E9A68CEC3DCECE39540F186B /* AzureData-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AzureData-Info.plist"; sourceTree = "<group>"; };
-		98917518156F450A9D061B3159E5C165 /* Willow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Willow-prefix.pch"; sourceTree = "<group>"; };
-		98925B812903DA40E2A2DC6D7FF848C1 /* Query+Within.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Query+Within.swift"; path = "AzureData/Source/Geometry/Query/Query+Within.swift"; sourceTree = "<group>"; };
-		9B43C1362320F1BB7DAF583A18FB784E /* AzureData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AzureData.h; path = AzureData/Source/AzureData.h; sourceTree = "<group>"; };
-		9C0BA3AF2D5E626666DCD293D6805E52 /* ResponseMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseMetadata.swift; path = AzureData/Source/Resources/ResponseMetadata.swift; sourceTree = "<group>"; };
-		9CB1F314E0D7306DCDBE85E7835EDEE6 /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = User.swift; path = AzureData/Source/Resources/User.swift; sourceTree = "<group>"; };
+		949F01E96EA068EA64A4EC252120AA0A /* Pods-MISforEduTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MISforEduTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D9DFBCD05536B57BCF463BFDE5D9E2A /* AzureData-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureData-umbrella.h"; sourceTree = "<group>"; };
-		9E85640716843C7449D73C815F3470EA /* CLLocationCoordinate2D+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocationCoordinate2D+Equatable.swift"; path = "AzureData/Source/Geometry/CLLocationCoordinate2D+Equatable.swift"; sourceTree = "<group>"; };
-		9FB7CEDA8D3804A1B8C4034D36D1E988 /* Pods-MISforEdu-MISforEduUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MISforEdu-MISforEduUITests-umbrella.h"; sourceTree = "<group>"; };
-		9FF6AE2EDDAE2B864145B16F472EBFB6 /* AzureCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureCore-umbrella.h"; sourceTree = "<group>"; };
-		A107CC141082BD97888F1D2D9825C6CE /* CodableResources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableResources.swift; path = AzureData/Source/Resources/CodableResources.swift; sourceTree = "<group>"; };
-		A30C393510A77FC93EF235CFA5563020 /* HttpStatusCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpStatusCode.swift; path = AzureCore/Source/HttpStatusCode.swift; sourceTree = "<group>"; };
-		AE35D42A64F92F9B36A8966635BB4A2B /* Pods-MISforEdu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-acknowledgements.plist"; sourceTree = "<group>"; };
-		B029BBAEE6825C6C2AC862E21CDAA55F /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = AzureCore/Source/Response.swift; sourceTree = "<group>"; };
-		B4D24E5ED580BC00F23D1620F7F448A7 /* Database.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Database.swift; path = AzureData/Source/Resources/Database.swift; sourceTree = "<group>"; };
-		B7569A31FE3DCAC28EB2F9CAD87512C5 /* Pods-MISforEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu.release.xcconfig"; sourceTree = "<group>"; };
-		B7DF2169E3DD51F9F715924FBF813785 /* DocumentClientError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentClientError.swift; path = AzureData/Source/DocumentClientError.swift; sourceTree = "<group>"; };
-		B826EFF51DD76AEB097FC8DF50AF36AB /* ResponseExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseExtensions.swift; path = AzureData/Source/ResponseExtensions.swift; sourceTree = "<group>"; };
-		B83E42BA83D54CF64D659BB17D5896AC /* KeychainAccess-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainAccess-Info.plist"; sourceTree = "<group>"; };
-		B8800DF822CB9F56CD37E4FDA2B194EB /* ReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReachabilityManager.swift; path = AzureCore/Source/ReachabilityManager.swift; sourceTree = "<group>"; };
-		B95B78D8FC0B17F439D18F8B8ADF0F6B /* HttpHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpHeader.swift; path = AzureCore/Source/HttpHeader.swift; sourceTree = "<group>"; };
-		B9B17E8D33469912CB473A761DFC2BBF /* ResourceError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceError.swift; path = AzureData/Source/Resources/ResourceError.swift; sourceTree = "<group>"; };
-		BF70AF93556EABBC178B0CA6F16C8F7C /* Pods-MISforEduTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEduTests.release.xcconfig"; sourceTree = "<group>"; };
-		C0EC9CBCEA9BBFC3CFD6DE49256D713F /* KeychainAccess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.release.xcconfig; sourceTree = "<group>"; };
-		C451CF859606760D47E80980A0E8A723 /* AzureCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AzureCore.release.xcconfig; sourceTree = "<group>"; };
-		C542002D87BB24745D774CA4A682A307 /* Conflict.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Conflict.swift; path = AzureData/Source/Resources/Conflict.swift; sourceTree = "<group>"; };
-		C617EFDC48E3016C4302DADF553B4597 /* DateFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormat.swift; path = AzureCore/Source/DateFormat.swift; sourceTree = "<group>"; };
-		C748634922DCCC0112B7D94AE0FF46F1 /* Query+Distance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Query+Distance.swift"; path = "AzureData/Source/Geometry/Query/Query+Distance.swift"; sourceTree = "<group>"; };
-		CB482EF38AC61A15FFB9039DE39DC70C /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
-		CBAE8B917CF0C857BDAE338D61D63D4F /* Pods-MISforEdu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEdu-Info.plist"; sourceTree = "<group>"; };
-		CD8F9876A26EB3CFD0FE538BD00CE69A /* PermissionProviderError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionProviderError.swift; path = AzureData/Source/PermissionProviderError.swift; sourceTree = "<group>"; };
-		D3429A9BA18E963EAB1D2B847C7CB842 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Logger.swift; sourceTree = "<group>"; };
-		D5AE054CE53C210048763134988E27F7 /* LogWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogWriter.swift; path = Source/LogWriter.swift; sourceTree = "<group>"; };
-		D7323ADB00BEFAD367196F2670F1CE5C /* AzureCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AzureCore.modulemap; sourceTree = "<group>"; };
-		D8AE0F9436BD5A0C94FE003B12EC758F /* LineString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineString.swift; path = AzureData/Source/Geometry/LineString.swift; sourceTree = "<group>"; };
-		DAE41E4ADBA71797617BE76A94ED6330 /* AzureData-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureData-prefix.pch"; sourceTree = "<group>"; };
-		DB052F1BC529323E143E119E1E7C766E /* DocumentCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentCollection.swift; path = AzureData/Source/Resources/DocumentCollection.swift; sourceTree = "<group>"; };
-		DB371BBA62D68A32E8B069F94F6EDDA5 /* Pods-MISforEdu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MISforEdu-dummy.m"; sourceTree = "<group>"; };
-		DE678D6A7C38E5662D54566DC2515EE5 /* ResourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceLocation.swift; path = AzureData/Source/ResourceLocation.swift; sourceTree = "<group>"; };
-		DEB25E66DEF04F3EAD1589557F16B38D /* Trigger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Trigger.swift; path = AzureData/Source/Resources/Trigger.swift; sourceTree = "<group>"; };
-		DEBB76448B6D4257F0541B82FA1F787D /* PermissionMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionMode.swift; path = AzureData/Source/Resources/PermissionMode.swift; sourceTree = "<group>"; };
-		DEBD543B36774C118F869B6593980450 /* AzureCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AzureCore-prefix.pch"; sourceTree = "<group>"; };
-		DF26AEC6695ADC1838244A9D3BC95008 /* Willow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Willow.modulemap; sourceTree = "<group>"; };
-		E11E79D8D78ED8DC0588E79815742AC0 /* Documents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Documents.swift; path = AzureData/Source/Resources/Documents.swift; sourceTree = "<group>"; };
+		A35E51C4E571F2981BA25CD96B81C3F4 /* Pods-MISforEduTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MISforEduTests-dummy.m"; sourceTree = "<group>"; };
+		ADE3D4D5185F81F99642C221E01F8712 /* Pods-MISforEduTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEduTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B66AE788A4C9F163D6FCBF6504B31648 /* Pods-MISforEduTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MISforEduTests.modulemap"; sourceTree = "<group>"; };
+		B7B3A37248C4D1A6722425D45B0F5D05 /* Pods-MISforEdu-MISforEduUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MISforEdu-MISforEduUITests-dummy.m"; sourceTree = "<group>"; };
+		E07D76AC85B5B7450D507B2D3D385691 /* Pods-MISforEdu-MISforEduUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MISforEdu-MISforEduUITests-umbrella.h"; sourceTree = "<group>"; };
 		E43A86DFA4A7AFB42269F950116CE1DA /* Pods-MISforEduTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MISforEduTests"; path = Pods_MISforEduTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6206795236D45B2ADACF449CAFB80A9 /* Pods-MISforEdu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MISforEdu.modulemap"; sourceTree = "<group>"; };
-		E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E908323922E6258005C465B8E4F22B46 /* CodableResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableResource.swift; path = AzureData/Source/Resources/CodableResource.swift; sourceTree = "<group>"; };
-		EA5EB6C34E31217BCD419456E860BA57 /* SupportsPermissionToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupportsPermissionToken.swift; path = AzureData/Source/SupportsPermissionToken.swift; sourceTree = "<group>"; };
-		EB0BFAB89310D3622883F45AD2306042 /* AzureCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AzureCore-dummy.m"; sourceTree = "<group>"; };
-		ED46EE15C055760B3D978B36C710B03A /* LogLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogLevel.swift; path = Source/LogLevel.swift; sourceTree = "<group>"; };
-		EEEDF2301CB27922C5E1DE52DDF5B688 /* PermissionProviderConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionProviderConfiguration.swift; path = AzureData/Source/PermissionProviderConfiguration.swift; sourceTree = "<group>"; };
-		F03889E007A48248E63658E574AE39B2 /* Pods-MISforEdu-MISforEduUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MISforEdu-MISforEduUITests-dummy.m"; sourceTree = "<group>"; };
-		F070C2F8DA4D932666A3D7947508FDE8 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = AzureData/Source/Resources/Document.swift; sourceTree = "<group>"; };
-		F38B4CB8D416F5CBEA81D542A7FCEB3B /* Pods-MISforEduTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEduTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F5F12EB7B8081BF25485F3CECEB9EECD /* AzureData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AzureData.swift; path = AzureData/Source/AzureData.swift; sourceTree = "<group>"; };
-		F8A13B1EDE066DE3A153EDAA5450CF00 /* UtilityExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UtilityExtensions.swift; path = AzureData/Source/UtilityExtensions.swift; sourceTree = "<group>"; };
-		FA0980F84BA0DEB2B823CDAA5307CE75 /* ReachabilityManagerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReachabilityManagerType.swift; path = AzureCore/Source/ReachabilityManagerType.swift; sourceTree = "<group>"; };
-		FAB54979C6BDC2A8B50841EB534B810C /* AzureData-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AzureData-dummy.m"; sourceTree = "<group>"; };
-		FAC35C9C6FCFC310F41812BFD648EFF3 /* Willow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Willow-dummy.m"; sourceTree = "<group>"; };
-		FD22CE84CADBE6805F03B59A22DE04D6 /* KeychainAccess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.debug.xcconfig; sourceTree = "<group>"; };
+		F0D066BDF917258CB542B64FC0A60871 /* Pods-MISforEdu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu.debug.xcconfig"; sourceTree = "<group>"; };
+		F472E57BBE9E3527839ED4AB8C54FE07 /* Pods-MISforEduTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MISforEduTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FEB2113F0952376D66ED9A5889E84411 /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MISforEdu-MISforEduUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,149 +69,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29C1C3C008EFE0A3F29C97C7424CFFD2 /* Frameworks */ = {
+		A2982E14C446E88F1060B6408E619FBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55BF0C80E470654BF9DD02AE3E4CEEEC /* Foundation.framework in Frameworks */,
+				C5C362DB32E479D0DAE7266545E9EE6C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F50E8CF18470CE90E19DFBBD2C2363E /* Frameworks */ = {
+		DAD633216C12E3EBA0011251ADA3AC66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE24559872C52F1A14230ED2CAF16EAE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AB4A67F77BCA9759F311EC81CE27CD0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED9DBBA58C75AC49991966CD468F2B58 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		572DC2037A9E469B1482921FEDFCD4DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3AE0A01CBB2A4683FE4FC0E96F05D24 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B36467C48E4E0576831D4968AF08552D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B09D4EB3AC252DA284F3624DF1FBF8A9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF8AFEC2DE4EDF67A10BD821D7373EED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0354A54FC607A76B4630C17261B1152 /* Foundation.framework in Frameworks */,
+				08E629D676BAF1E3EA8C396964DF10D4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2347DBCF36B65CA64E66DCB823A6E9BD /* Support Files */ = {
+		1119088025809B88A59AAFA5CEA9694D /* Pods-MISforEdu */ = {
 			isa = PBXGroup;
 			children = (
-				DF26AEC6695ADC1838244A9D3BC95008 /* Willow.modulemap */,
-				FAC35C9C6FCFC310F41812BFD648EFF3 /* Willow-dummy.m */,
-				61CFC446892938460FBFC4DE8BB6EBA4 /* Willow-Info.plist */,
-				98917518156F450A9D061B3159E5C165 /* Willow-prefix.pch */,
-				524EEC79E329E7FBF686CE0A244B4228 /* Willow-umbrella.h */,
-				57F3E2EB3A96663A8B14346898C6CD8A /* Willow.debug.xcconfig */,
-				725AD92A812B0CEDFD90C39AF06DE485 /* Willow.release.xcconfig */,
+				1A706FAE8AC7363D5E1056EE6AF22558 /* Pods-MISforEdu.modulemap */,
+				006996E58729BCF98E797E23453027E5 /* Pods-MISforEdu-acknowledgements.markdown */,
+				1FD78C476D2FF20F8D17646248FF0BE3 /* Pods-MISforEdu-acknowledgements.plist */,
+				2A26C6C15FB983D8CF26BC356033B160 /* Pods-MISforEdu-dummy.m */,
+				2582DFC5C367F62342045F7B6EC0585C /* Pods-MISforEdu-Info.plist */,
+				2A82DE6B6E47AA735A182831A81B184F /* Pods-MISforEdu-umbrella.h */,
+				F0D066BDF917258CB542B64FC0A60871 /* Pods-MISforEdu.debug.xcconfig */,
+				5FC197C04C61BFF5D8B92CA98B0A71EF /* Pods-MISforEdu.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Willow";
-			sourceTree = "<group>";
-		};
-		45BC948FD9D57CF1D23501D1C666C6AC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D717023005AB1C4FFA1E0C5C37C29573 /* AzureCore */,
-				5344551BE57EF8E345C6ED8A0103D563 /* AzureData */,
-				5D6D98C7DE11453346E1D418C7D36EFA /* KeychainAccess */,
-				7F2179C0580DDB1EEB2BF8F3CAE21D03 /* Willow */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5344551BE57EF8E345C6ED8A0103D563 /* AzureData */ = {
-			isa = PBXGroup;
-			children = (
-				807191D6D1B6284A20AF20C9CBC6E3C3 /* Attachment.swift */,
-				9B43C1362320F1BB7DAF583A18FB784E /* AzureData.h */,
-				F5F12EB7B8081BF25485F3CECEB9EECD /* AzureData.swift */,
-				84B7836E60EE4D01D236F2C643067FE3 /* AzureDataExtensions.swift */,
-				9E85640716843C7449D73C815F3470EA /* CLLocationCoordinate2D+Equatable.swift */,
-				1F7DF7B95685F34F40C6AB4525F7CE0F /* CodableDictionary.swift */,
-				E908323922E6258005C465B8E4F22B46 /* CodableResource.swift */,
-				A107CC141082BD97888F1D2D9825C6CE /* CodableResources.swift */,
-				C542002D87BB24745D774CA4A682A307 /* Conflict.swift */,
-				1C6B35014F95F095CA4DC65A83199F27 /* ConflictStrategy.swift */,
-				B4D24E5ED580BC00F23D1620F7F448A7 /* Database.swift */,
-				4D448E247519F92C44B40C229A7BADB9 /* DatabaseAccount.swift */,
-				F070C2F8DA4D932666A3D7947508FDE8 /* Document.swift */,
-				7C368EDFC8CAD7446C7955C4544A84D5 /* DocumentClient.swift */,
-				B7DF2169E3DD51F9F715924FBF813785 /* DocumentClientError.swift */,
-				8C520848ACF67B644A18E642BC6BB549 /* DocumentClientExtensions.swift */,
-				DB052F1BC529323E143E119E1E7C766E /* DocumentCollection.swift */,
-				023B5F3A39AF4FDD157D726895F30E68 /* DocumentContainer.swift */,
-				0A9B3EB206CCC1EE34736D746E83DFD1 /* DocumentProperties.swift */,
-				E11E79D8D78ED8DC0588E79815742AC0 /* Documents.swift */,
-				41425B6F2BA3B3FC66FFC0073F57D697 /* Geometry.swift */,
-				611A42D03777206D30B407C05FF10708 /* GeometryError.swift */,
-				D8AE0F9436BD5A0C94FE003B12EC758F /* LineString.swift */,
-				5913EC2B16525090CFA3E77102CB3E99 /* MSHttpHeader.swift */,
-				1A1CDF91C72A9BC8A04723F84706BF3A /* Offer.swift */,
-				00E65045834C57C2CD53A423321B8A0D /* PartitionKeyDefinition.swift */,
-				19D5C1C7227548DFFDE0A058196B0578 /* PartitionKeyRange.swift */,
-				2D8C0E47625D338DB24419266B79EE32 /* Permission.swift */,
-				680A70C37C5D2D07EDB4768F1B144541 /* PermissionCache.swift */,
-				DEBB76448B6D4257F0541B82FA1F787D /* PermissionMode.swift */,
-				8BD6EE0496EE71AB493E2373F6A3B8EE /* PermissionProvider.swift */,
-				EEEDF2301CB27922C5E1DE52DDF5B688 /* PermissionProviderConfiguration.swift */,
-				CD8F9876A26EB3CFD0FE538BD00CE69A /* PermissionProviderError.swift */,
-				3F53CDE03FD487D183634162AB3AF1CF /* Point.swift */,
-				53FDC224FB0E38A2F2394C64AE613BA8 /* Polygon.swift */,
-				97FE901482E3D6FE4148B10FCF555F8C /* Query.swift */,
-				C748634922DCCC0112B7D94AE0FF46F1 /* Query+Distance.swift */,
-				71076252E3B76C89DA37A202B37137BC /* Query+Intersects.swift */,
-				98925B812903DA40E2A2DC6D7FF848C1 /* Query+Within.swift */,
-				93632212DD81CCFBC742D1D441040160 /* ResourceCache.swift */,
-				8B667816C15B6510D752DC8F4FCD02D8 /* ResourceEncryptor.swift */,
-				B9B17E8D33469912CB473A761DFC2BBF /* ResourceError.swift */,
-				DE678D6A7C38E5662D54566DC2515EE5 /* ResourceLocation.swift */,
-				52CD21734F23F9CB6A71AE51D5BB7CE5 /* ResourceOracle.swift */,
-				5ED6524EE582CDEF1F69453F00588444 /* ResourceRequestError.swift */,
-				981C6FB4CCD3305AF13C157429737264 /* Resources.swift */,
-				6AB2492B47AF9EA787376C0BAD6595FE /* ResourceSystemProperties.swift */,
-				978C9899518A490EC9C47FD4C3CE7A58 /* ResourceTokenProvider.swift */,
-				19DAFC8023951493C83142870F45C253 /* ResourceType.swift */,
-				2546A7A09AA12C396FDDB1D873CF8E2A /* ResourceWriteOperation.swift */,
-				4952098D573D8AFBC4A389CB3DF31E6D /* ResourceWriteOperationQueue.swift */,
-				B826EFF51DD76AEB097FC8DF50AF36AB /* ResponseExtensions.swift */,
-				9C0BA3AF2D5E626666DCD293D6805E52 /* ResponseMetadata.swift */,
-				95A17A45EDC272B68E42FB41FED52E1C /* StoredProcedure.swift */,
-				EA5EB6C34E31217BCD419456E860BA57 /* SupportsPermissionToken.swift */,
-				DEB25E66DEF04F3EAD1589557F16B38D /* Trigger.swift */,
-				9CB1F314E0D7306DCDBE85E7835EDEE6 /* User.swift */,
-				8131826FADFFDAEE1FAD197592D87D6B /* UserDefinedFunction.swift */,
-				F8A13B1EDE066DE3A153EDAA5450CF00 /* UtilityExtensions.swift */,
-				5A8DD7BAFA6ADA17BF0928F59C4F96C5 /* Support Files */,
-			);
-			name = AzureData;
-			path = AzureData;
+			name = "Pods-MISforEdu";
+			path = "Target Support Files/Pods-MISforEdu";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -501,130 +112,46 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5A8DD7BAFA6ADA17BF0928F59C4F96C5 /* Support Files */ = {
+		A1C3A9E0202671850778933845C0FDFF /* Pods-MISforEdu-MISforEduUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5E0F7FABADC6FE9EF0EA97D94930F4CD /* AzureData.modulemap */,
-				FAB54979C6BDC2A8B50841EB534B810C /* AzureData-dummy.m */,
-				983F8710E9A68CEC3DCECE39540F186B /* AzureData-Info.plist */,
-				DAE41E4ADBA71797617BE76A94ED6330 /* AzureData-prefix.pch */,
-				9D9DFBCD05536B57BCF463BFDE5D9E2A /* AzureData-umbrella.h */,
-				74267FE8C606C2D65E352E99A6ECDAEE /* AzureData.debug.xcconfig */,
-				2D8CB976CC49B5F901407449B907A201 /* AzureData.release.xcconfig */,
+				38186D75E3BF97CAC7FD90099CCC2EBE /* Pods-MISforEdu-MISforEduUITests.modulemap */,
+				54409CD36B5081A7D49532B5F35B5EDD /* Pods-MISforEdu-MISforEduUITests-acknowledgements.markdown */,
+				4216134E5B01C850BCA5D8D830F15A33 /* Pods-MISforEdu-MISforEduUITests-acknowledgements.plist */,
+				B7B3A37248C4D1A6722425D45B0F5D05 /* Pods-MISforEdu-MISforEduUITests-dummy.m */,
+				1A0F4D7C1430C7D50F2BED7EBF698200 /* Pods-MISforEdu-MISforEduUITests-Info.plist */,
+				E07D76AC85B5B7450D507B2D3D385691 /* Pods-MISforEdu-MISforEduUITests-umbrella.h */,
+				3DF035BB1806C28E2EF11FF301C67439 /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */,
+				FEB2113F0952376D66ED9A5889E84411 /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AzureData";
+			name = "Pods-MISforEdu-MISforEduUITests";
+			path = "Target Support Files/Pods-MISforEdu-MISforEduUITests";
 			sourceTree = "<group>";
 		};
-		5D6D98C7DE11453346E1D418C7D36EFA /* KeychainAccess */ = {
+		A5E91D9524D4FF3DDD92E9C2170585AD /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0D8FCF5F1A27ED9A0E6BDD4BE57FCBB2 /* Keychain.swift */,
-				5D7B899244679A0F0268177D5389ACA6 /* Support Files */,
-			);
-			name = KeychainAccess;
-			path = KeychainAccess;
-			sourceTree = "<group>";
-		};
-		5D7B899244679A0F0268177D5389ACA6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				962194EEAC932E04105ACC96897CB402 /* KeychainAccess.modulemap */,
-				022F83D3E8EFB4E6E262D77EF7402741 /* KeychainAccess-dummy.m */,
-				B83E42BA83D54CF64D659BB17D5896AC /* KeychainAccess-Info.plist */,
-				CB482EF38AC61A15FFB9039DE39DC70C /* KeychainAccess-prefix.pch */,
-				81FDFBF5664E7266869A0BE9234F92E5 /* KeychainAccess-umbrella.h */,
-				FD22CE84CADBE6805F03B59A22DE04D6 /* KeychainAccess.debug.xcconfig */,
-				C0EC9CBCEA9BBFC3CFD6DE49256D713F /* KeychainAccess.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/KeychainAccess";
-			sourceTree = "<group>";
-		};
-		680D5BB0191B5E25B20B416CCDC4A345 /* Pods-MISforEduTests */ = {
-			isa = PBXGroup;
-			children = (
-				14DB35021887660956525365AD31FC22 /* Pods-MISforEduTests.modulemap */,
-				8BA06F165DE963EB4F07C53038FC816F /* Pods-MISforEduTests-acknowledgements.markdown */,
-				F38B4CB8D416F5CBEA81D542A7FCEB3B /* Pods-MISforEduTests-acknowledgements.plist */,
-				0CE4DDAF622C02D770C5F567E55157EB /* Pods-MISforEduTests-dummy.m */,
-				1FEA596A6E92848808917C8745577FA5 /* Pods-MISforEduTests-Info.plist */,
-				94CE37E107BB467D8C598F41D5EA857A /* Pods-MISforEduTests-umbrella.h */,
-				6443CA7DEB23FA44C522B2516291DDC1 /* Pods-MISforEduTests.debug.xcconfig */,
-				BF70AF93556EABBC178B0CA6F16C8F7C /* Pods-MISforEduTests.release.xcconfig */,
-			);
-			name = "Pods-MISforEduTests";
-			path = "Target Support Files/Pods-MISforEduTests";
-			sourceTree = "<group>";
-		};
-		6F27B370266D65F71DE05B6008CA6682 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FBAF7EB3722893E88056182C0CD0DC78 /* Pods-MISforEdu */,
-				BF5E51C8F679EA874B6EB834A7D70353 /* Pods-MISforEdu-MISforEduUITests */,
-				680D5BB0191B5E25B20B416CCDC4A345 /* Pods-MISforEduTests */,
+				1119088025809B88A59AAFA5CEA9694D /* Pods-MISforEdu */,
+				A1C3A9E0202671850778933845C0FDFF /* Pods-MISforEdu-MISforEduUITests */,
+				B0FC29EB1BFEC195B03ED6569E6069A3 /* Pods-MISforEduTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7F2179C0580DDB1EEB2BF8F3CAE21D03 /* Willow */ = {
+		B0FC29EB1BFEC195B03ED6569E6069A3 /* Pods-MISforEduTests */ = {
 			isa = PBXGroup;
 			children = (
-				D3429A9BA18E963EAB1D2B847C7CB842 /* Logger.swift */,
-				ED46EE15C055760B3D978B36C710B03A /* LogLevel.swift */,
-				6996B61208F0B63BD34A662D03947A5A /* LogMessage.swift */,
-				2A75DAC0BF46F06A47FEF4B591CC02BA /* LogModifier.swift */,
-				D5AE054CE53C210048763134988E27F7 /* LogWriter.swift */,
-				2347DBCF36B65CA64E66DCB823A6E9BD /* Support Files */,
+				B66AE788A4C9F163D6FCBF6504B31648 /* Pods-MISforEduTests.modulemap */,
+				949F01E96EA068EA64A4EC252120AA0A /* Pods-MISforEduTests-acknowledgements.markdown */,
+				F472E57BBE9E3527839ED4AB8C54FE07 /* Pods-MISforEduTests-acknowledgements.plist */,
+				A35E51C4E571F2981BA25CD96B81C3F4 /* Pods-MISforEduTests-dummy.m */,
+				6837FEF500CA5B87324CCB90D7AE4D35 /* Pods-MISforEduTests-Info.plist */,
+				3675449ABFC1D4EA29D4A3CD4BF44F00 /* Pods-MISforEduTests-umbrella.h */,
+				ADE3D4D5185F81F99642C221E01F8712 /* Pods-MISforEduTests.debug.xcconfig */,
+				5FE24FAC8E81D031522F08498D75060B /* Pods-MISforEduTests.release.xcconfig */,
 			);
-			name = Willow;
-			path = Willow;
-			sourceTree = "<group>";
-		};
-		B335184128293A5E0800AC473F877C96 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D7323ADB00BEFAD367196F2670F1CE5C /* AzureCore.modulemap */,
-				EB0BFAB89310D3622883F45AD2306042 /* AzureCore-dummy.m */,
-				79B734C086E8E8CBF6AF442332E184AC /* AzureCore-Info.plist */,
-				DEBD543B36774C118F869B6593980450 /* AzureCore-prefix.pch */,
-				9FF6AE2EDDAE2B864145B16F472EBFB6 /* AzureCore-umbrella.h */,
-				6FBA427FAA0FFF60CAEA129689DB0AA5 /* AzureCore.debug.xcconfig */,
-				C451CF859606760D47E80980A0E8A723 /* AzureCore.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AzureCore";
-			sourceTree = "<group>";
-		};
-		BBC31A0F46BBA7D8A293A5AA189CDE13 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2A0569FC6542319D29A5F4C7D66F6F5C /* AzureCore */,
-				3E9E0B7389204022244E2048195794F4 /* AzureData */,
-				E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess */,
-				497CE12D80BB53B39F9A5F47E8D8656F /* Pods-MISforEdu */,
-				3A0C5004726D93BA768A9894E2DB3E73 /* Pods-MISforEdu-MISforEduUITests */,
-				E43A86DFA4A7AFB42269F950116CE1DA /* Pods-MISforEduTests */,
-				7BCF03ED1454CF04BE743F653E609A87 /* Willow */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BF5E51C8F679EA874B6EB834A7D70353 /* Pods-MISforEdu-MISforEduUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4BE31FB71E7AB50007CE553BB22AD4DD /* Pods-MISforEdu-MISforEduUITests.modulemap */,
-				1EE3EBC1A4C4A8955318F0A7BB06E85E /* Pods-MISforEdu-MISforEduUITests-acknowledgements.markdown */,
-				7E15389E228048897368E1150C62FE99 /* Pods-MISforEdu-MISforEduUITests-acknowledgements.plist */,
-				F03889E007A48248E63658E574AE39B2 /* Pods-MISforEdu-MISforEduUITests-dummy.m */,
-				2BE748E2FD4E77F075A6C3338104143C /* Pods-MISforEdu-MISforEduUITests-frameworks.sh */,
-				25B8D93AFAD55AC87FBA7E4B581FDACA /* Pods-MISforEdu-MISforEduUITests-Info.plist */,
-				9FB7CEDA8D3804A1B8C4034D36D1E988 /* Pods-MISforEdu-MISforEduUITests-umbrella.h */,
-				0890E2EAE4F1E9DB56D2E12DD3A50A61 /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */,
-				033F0D7F0EDDBECE0E635DD7C8A5BBA0 /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */,
-			);
-			name = "Pods-MISforEdu-MISforEduUITests";
-			path = "Target Support Files/Pods-MISforEdu-MISforEduUITests";
+			name = "Pods-MISforEduTests";
+			path = "Target Support Files/Pods-MISforEduTests";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -632,9 +159,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				45BC948FD9D57CF1D23501D1C666C6AC /* Pods */,
-				BBC31A0F46BBA7D8A293A5AA189CDE13 /* Products */,
-				6F27B370266D65F71DE05B6008CA6682 /* Targets Support Files */,
+				E6DFEEF4E5FDBB2F3DAE9FF41B65326D /* Products */,
+				A5E91D9524D4FF3DDD92E9C2170585AD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -646,88 +172,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D717023005AB1C4FFA1E0C5C37C29573 /* AzureCore */ = {
+		E6DFEEF4E5FDBB2F3DAE9FF41B65326D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24F7224811A20E3968BA3C53221FCA4F /* AzureCore.h */,
-				064AF1CF5059BCB3541850F57FB4A382 /* AzureKeys.swift */,
-				80361AC1A083633A10A27BE47F020E51 /* CryptoProvider.h */,
-				685E94C3E4E2C9DEFD870143A30AC011 /* CryptoProvider.m */,
-				C617EFDC48E3016C4302DADF553B4597 /* DateFormat.swift */,
-				B95B78D8FC0B17F439D18F8B8ADF0F6B /* HttpHeader.swift */,
-				37B6468C7BD046F6731B279D4704C962 /* HttpMethod.swift */,
-				A30C393510A77FC93EF235CFA5563020 /* HttpStatusCode.swift */,
-				27369A0FE832FB75477108D873BFD1FB /* Keychain.swift */,
-				17E25225FC504798D69704ED792CBB9E /* Logger.swift */,
-				B8800DF822CB9F56CD37E4FDA2B194EB /* ReachabilityManager.swift */,
-				FA0980F84BA0DEB2B823CDAA5307CE75 /* ReachabilityManagerType.swift */,
-				B029BBAEE6825C6C2AC862E21CDAA55F /* Response.swift */,
-				B335184128293A5E0800AC473F877C96 /* Support Files */,
+				497CE12D80BB53B39F9A5F47E8D8656F /* Pods-MISforEdu */,
+				3A0C5004726D93BA768A9894E2DB3E73 /* Pods-MISforEdu-MISforEduUITests */,
+				E43A86DFA4A7AFB42269F950116CE1DA /* Pods-MISforEduTests */,
 			);
-			name = AzureCore;
-			path = AzureCore;
-			sourceTree = "<group>";
-		};
-		FBAF7EB3722893E88056182C0CD0DC78 /* Pods-MISforEdu */ = {
-			isa = PBXGroup;
-			children = (
-				E6206795236D45B2ADACF449CAFB80A9 /* Pods-MISforEdu.modulemap */,
-				420368D7836D22AEAEDD5DDEDFACA65F /* Pods-MISforEdu-acknowledgements.markdown */,
-				AE35D42A64F92F9B36A8966635BB4A2B /* Pods-MISforEdu-acknowledgements.plist */,
-				DB371BBA62D68A32E8B069F94F6EDDA5 /* Pods-MISforEdu-dummy.m */,
-				544033D723CE8D03CA1A928AD26F0AF6 /* Pods-MISforEdu-frameworks.sh */,
-				CBAE8B917CF0C857BDAE338D61D63D4F /* Pods-MISforEdu-Info.plist */,
-				6A93D0485DF0803CD6A768C4E01C9C05 /* Pods-MISforEdu-umbrella.h */,
-				5CB7858DC3C355DCAA8EF63A9DAF7933 /* Pods-MISforEdu.debug.xcconfig */,
-				B7569A31FE3DCAC28EB2F9CAD87512C5 /* Pods-MISforEdu.release.xcconfig */,
-			);
-			name = "Pods-MISforEdu";
-			path = "Target Support Files/Pods-MISforEdu";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0B8741F45FFF82F0CC5C314B1DBC20BD /* Headers */ = {
+		7A8CD333D908A045FC2E98D205E50CB8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0AEB4BC4A6F321B053B3F48506CB9F2 /* Pods-MISforEdu-MISforEduUITests-umbrella.h in Headers */,
+				D87488371617D6D7C1199915AF271CD7 /* Pods-MISforEdu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CC3746A588434325B6BFE85C26C17AC /* Headers */ = {
+		C06B247DCA3011C3A808074476E910A6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95374F90A36D4F88CF8EB6C1D65E966C /* Pods-MISforEdu-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8DEB04ACC850F952397CCB0887B56798 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2D72C163CE2A927D465B6A4BA399CD7 /* AzureCore.h in Headers */,
-				AA3BD99C233354EE033760F32F01B7B8 /* AzureCore-umbrella.h in Headers */,
-				1B3D9AD2CE4E21C01B4B64D655084788 /* CryptoProvider.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7A44661ADDCC05D486363888561D3A4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09A886E52B245A1B6565CCCCCCBD6716 /* AzureData.h in Headers */,
-				B2331AF500BD9430D875D13AF737F703 /* AzureData-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C21AC788A7399FF79226ACFA8EA6B28C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69E4D61EBF9FBA0C46A19F400A40C61B /* KeychainAccess-umbrella.h in Headers */,
+				A042F26F0F8825807BD7AB5176D1AC7A /* Pods-MISforEdu-MISforEduUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,92 +209,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF347948894CAD03A9631272D40DDB66 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BADA5292B57C90DCB9C93DDD7E67D848 /* Willow-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		36DFF006921509598FA3006632EF0B2B /* Pods-MISforEdu-MISforEduUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B589AC5DBDC1CB4CD03EF0FBE663E2A /* Build configuration list for PBXNativeTarget "Pods-MISforEdu-MISforEduUITests" */;
+			buildConfigurationList = 6D8F6A5C6A945C64228BCC3636EAD222 /* Build configuration list for PBXNativeTarget "Pods-MISforEdu-MISforEduUITests" */;
 			buildPhases = (
-				0B8741F45FFF82F0CC5C314B1DBC20BD /* Headers */,
-				6B9BB93F800CB0056006072F833A9ECC /* Sources */,
-				B36467C48E4E0576831D4968AF08552D /* Frameworks */,
-				13F672C61108D70082FC2B991E63CDAA /* Resources */,
+				C06B247DCA3011C3A808074476E910A6 /* Headers */,
+				DCED694FBB646DFA27B2F6044907CF77 /* Sources */,
+				DAD633216C12E3EBA0011251ADA3AC66 /* Frameworks */,
+				9FFC0D6EE868885E7F4A6600E1EE5ED4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				21F5D95B80C26C360E17E1D87433FDDE /* PBXTargetDependency */,
-				4A51B5F8BA944808C4A4C9939B3165EE /* PBXTargetDependency */,
-				BA63A83C8875E7DE3E189F7B4BB59E84 /* PBXTargetDependency */,
-				F6B12DFD1A1192CE238E52ACD753A2CB /* PBXTargetDependency */,
 			);
 			name = "Pods-MISforEdu-MISforEduUITests";
 			productName = Pods_MISforEdu_MISforEduUITests;
 			productReference = 3A0C5004726D93BA768A9894E2DB3E73 /* Pods-MISforEdu-MISforEduUITests */;
-			productType = "com.apple.product-type.framework";
-		};
-		615C831BCE925ED486B225B87E44926D /* KeychainAccess */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EE4BAC6C8008A3A4280C9DAB394651BD /* Build configuration list for PBXNativeTarget "KeychainAccess" */;
-			buildPhases = (
-				C21AC788A7399FF79226ACFA8EA6B28C /* Headers */,
-				06B151AEEFE6BEF9E05FFD7C31DEEF18 /* Sources */,
-				29C1C3C008EFE0A3F29C97C7424CFFD2 /* Frameworks */,
-				B9C4DEDD9B82845D6A3C63F2D22B4537 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KeychainAccess;
-			productName = KeychainAccess;
-			productReference = E8EE7F078656FABB8F6821D10FF994BB /* KeychainAccess */;
-			productType = "com.apple.product-type.framework";
-		};
-		6693EB530C7E9ACCD96AEBDF3A5670CE /* Willow */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF3BA4BCFB11358222E014E5D67A0CAC /* Build configuration list for PBXNativeTarget "Willow" */;
-			buildPhases = (
-				EF347948894CAD03A9631272D40DDB66 /* Headers */,
-				E607131F6ADB7DC18A85293835520C5C /* Sources */,
-				2F50E8CF18470CE90E19DFBBD2C2363E /* Frameworks */,
-				9C339C943BA3C3FBDEF6060FC53946AB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Willow;
-			productName = Willow;
-			productReference = 7BCF03ED1454CF04BE743F653E609A87 /* Willow */;
-			productType = "com.apple.product-type.framework";
-		};
-		677F7AB62DF420A2BEE522AE316380C6 /* AzureData */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 030A2A7EC70231CDE4B39F6DA78BBE3B /* Build configuration list for PBXNativeTarget "AzureData" */;
-			buildPhases = (
-				A7A44661ADDCC05D486363888561D3A4 /* Headers */,
-				7E523E3570BC1A98E894F23C31FFA7DE /* Sources */,
-				4AB4A67F77BCA9759F311EC81CE27CD0 /* Frameworks */,
-				0B067270FA02C64ADA0411CA2194FD07 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6FD76E7D48A7273EB913DF00800C85C7 /* PBXTargetDependency */,
-			);
-			name = AzureData;
-			productName = AzureData;
-			productReference = 3E9E0B7389204022244E2048195794F4 /* AzureData */;
 			productType = "com.apple.product-type.framework";
 		};
 		7A306575E55837238EECA9D727E04E2D /* Pods-MISforEduTests */ = {
@@ -839,7 +242,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C3B9476D78A43BEE9DD25CE6F61C5602 /* PBXTargetDependency */,
+				FF12939CC26EA1E9D921A7DC8D027D2D /* PBXTargetDependency */,
 			);
 			name = "Pods-MISforEduTests";
 			productName = Pods_MISforEduTests;
@@ -848,44 +251,20 @@
 		};
 		A6AD42551A3E183DD79F9E0E66050544 /* Pods-MISforEdu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3A7FB4543264523DC2CE22424C09084 /* Build configuration list for PBXNativeTarget "Pods-MISforEdu" */;
+			buildConfigurationList = AEB6A7B697175FF15C65E1E917467988 /* Build configuration list for PBXNativeTarget "Pods-MISforEdu" */;
 			buildPhases = (
-				6CC3746A588434325B6BFE85C26C17AC /* Headers */,
-				47DDEBD9C9046D34AFE0D8BDBD6F26E1 /* Sources */,
-				DF8AFEC2DE4EDF67A10BD821D7373EED /* Frameworks */,
-				152C411C7A5DB656F95538085F1DA838 /* Resources */,
+				7A8CD333D908A045FC2E98D205E50CB8 /* Headers */,
+				CA7895CB0EC12CF5017F03C37900C948 /* Sources */,
+				A2982E14C446E88F1060B6408E619FBC /* Frameworks */,
+				9676CEFD1A957474887EC2BF0D5DDBD1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F4216952D41298B3EB7EF519ECBDE1D /* PBXTargetDependency */,
-				05A834A6F624965AD913777EA71F2FAB /* PBXTargetDependency */,
-				CC91C736BE7B7231FE1E17BA423D58AB /* PBXTargetDependency */,
-				9E859AA77BE99F47D2279FE62AD28797 /* PBXTargetDependency */,
 			);
 			name = "Pods-MISforEdu";
 			productName = Pods_MISforEdu;
 			productReference = 497CE12D80BB53B39F9A5F47E8D8656F /* Pods-MISforEdu */;
-			productType = "com.apple.product-type.framework";
-		};
-		EF3D57598B2F6B611B951D5BC18E691F /* AzureCore */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC57F3FEAF8D55F9E397E5C1D9686E85 /* Build configuration list for PBXNativeTarget "AzureCore" */;
-			buildPhases = (
-				8DEB04ACC850F952397CCB0887B56798 /* Headers */,
-				3D71CF94CD0A200A218CD658705600C6 /* Sources */,
-				572DC2037A9E469B1482921FEDFCD4DB /* Frameworks */,
-				A4873F257530CB9F1BBFC1129AF1F24C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				809747FA3FD733BEF90D4107227A44CA /* PBXTargetDependency */,
-				EA88B7EC982160271159F430CE8D7273 /* PBXTargetDependency */,
-			);
-			name = AzureCore;
-			productName = AzureCore;
-			productReference = 2A0569FC6542319D29A5F4C7D66F6F5C /* AzureCore */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -906,43 +285,18 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BBC31A0F46BBA7D8A293A5AA189CDE13 /* Products */;
+			productRefGroup = E6DFEEF4E5FDBB2F3DAE9FF41B65326D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF3D57598B2F6B611B951D5BC18E691F /* AzureCore */,
-				677F7AB62DF420A2BEE522AE316380C6 /* AzureData */,
-				615C831BCE925ED486B225B87E44926D /* KeychainAccess */,
 				A6AD42551A3E183DD79F9E0E66050544 /* Pods-MISforEdu */,
 				36DFF006921509598FA3006632EF0B2B /* Pods-MISforEdu-MISforEduUITests */,
 				7A306575E55837238EECA9D727E04E2D /* Pods-MISforEduTests */,
-				6693EB530C7E9ACCD96AEBDF3A5670CE /* Willow */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0B067270FA02C64ADA0411CA2194FD07 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		13F672C61108D70082FC2B991E63CDAA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		152C411C7A5DB656F95538085F1DA838 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		49FFF7B23746C46CC01C3F1EB4F29318 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -950,21 +304,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C339C943BA3C3FBDEF6060FC53946AB /* Resources */ = {
+		9676CEFD1A957474887EC2BF0D5DDBD1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4873F257530CB9F1BBFC1129AF1F24C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9C4DEDD9B82845D6A3C63F2D22B4537 /* Resources */ = {
+		9FFC0D6EE868885E7F4A6600E1EE5ED4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -974,116 +321,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06B151AEEFE6BEF9E05FFD7C31DEEF18 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2A4D7279F47C00D28F68AA5FFFDBB7F /* Keychain.swift in Sources */,
-				CCE133A0670404FDE94583D100B7A989 /* KeychainAccess-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D71CF94CD0A200A218CD658705600C6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				07065F46DD5B5B1C09A2C7006EF0D2CA /* AzureCore-dummy.m in Sources */,
-				077FA4B5894563AE795759E67A3F2542 /* AzureKeys.swift in Sources */,
-				8A7667A9CF7E41A3AD9D8B5CF4C01251 /* CryptoProvider.m in Sources */,
-				10B181615A07C2D6086D3D442E005F6D /* DateFormat.swift in Sources */,
-				BF391884073C9CE1D33FFB4B3E3A6858 /* HttpHeader.swift in Sources */,
-				F6021FC9BDD53C0B2B4BE067C2E87228 /* HttpMethod.swift in Sources */,
-				B69400EAB68C23D9026862EA26BE0FCE /* HttpStatusCode.swift in Sources */,
-				61ED33807DC26F084D2F6A97124629AC /* Keychain.swift in Sources */,
-				A8FA5271679F4E5C606025AABA3C8D96 /* Logger.swift in Sources */,
-				E15771BBA9E6FF6F61E661E10DF52E25 /* ReachabilityManager.swift in Sources */,
-				63D334FFD0E09AC0CB3B37E97438CAC3 /* ReachabilityManagerType.swift in Sources */,
-				0C3583ED7D8D00B13E7A78037E7122EA /* Response.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47DDEBD9C9046D34AFE0D8BDBD6F26E1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EFE605965F53A96EF371A89ECB07EF4A /* Pods-MISforEdu-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6B9BB93F800CB0056006072F833A9ECC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				348EFFA939314591758A6F9C5B523BAA /* Pods-MISforEdu-MISforEduUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E523E3570BC1A98E894F23C31FFA7DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1FAEA28BE486A39ED26AA07E674E1C37 /* Attachment.swift in Sources */,
-				736AA573B3BF668EF681220E6FF7DCFE /* AzureData.swift in Sources */,
-				1E31B644D6FB257B836AFECFBD946A71 /* AzureData-dummy.m in Sources */,
-				F90C96DF6A594C92AEEE214566ACEE0B /* AzureDataExtensions.swift in Sources */,
-				D3F34288337BE36FACE270118465C72B /* CLLocationCoordinate2D+Equatable.swift in Sources */,
-				F8FC74CE70ACEB0EA429C7B856BF5874 /* CodableDictionary.swift in Sources */,
-				4F62DC2CA56C088E92F72C529D6FEF59 /* CodableResource.swift in Sources */,
-				EE30DACDD463CC028A7AF3A323BFD761 /* CodableResources.swift in Sources */,
-				804440901584EBAA28565FCD4CAA3FB6 /* Conflict.swift in Sources */,
-				5DF8AD2369B6E25261F41F304E87B46B /* ConflictStrategy.swift in Sources */,
-				52DF1A7F023AEF3D364B30E16241C405 /* Database.swift in Sources */,
-				FE1C8D0F524BE60E193612D5914AABBD /* DatabaseAccount.swift in Sources */,
-				069686A459D91E611DC75BC4A9C14853 /* Document.swift in Sources */,
-				8B5989AA351C077EA962A9B05070CE26 /* DocumentClient.swift in Sources */,
-				CAC3D718BF26D45E8E931FA56B7A4C69 /* DocumentClientError.swift in Sources */,
-				439AE9733F8370D8F9489CE1835E159A /* DocumentClientExtensions.swift in Sources */,
-				9CFE89DAA977D7D8211E1C78E069DA4F /* DocumentCollection.swift in Sources */,
-				FE47D8ABE10D1F26387B242D8726037A /* DocumentContainer.swift in Sources */,
-				DCA073EC171A3A36A4EEC868B591F680 /* DocumentProperties.swift in Sources */,
-				E8A9F7C1D3DF0504DD65FB0ECCD247A1 /* Documents.swift in Sources */,
-				3688A07AEA85EEB11CD4F83174F40994 /* Geometry.swift in Sources */,
-				A5ADF0FB2817A58608B620145DAC9D92 /* GeometryError.swift in Sources */,
-				0F9C7C42D5EC2E71B1170FED70D76A86 /* LineString.swift in Sources */,
-				6DDC4BFB715237A85CAA23E9B77F1730 /* MSHttpHeader.swift in Sources */,
-				BAB5318D62EEAD199A7B94988007DB8D /* Offer.swift in Sources */,
-				82ED8C2A4F347CB2F0ABB08A87480DA7 /* PartitionKeyDefinition.swift in Sources */,
-				44775E5A01206753574238F2E4DD7CEE /* PartitionKeyRange.swift in Sources */,
-				5F0CFF73B2AC3CF6581CD882C378FAC8 /* Permission.swift in Sources */,
-				27CB904388B2F5EA7470E4801915AD8A /* PermissionCache.swift in Sources */,
-				3B0678E7A12353DED422CEBF2CB620E0 /* PermissionMode.swift in Sources */,
-				572012C7094761D3DE9ED2ECE2170874 /* PermissionProvider.swift in Sources */,
-				5D63334B556CF34F4CF2A017954EC3D2 /* PermissionProviderConfiguration.swift in Sources */,
-				BD3FB9E7177A70D8621365EE90A20B8D /* PermissionProviderError.swift in Sources */,
-				5D7578E5C513B6C53DD31CD33BD8CC29 /* Point.swift in Sources */,
-				4EA60E9DABE8872C204A1659C26419F2 /* Polygon.swift in Sources */,
-				65E7BFDCAF80194F5E459A1367E51E7C /* Query.swift in Sources */,
-				2F0D4C4D5DC03D2F23EC9569E6220D72 /* Query+Distance.swift in Sources */,
-				23DAC5C18A12E05227B75941FE762446 /* Query+Intersects.swift in Sources */,
-				CFA2C34028DDA2BEB19F460ACF7DC7E0 /* Query+Within.swift in Sources */,
-				0F5AD473B8ABE2EF9F784C64810283BA /* ResourceCache.swift in Sources */,
-				8B160AD622918962F59235C7040FC787 /* ResourceEncryptor.swift in Sources */,
-				DD193C2DB7358B0CBCC2C1FA200C9C2E /* ResourceError.swift in Sources */,
-				F4D94B478F3D39F48832A5DE3D886303 /* ResourceLocation.swift in Sources */,
-				4603A2798C27648585F610000BB16F14 /* ResourceOracle.swift in Sources */,
-				0AA05B0AC898E828A19E5FA45601B546 /* ResourceRequestError.swift in Sources */,
-				3B13248446F6C8873E2AC31D91A33225 /* Resources.swift in Sources */,
-				5EC68F0EE0CECE7282CE675962533E0D /* ResourceSystemProperties.swift in Sources */,
-				B1E8E11464A72A6991AF5D665A3830CB /* ResourceTokenProvider.swift in Sources */,
-				57B3944201A16066B9F6AB8BD82040EB /* ResourceType.swift in Sources */,
-				E04AD53EE813D50A80DB78B93A1EE55D /* ResourceWriteOperation.swift in Sources */,
-				42FD1FF8C3673F3746EB8AE322C29029 /* ResourceWriteOperationQueue.swift in Sources */,
-				4ECCB15C428C79B1970BE8AE96202126 /* ResponseExtensions.swift in Sources */,
-				04E4B76534AF53C3BEDE5489EE65B3A9 /* ResponseMetadata.swift in Sources */,
-				3B6BD11000DACAD55F4EF03180AAEC20 /* StoredProcedure.swift in Sources */,
-				5B9C7C45925B06F30E076D3F1477D8B3 /* SupportsPermissionToken.swift in Sources */,
-				2429121B1BCA24972D71CECF646BD540 /* Trigger.swift in Sources */,
-				8B275B5A9723FE5FBDA9BCC0E5B0F2EF /* User.swift in Sources */,
-				5B1169AB2E4B6595CB1C1D5DD61250B9 /* UserDefinedFunction.swift in Sources */,
-				5A2DF165DE7FCE3A83BC1732E641FB5E /* UtilityExtensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9AB5F7A47553D2881C4BCBC5FFA10CCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1092,171 +329,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E607131F6ADB7DC18A85293835520C5C /* Sources */ = {
+		CA7895CB0EC12CF5017F03C37900C948 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F0A1FB84106D829C25338A69A49E317 /* Logger.swift in Sources */,
-				8EAA07C439F1F8C72A3FAFF102CBB035 /* LogLevel.swift in Sources */,
-				BB569E16710163F8FA53B1B4E7535F71 /* LogMessage.swift in Sources */,
-				085EC51689B5C6303DC676DA7A346763 /* LogModifier.swift in Sources */,
-				0A114B2BDD785F60D27A4A7B8437F78A /* LogWriter.swift in Sources */,
-				8F46BDA8DA4125188A1B4972D9F45A41 /* Willow-dummy.m in Sources */,
+				E66A5EFE62ECEFE70B1F09145124EF00 /* Pods-MISforEdu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCED694FBB646DFA27B2F6044907CF77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2FE6FEC981ED693958BF06078D3C213 /* Pods-MISforEdu-MISforEduUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		05A834A6F624965AD913777EA71F2FAB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AzureData;
-			target = 677F7AB62DF420A2BEE522AE316380C6 /* AzureData */;
-			targetProxy = DD8F50EA8F3CF021B54A27D3FFD76594 /* PBXContainerItemProxy */;
-		};
-		21F5D95B80C26C360E17E1D87433FDDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AzureCore;
-			target = EF3D57598B2F6B611B951D5BC18E691F /* AzureCore */;
-			targetProxy = 298A126726A406A3B2E3ECAFC5FF2E8A /* PBXContainerItemProxy */;
-		};
-		2F4216952D41298B3EB7EF519ECBDE1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AzureCore;
-			target = EF3D57598B2F6B611B951D5BC18E691F /* AzureCore */;
-			targetProxy = 5320038A3F8647FBB09574A112897010 /* PBXContainerItemProxy */;
-		};
-		4A51B5F8BA944808C4A4C9939B3165EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AzureData;
-			target = 677F7AB62DF420A2BEE522AE316380C6 /* AzureData */;
-			targetProxy = E56B7A7766F6EFDBAEE42628B5AB47C0 /* PBXContainerItemProxy */;
-		};
-		6FD76E7D48A7273EB913DF00800C85C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AzureCore;
-			target = EF3D57598B2F6B611B951D5BC18E691F /* AzureCore */;
-			targetProxy = 7F610D47F33FB3DCCAB944D21CE12172 /* PBXContainerItemProxy */;
-		};
-		809747FA3FD733BEF90D4107227A44CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KeychainAccess;
-			target = 615C831BCE925ED486B225B87E44926D /* KeychainAccess */;
-			targetProxy = 16CA38DC611455FE5028B3C81E069C5C /* PBXContainerItemProxy */;
-		};
-		9E859AA77BE99F47D2279FE62AD28797 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Willow;
-			target = 6693EB530C7E9ACCD96AEBDF3A5670CE /* Willow */;
-			targetProxy = 765796299820F996B72507056729B131 /* PBXContainerItemProxy */;
-		};
-		BA63A83C8875E7DE3E189F7B4BB59E84 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KeychainAccess;
-			target = 615C831BCE925ED486B225B87E44926D /* KeychainAccess */;
-			targetProxy = 026C0F6E7AA0E839440554B2488E2E45 /* PBXContainerItemProxy */;
-		};
-		C3B9476D78A43BEE9DD25CE6F61C5602 /* PBXTargetDependency */ = {
+		FF12939CC26EA1E9D921A7DC8D027D2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MISforEdu";
 			target = A6AD42551A3E183DD79F9E0E66050544 /* Pods-MISforEdu */;
-			targetProxy = 3F6AA5EA16374FD87CC9F9A83FD7325F /* PBXContainerItemProxy */;
-		};
-		CC91C736BE7B7231FE1E17BA423D58AB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KeychainAccess;
-			target = 615C831BCE925ED486B225B87E44926D /* KeychainAccess */;
-			targetProxy = FA098E1D9EB9A2DCFD11E5EBA5CBCE3A /* PBXContainerItemProxy */;
-		};
-		EA88B7EC982160271159F430CE8D7273 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Willow;
-			target = 6693EB530C7E9ACCD96AEBDF3A5670CE /* Willow */;
-			targetProxy = 07019D231692EC7BF6CEBBC4A1F477FD /* PBXContainerItemProxy */;
-		};
-		F6B12DFD1A1192CE238E52ACD753A2CB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Willow;
-			target = 6693EB530C7E9ACCD96AEBDF3A5670CE /* Willow */;
-			targetProxy = BF023D097A95E3145157E05D8BB832E4 /* PBXContainerItemProxy */;
+			targetProxy = 04C49C7D9DACEE258F801553B1CBEF2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		107F9362716617864C0ACFA44FD5DA4A /* Release */ = {
+		1BB5864F7221D1EAB32238B4EA365720 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D8CB976CC49B5F901407449B907A201 /* AzureData.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AzureData/AzureData-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AzureData/AzureData-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AzureData/AzureData.modulemap";
-				PRODUCT_MODULE_NAME = AzureData;
-				PRODUCT_NAME = AzureData;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1EDFD4C0ECAEC1938853CC92892A8EC0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FBA427FAA0FFF60CAEA129689DB0AA5 /* AzureCore.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AzureCore/AzureCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AzureCore/AzureCore-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AzureCore/AzureCore.modulemap";
-				PRODUCT_MODULE_NAME = AzureCore;
-				PRODUCT_NAME = AzureCore;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		25A0B0B3089F9A3D3317AB2A3D144CD9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CB7858DC3C355DCAA8EF63A9DAF7933 /* Pods-MISforEdu.debug.xcconfig */;
+			baseConfigurationReference = 3DF035BB1806C28E2EF11FF301C67439 /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1268,7 +371,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MISforEdu/Pods-MISforEdu-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1277,7 +380,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MISforEdu/Pods-MISforEdu.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1353,78 +456,9 @@
 			};
 			name = Release;
 		};
-		562059C8E35BAD8DBFCF11E5D7EED525 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57F3E2EB3A96663A8B14346898C6CD8A /* Willow.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Willow/Willow-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Willow/Willow-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Willow/Willow.modulemap";
-				PRODUCT_MODULE_NAME = Willow;
-				PRODUCT_NAME = Willow;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5887B1D2B87FC38CE355C2EE6B6327A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0EC9CBCEA9BBFC3CFD6DE49256D713F /* KeychainAccess.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KeychainAccess/KeychainAccess-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
-				PRODUCT_MODULE_NAME = KeychainAccess;
-				PRODUCT_NAME = KeychainAccess;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		5C2D688527A9500A240D97AEBE39E6AD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF70AF93556EABBC178B0CA6F16C8F7C /* Pods-MISforEduTests.release.xcconfig */;
+			baseConfigurationReference = 5FE24FAC8E81D031522F08498D75060B /* Pods-MISforEduTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1460,117 +494,9 @@
 			};
 			name = Release;
 		};
-		5F87431E1D544688A98F794BD5CDCE84 /* Debug */ = {
+		8A6A008B1EED95D6F66D3D6F292BBF8D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0890E2EAE4F1E9DB56D2E12DD3A50A61 /* Pods-MISforEdu-MISforEduUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MISforEdu-MISforEduUITests/Pods-MISforEdu-MISforEduUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		82D867A234397C3B93DA0F039B2F0CBB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74267FE8C606C2D65E352E99A6ECDAEE /* AzureData.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AzureData/AzureData-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AzureData/AzureData-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AzureData/AzureData.modulemap";
-				PRODUCT_MODULE_NAME = AzureData;
-				PRODUCT_NAME = AzureData;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8984C62C15DF16A82A0C06735E0332EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C451CF859606760D47E80980A0E8A723 /* AzureCore.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AzureCore/AzureCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AzureCore/AzureCore-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AzureCore/AzureCore.modulemap";
-				PRODUCT_MODULE_NAME = AzureCore;
-				PRODUCT_NAME = AzureCore;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8B2868F3BE95C3A82C92DA1522CC7CDB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 033F0D7F0EDDBECE0E635DD7C8A5BBA0 /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */;
+			baseConfigurationReference = FEB2113F0952376D66ED9A5889E84411 /* Pods-MISforEdu-MISforEduUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1608,7 +534,7 @@
 		};
 		93F2FB63CCA3BCA3DBD7BB81827225C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6443CA7DEB23FA44C522B2516291DDC1 /* Pods-MISforEduTests.debug.xcconfig */;
+			baseConfigurationReference = ADE3D4D5185F81F99642C221E01F8712 /* Pods-MISforEduTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1643,9 +569,9 @@
 			};
 			name = Debug;
 		};
-		9A74D46D6139B9D64618CE8726798E26 /* Release */ = {
+		AE57B550497B1CD5973CA90FB6BF94F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7569A31FE3DCAC28EB2F9CAD87512C5 /* Pods-MISforEdu.release.xcconfig */;
+			baseConfigurationReference = 5FC197C04C61BFF5D8B92CA98B0A71EF /* Pods-MISforEdu.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1681,10 +607,12 @@
 			};
 			name = Release;
 		};
-		EE5F94FDD9205ECAC6AF241FE788BBC8 /* Release */ = {
+		AF687911544BFA308224E083680D9DC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 725AD92A812B0CEDFD90C39AF06DE485 /* Willow.release.xcconfig */;
+			baseConfigurationReference = F0D066BDF917258CB542B64FC0A60871 /* Pods-MISforEdu.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1693,28 +621,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Willow/Willow-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Willow/Willow-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MISforEdu/Pods-MISforEdu-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Willow/Willow.modulemap";
-				PRODUCT_MODULE_NAME = Willow;
-				PRODUCT_NAME = Willow;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MISforEdu/Pods-MISforEdu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		F4FF6A0D1970CA9705974E3CB2134802 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1782,52 +710,9 @@
 			};
 			name = Debug;
 		};
-		F6375F02125ED2F5507640C3CAF616AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD22CE84CADBE6805F03B59A22DE04D6 /* KeychainAccess.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KeychainAccess/KeychainAccess-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
-				PRODUCT_MODULE_NAME = KeychainAccess;
-				PRODUCT_NAME = KeychainAccess;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		030A2A7EC70231CDE4B39F6DA78BBE3B /* Build configuration list for PBXNativeTarget "AzureData" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82D867A234397C3B93DA0F039B2F0CBB /* Debug */,
-				107F9362716617864C0ACFA44FD5DA4A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1846,47 +731,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B589AC5DBDC1CB4CD03EF0FBE663E2A /* Build configuration list for PBXNativeTarget "Pods-MISforEdu-MISforEduUITests" */ = {
+		6D8F6A5C6A945C64228BCC3636EAD222 /* Build configuration list for PBXNativeTarget "Pods-MISforEdu-MISforEduUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F87431E1D544688A98F794BD5CDCE84 /* Debug */,
-				8B2868F3BE95C3A82C92DA1522CC7CDB /* Release */,
+				1BB5864F7221D1EAB32238B4EA365720 /* Debug */,
+				8A6A008B1EED95D6F66D3D6F292BBF8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF3BA4BCFB11358222E014E5D67A0CAC /* Build configuration list for PBXNativeTarget "Willow" */ = {
+		AEB6A7B697175FF15C65E1E917467988 /* Build configuration list for PBXNativeTarget "Pods-MISforEdu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				562059C8E35BAD8DBFCF11E5D7EED525 /* Debug */,
-				EE5F94FDD9205ECAC6AF241FE788BBC8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E3A7FB4543264523DC2CE22424C09084 /* Build configuration list for PBXNativeTarget "Pods-MISforEdu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				25A0B0B3089F9A3D3317AB2A3D144CD9 /* Debug */,
-				9A74D46D6139B9D64618CE8726798E26 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC57F3FEAF8D55F9E397E5C1D9686E85 /* Build configuration list for PBXNativeTarget "AzureCore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1EDFD4C0ECAEC1938853CC92892A8EC0 /* Debug */,
-				8984C62C15DF16A82A0C06735E0332EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EE4BAC6C8008A3A4280C9DAB394651BD /* Build configuration list for PBXNativeTarget "KeychainAccess" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F6375F02125ED2F5507640C3CAF616AC /* Debug */,
-				5887B1D2B87FC38CE355C2EE6B6327A3 /* Release */,
+				AF687911544BFA308224E083680D9DC5 /* Debug */,
+				AE57B550497B1CD5973CA90FB6BF94F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

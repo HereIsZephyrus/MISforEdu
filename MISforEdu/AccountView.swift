@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct AccountView: View {
-    let userID: String
-    let userName : String
-    let userSchool : String
-    let userRole : user_role
-    init(userRole :user_role, userID :String){
-        self.userRole = userRole
+    //let userID: String
+    //let userName : String
+    //let userSchool : String
+    //let user.role : user_role
+    @Binding var interface : UserInterface
+    /*
+    init(user.role :user_role, userID :String){
+        self.user.role = user.role
         self.userID = userID
-        if (userRole == .Student || userRole == .Teacher || userRole == .Secretary){
+        if (user.role == .Student || user.role == .Teacher || user.role == .Secretary){
             //query
             self.userName = "TCB"
             self.userSchool = "地理与信息工程学院"
@@ -24,18 +26,21 @@ struct AccountView: View {
             self.userName = "-"
             self.userSchool = "-"
         }
-    }
-    @Environment(\.presentationMode) var isLoggedin
+    }*/
+    //@Environment(\.presentationMode) var isLoggedin
     var body: some View {
         ZStack{
             Color.white.ignoresSafeArea(.all)
                 .navigationBarBackButtonHidden(true)
-            if (userRole == .Student){
+            if let userInterface = interface as? StudentInterface{
+            //if (interface.role == .Student){
+                //let studentInterface = interface as! UserInterface<StudentInfo>
+                @State var user = Student(user: userInterface)
                 NavigationStack{
-                        headerView(showinfo: true, identify: "学号",userID: userID,userName: userName,userSchool: userSchool)
+                    headerView(showinfo: true, identify: "学号",userID: user.interface.ID,userName: user.info.name,userSchool: user.AddSubjectToSchool(school: user.info.school))
                             Form {
                                 Section {
-                                    NavigationLink(destination: AccountManageView()) {
+                                    NavigationLink(destination: AccountManageView<Student>(user: $user)) {
                                         Text("信息管理")
                                     }
                                 }
@@ -60,25 +65,19 @@ struct AccountView: View {
                                     }
                                 }
                                 Section {
-                                    NavigationLink(destination: LoginView())   {
-                                        Button(action : {
-                                            
-                                        } ,
-                                               label: {Text("退出登录")
-                                                .foregroundColor(Color.red)
-                                        })
-                                    }
+                                    LogoutButton(interface: $interface)
                                 }
                             }
                         }.background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
             }
-            
-            if (userRole == .Teacher){
-                            NavigationStack {
-                                headerView(showinfo: true, identify: "教工号",userID: userID,userName: userName,userSchool: userSchool)
+            if let userInterface = interface as? TeacherInterface{
+            //if (interface.role == .Teacher){
+                @State var user = Teacher(user : userInterface)
+                NavigationStack {
+                                headerView(showinfo: true, identify: "教工号",userID: user.interface.ID,userName: user.info.name,userSchool: user.info.school)
                                 Form {
                                     Section {
-                                        NavigationLink(destination: AccountManageView()) {
+                                        NavigationLink(destination: AccountManageView<Teacher>(user: $user)) {
                                             Text("信息管理")
                                         }
                                     }
@@ -114,16 +113,16 @@ struct AccountView: View {
                                     }
                                 }
                                 
-                            }.background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
+                            }.background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))            
             }
-            
-            if (userRole == .Secretary){
-      
+            if let userInterface = interface as? SecretaryInterface{
+            //if (interface.role == .Secretary){
+                @State var user = Secretary(user : userInterface)
                         NavigationStack{
-                            headerView(showinfo: true, identify: "职工号",userID: userID,userName: userName,userSchool: userSchool)
+                            headerView(showinfo: true, identify: "职工号",userID: user.interface.ID,userName: user.info.name,userSchool: user.info.school)
                             Form {
                                 Section {
-                                    NavigationLink(destination: AccountManageView()) {
+                                    NavigationLink(destination: AccountManageView<Secretary>(user: $user)) {
                                         Text("信息管理")
                                     }
                                 }
@@ -150,11 +149,10 @@ struct AccountView: View {
                             }
                         }.background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
             }
-            
-            if( userRole == .Dean){
-
+            if let userInterface = interface as? DeanInterface{
+            //if( interface.role == .Dean){
                     NavigationStack{
-                        headerView(showinfo: false, identify: "-",userID: userID,userName: userName,userSchool: userSchool)
+                        headerView(showinfo: false, identify: "-",userID: userInterface.ID,userName: "-",userSchool: "-")
                         Form {
                             Section {
                                 NavigationLink(destination: ClassManageView()) {
@@ -189,10 +187,10 @@ struct AccountView: View {
                         }
                     }.background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
             }
-            
-            if (userRole == .HR){
+            if let userInterface = interface as? HRInterface{
+            //if (interface.role == .HR){
                     NavigationStack{
-                        headerView(showinfo: false, identify: "-",userID: userID,userName: userName,userSchool: userSchool)
+                        headerView(showinfo: false, identify: "-",userID: userInterface.ID,userName: "-",userSchool: "-")
                         Form {
                             Section {
                                 NavigationLink(destination: PersonCheckView()) {
@@ -234,7 +232,8 @@ struct AccountView: View {
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountView(userRole : .Secretary, userID : "20221000679")
+        //AccountView(user.role : .Secretary, userID : "20221000679")
+        AccountView(interface : .constant(StudentInterface(ID: "1234567890", password: "1234567890")))
     }
 }
 
@@ -290,6 +289,20 @@ struct headerView: View {
                 Text("你好,admin")
                     .font(.title)
             }
+        }
+    }
+}
+
+struct LogoutButton: View {
+    @Binding var interface : UserInterface
+    var body: some View {
+        NavigationLink(destination: LoginView())   {
+            Button(action : {
+                interface.logged = false
+            } ,
+                   label: {Text("退出登录")
+                    .foregroundColor(Color.red)
+            })
         }
     }
 }

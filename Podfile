@@ -6,8 +6,8 @@ target 'MISforEdu' do
   use_frameworks!
 
 # Use the following line to use App Center Analytics and Crashes.x
- pod 'AzureCore'
- pod 'AzureData'
+# pod 'AzureCore'
+# pod 'AzureData'
   # Pods for MISforEdu
 
   target 'MISforEduTests' do

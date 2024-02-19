@@ -7,23 +7,24 @@
 
 import Foundation
 //enum items
-enum user_role {
+enum user_role: String, CaseIterable, Identifiable {
     case Student
     case Teacher
     case Secretary
     case HR
     case Dean
+    var id: String { self.rawValue }
 }
 enum roombutton_state {
     case avaliable
     case unavaliable
     case selected
 }
-enum sex_type{
-    case male
-    case famale
+enum sex_type : String{
+    case male = "男"
+    case famale = "女"
 }
-enum title_type{
+enum title_type : String{
     case professor
     case associate_professor
     case lecturer
@@ -74,54 +75,37 @@ struct Filter{
     
 }
 
-//lecture
-struct Lecture :Identifiable {
-    var id: Int
-    var name: String
-    var school: String
-    var type: String
-    var credit: Float
-    var assessment: String
+struct oldStudent{
+        var id: Int
+        var name: String
+        var sex: String
+        var email: String
+        var subjects: Int
+        var enrollment: Int
+        var birth: String
 }
-struct Class :Identifiable {
-    var id: String
-    var lecture: String
-    var schedule: String
-    var classroom: String
+struct oldClass{
+        var id: String
+        var lecture: String
+        var schedule: String
+        var classroom: String
 }
-struct Instruction :Identifiable {
-    var id: Int
-    var classId: Int
-    var teacherId: Int
-    var appraise: Float
-}
-struct Attendance :Identifiable {
-    var id: Int
-    var classId: String
-    var studentId: Int
-    var score: Int
-}
-struct Syllabus :Identifiable {
-    var id: String
-    var startWeek: Int
-    var termWeek: Int
-    var remark: String
-    var Speriod: Int
-}
-struct Timetable :Identifiable {
-    var id: String
-    var classId: String
-    var enumValue: Int
-}
-//school
-struct Subjects :Identifiable {
-    var id: Int
-    var name: String
-    var code: String
-    var school: String
-}
-struct School :Identifiable {
-    var id: Int
-    var name: String
-    var building: Int
-}
+let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .full
+        formatter.timeStyle = .none
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
+let ex_blankuser_interface = UserInterface()
+let ex_student_interface = UserInterface(ID: "1234567890", password: "1234567890")
+let ex_teacher_interface = UserInterface(ID: "87654321", password: "87654321")
+let ex_secretary_interface = UserInterface(ID: "123456", password: "123456")
+let ex_dean_interface = UserInterface(ID: "D1234", password: "D1234")
+let ex_hr_interface = UserInterface(ID: "H1234", password: "H1234")
+let ex_student_info = StudentInfo(name: "童川博", school: "地理与信息工程学院", enrollment: "2022", subject: "地理信息科学", email: "tongchuanbo@cug.edu.cn", sex: .male, birth: dateFormatter.date(from: "2003-11-17")!)
+let ex_teacher_info = TeacherInfo(name: "郑坤", school: "地理与信息工程学院", enrollment: "2004", email: "ZhengK@cug.edu.cn", office: "地信楼-101", sex :.male , birth : dateFormatter.date(from: "1980-01-01")!, title: .associate_professor)
+let ex_secretary_info = SecretaryInfo(name: "曾云", school: "地理与信息工程学院", enrollment: "2010", email: "zengyun@cug.edu.cn", sex : .famale, birth : dateFormatter.date(from: "1990-01-01")!)
+let ex_student = Student(user: ex_student_interface as! StudentInterface)
+let ex_teacher = Teacher(user: ex_teacher_interface as! TeacherInterface)
+let ex_secretary = Secretary(user: ex_secretary_interface as! SecretaryInterface)

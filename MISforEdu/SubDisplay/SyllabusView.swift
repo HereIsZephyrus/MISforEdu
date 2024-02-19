@@ -59,12 +59,12 @@ struct SyllabusTableView: View {
 }
 
 struct SyllabusListView: View {
-    let classlist: [Class] = [
-            Class(id: "1库", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室A"),
-            Class(id: "2", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室B"),
-            Class(id: "3", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室C"),
-            Class(id: "4", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室D"),
-            Class(id: "5", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室E")
+    let classlist: [oldClass] = [
+            oldClass(id: "1库", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室A"),
+            oldClass(id: "2", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室B"),
+            oldClass(id: "3", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室C"),
+            oldClass(id: "4", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室D"),
+            oldClass(id: "5", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室E")
         ]
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {

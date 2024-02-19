@@ -9,16 +9,16 @@ import SwiftUI
 
 struct PersonCheckView: View{
     let select_students = [
-        Student(id: 20221000679, name: "童川博", sex: "男", email: "john@example.com", subjects: 4, enrollment: 2022, birth: "1995-03-15"),
-        Student(id: 20211000680, name: "相泽林", sex: "男", email: "jane@example.com", subjects: 5, enrollment: 2021, birth: "1998-08-21"),
-        Student(id: 20231000681, name: "姚慧杰", sex: "男", email: "alex@example.com", subjects: 3, enrollment: 2023, birth: "2000-11-07")
+        oldStudent(id: 20221000679, name: "童川博", sex: "男", email: "john@example.com", subjects: 4, enrollment: 2022, birth: "1995-03-15"),
+        oldStudent(id: 20211000680, name: "相泽林", sex: "男", email: "jane@example.com", subjects: 5, enrollment: 2021, birth: "1998-08-21"),
+        oldStudent(id: 20231000681, name: "姚慧杰", sex: "男", email: "alex@example.com", subjects: 3, enrollment: 2023, birth: "2000-11-07")
     ]
     var body: some View {
         GeometryReader { geometry in
             NavigationStack{
                 ScrollView( .vertical,content: {
                     ForEach(0..<3){index in
-                        NavigationLink(destination: AccountManageView()) {
+                        NavigationLink(destination: AccountManageView<Student>(user: .constant(ex_student))) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 25.0)
                                     .fill(Color.white)

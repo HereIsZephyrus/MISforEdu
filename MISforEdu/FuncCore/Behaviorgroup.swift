@@ -7,13 +7,17 @@ struct AttendenceInfo{
 }
 struct editAttendenceInterface : editInterface{
     var ID : String
-    func Push() -> update_status
-    func Fatch(ID : String) -> AttendenceInfo
-    func Credential() -> Bool{
-
+    func Push(execution: String) -> update_status{
+        return .successful
+    }
+    func Fatch(ID : String) -> AttendenceInfo{
+        return .init(classId: "", studentId: "", score: 0)
+    }
+    func Credential() -> String{
+        return ""
     }
     func SyncWithDatabase() -> Bool{
-
+        return true
     }
 }
 struct ToAttendence{
@@ -31,13 +35,17 @@ struct CriticInfo{
 }
 struct editCriticInterface : editInterface{
     var ID : String
-    func Push() -> update_status
-    func Fatch(ID : String) -> CriticInfo
-    func Credential() -> Bool{
-
+    func Push(execution: String) -> update_status{
+        return .successful
+    }
+    func Fatch(ID : String) -> CriticInfo{
+        return .init(classId: "", teacherId: "", score: 0)
+    }
+    func Credential() -> String{
+        return ""
     }
     func SyncWithDatabase() -> Bool{
-
+        return true
     }
 }
 struct ToCritic{
@@ -58,13 +66,17 @@ struct GradeInfo{
 }
 struct editGradeInterface : editInterface{
     var ID : String
-    func Push() -> update_status
-    func Fatch(ID : String) -> GradeInfo
-    func Credential() -> Bool{
-
+    func Push(execution: String) -> update_status{
+        return .successful
+    }
+    func Fatch(ID : String) -> GradeInfo{
+        return .init(classId: "", studentId: "", score: 0)
+    }
+    func Credential() -> String{
+        return ""
     }
     func SyncWithDatabase() -> Bool{
-
+        return true
     }
 }
 struct ToGrade{

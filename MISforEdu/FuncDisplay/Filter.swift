@@ -12,7 +12,7 @@ struct FilterView: View {
     @State private var selectedOption = "地理与信息工程学院"
     @State private var filterString = ""
     //let filterItem = 
-    let filter : Filter = PersonFilterItem
+    let filter : FilterItem = PersonFilterItem
     var body: some View {
         ZStack {
             Capsule()

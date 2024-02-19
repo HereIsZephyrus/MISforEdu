@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1430"
+   LastUpgradeVersion = "1520"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -28,6 +28,30 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "324A3A5E2B564E2F0026BB79"
+               BuildableName = "MISforEduTests.xctest"
+               BlueprintName = "MISforEduTests"
+               ReferencedContainer = "container:MISforEdu.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "324A3A682B564E2F0026BB79"
+               BuildableName = "MISforEduUITests.xctest"
+               BlueprintName = "MISforEduUITests"
+               ReferencedContainer = "container:MISforEdu.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -39,8 +63,11 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <PathRunnable
+         runnableDebuggingMode = "0"
+         FilePath = "/Users/channingtong/Library/Developer/Xcode/DerivedData/MISforEdu-bertgjpyqjceszfqnolzahpomtmj/Build/Products/Debug-iphoneos/MISforEdu.app">
+      </PathRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "324A3A4D2B564E2D0026BB79"
@@ -48,7 +75,7 @@
             BlueprintName = "MISforEdu"
             ReferencedContainer = "container:MISforEdu.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
