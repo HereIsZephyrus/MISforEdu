@@ -53,13 +53,13 @@ struct AccountManageView<T>: View {
     //@State var user=oldStudent(id: 20221000679, name: "童川博", sex: "男", email: "Channing@cug.edu.com", subjects: 4, enrollment: 2022, birth: "2003-13-17")
     @Binding var user : T
     @State var isEditing : Bool = false
-    //@State var editInfo : AccountInfoBucket //= AccountInfoBucket()
+    //@State var editInfo : AccountInfoBucket = AccountInfoBucket()
     var body: some View {
         let info = AccountBasicInfo(user : user)
         NavigationStack {
             VStack {
                 //AccountBasicInfo(uid: String(user.id), name: user.name, school: "地理与信息工程学院", subject: "地理信息科学")
-                AccountIdentityInfo(infoVIew : info as! infoStack)
+                AccountIdentityInfo(account_head_info : info)
                 Divider()
                // AccountEditableInfo(isEditing: $isEditing, birth: $user.birth, email: $user.email)
                 AccountEditableInfo<T>(isEditing: $isEditing,user : $user)
@@ -76,10 +76,24 @@ struct AccountManageView<T>: View {
         )
         }
     }
-    func AccountBasicInfo(user : T) -> some View{
-        var contentView : infoStack?
+    func AccountBasicInfo(user : T) -> infoStack{
+        var account_head_info = HStack(spacing: 20) {
+                VStack(spacing:30){
+                    AccountInfoPair(title : "学号", content : "")
+                    AccountInfoPair(title : "姓名", content : "")
+                    AccountInfoPair(title : "性别", content : "男")
+                }
+                Divider()
+                VStack(spacing:30) {
+                    AccountInfoPair(title : "学院", content : "")
+                    AccountInfoPair(title : "专业", content : "")
+                    AccountInfoPair(title : "入学时间", content : "")
+                }
+                
+            }
+        
         if let studentInfo = user as? Student{
-            contentView = HStack(spacing: 20) {
+            account_head_info = HStack(spacing: 20) {
                 VStack(spacing:30){
                     AccountInfoPair(title : "学号", content : studentInfo.interface.ID)
                     AccountInfoPair(title : "姓名", content : studentInfo.info.name)
@@ -95,7 +109,7 @@ struct AccountManageView<T>: View {
             }
         }
         if let teacherInfo = user as? Teacher{
-            contentView = HStack(spacing: 20) {
+            account_head_info = HStack(spacing: 20) {
                 VStack(spacing:30){
                     AccountInfoPair(title : "教工号", content : teacherInfo.interface.ID)
                     AccountInfoPair(title : "姓名", content : teacherInfo.info.name)
@@ -111,7 +125,7 @@ struct AccountManageView<T>: View {
             }
         }
         if let secretaryInfo = user as? Secretary{
-            contentView = HStack(spacing: 20) {
+            account_head_info = HStack(spacing: 20) {
                 VStack(spacing:30){
                     AccountInfoPair(title : "职工号", content : secretaryInfo.interface.ID)
                     AccountInfoPair(title : "姓名", content : secretaryInfo.info.name)
@@ -125,13 +139,7 @@ struct AccountManageView<T>: View {
                 }
             }
         }
-        return contentView
-    }
-}
-
-struct AccountManage_Previews: PreviewProvider {
-    static var previews: some View {
-        AccountManageView<Student>(user: .constant(ex_student))
+        return account_head_info
     }
 }
 
@@ -140,19 +148,19 @@ struct AccountIdentityInfo: View {
     //let name : String
    // let school : String
     //let subject : String
-    let infoVIew : infoStack
+    let account_head_info : infoStack
     var body: some View {
         HStack (alignment: .top){
             ManagePortrait()
-            infoView()
+            account_head_info.padding()
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(10)
+                .frame(width: 400)
+                .padding()
+                .frame(height: 240)
+                .padding()
             }
-            .padding()
-            .background(Color.gray.opacity(0.2))
-            .cornerRadius(10)
-            .frame(width: 400)
-            .padding()
-            .frame(height: 240)
-            .padding()
+            
         }
 }
 
@@ -387,5 +395,11 @@ struct ManagePortrait: View {
                     .cornerRadius(15.0)
             }
         }
+    }
+}
+
+struct AccountManage_Previews: PreviewProvider {
+    static var previews: some View {
+        AccountManageView<Student>(user: .constant(ex_student))
     }
 }

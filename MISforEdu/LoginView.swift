@@ -119,7 +119,7 @@ struct MainLogView: View {
                             .navigationDestination(isPresented: $beLogged) {
                                 //print("log in")
                                 //AccountView(userRole: .Student, userID: userID)
-                                //AccountView(interface: $interface)
+                                AccountView(interface: $interface)
                             }
                         NavigationLink {
                             infoView()

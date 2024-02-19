@@ -233,7 +233,10 @@ struct AccountView: View {
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
         //AccountView(user.role : .Secretary, userID : "20221000679")
-        AccountView(interface : .constant(StudentInterface(ID: "1234567890", password: "1234567890")))
+        //AccountView(interface : .constant(StudentInterface(ID: "1234567890", password: "1234567890")))
+        AccountView(interface : .constant(ex_student_interface))
+        AccountView(interface : .constant(ex_teacher_interface))
+        AccountView(interface : .constant(ex_secretary_interface))
     }
 }
 
