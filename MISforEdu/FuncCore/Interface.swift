@@ -81,7 +81,16 @@ class StudentInterface : UserInterface{
         return info
     }
     override func Push(execution : String) -> update_status{
-        return .successful
+        self.sync = false
+        //执行excution
+        let uploaded : Bool = true
+        if (uploaded){
+            self.sync = true
+            return .successful
+        }
+        else{
+            return .connection_failed
+        }
     }
     init(interface : UserInterface){
         super.init()

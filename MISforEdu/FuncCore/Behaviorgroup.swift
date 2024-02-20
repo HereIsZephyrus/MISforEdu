@@ -11,7 +11,7 @@ struct editAttendenceInterface : editInterface{
         return .successful
     }
     func Fatch(ID : String) -> AttendenceInfo{
-        return .init(classId: "", studentId: "", score: 0)
+        return ex_attendence
     }
     func Credential() -> String{
         return ""

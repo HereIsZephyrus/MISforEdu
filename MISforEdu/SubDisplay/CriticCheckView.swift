@@ -8,81 +8,83 @@
 import SwiftUI
 
 struct CriticCheckView: View {
-    struct Course {
-            let name: String
-            let grade: String
-            let credit: Double
-        }
-        
-        let courses: [Course] = [
-            Course(name: "数学", grade: "A+", credit: 4.0),
-            Course(name: "英语", grade: "A", credit: 3.0),
-            Course(name: "物理", grade: "B", credit: 3.5),
-            Course(name: "化学", grade: "A-", credit: 3.5),
-            Course(name: "历史", grade: "B+", credit: 2.5)
-        ]
-        
-        var totalCredits: Double {
-            courses.reduce(0) { $0 + $1.credit }
-        }
-        
-        var totalGradePoints: Double {
-            courses.reduce(0) { $0 + gradePoint(for: $1.grade) * $1.credit }
-        }
-        
-        func gradePoint(for grade: String) -> Double {
-            // 自定义成绩和绩点的对应关系
-            switch grade {
-            case "A+":
-                return 4.0
-            case "A":
-                return 4.0
-            case "A-":
-                return 3.7
-            case "B+":
-                return 3.3
-            case "B":
-                return 3.0
-            case "B-":
-                return 2.7
-            case "C+":
-                return 2.3
-            case "C":
-                return 2.0
-            case "C-":
-                return 1.7
-            case "D+":
-                return 1.3
-            case "D":
-                return 1.0
-            case "D-":
-                return 0.7
-            default:
-                return 0.0
-            }
-        }
+    @Binding var  user : Teacher?
+        @State private var studentIdToSearch: String = ""
+        @State private var classIdToSearch: String = ""
         
         var body: some View {
-            List(courses, id: \.name) { course in
-                VStack(alignment: .leading) {
-                    Text(course.name)
-                        .font(.headline)
-                    Text(course.grade)
-                        .foregroundColor(.secondary)
-                    Text("绩点: \(gradePoint(for: course.grade))")
-                        .foregroundColor(.secondary)
+            VStack {
+                // 输入框和按钮用于查询某个同学不同课程的成绩
+                HStack {
+                    TextField("学生ID", text: $studentIdToSearch)
+                        .padding()
+                    Button(action: {
+                        // 执行查询某个同学不同课程的成绩操作
+                        searchStudentGrades()
+                    }) {
+                        Text("查询")
+                    }
                 }
+                
+                // 显示某个同学不同课程的成绩
+                Text("学生 \(studentIdToSearch) 的成绩:")
+                    .font(.headline)
+                // 循环显示成绩信息
+                ForEach(getStudentGrades(), id: \.self) { grade in
+                    Text(grade)
+                }
+                
+                // 输入框和按钮用于查询班级平均分
+                HStack {
+                    TextField("班级ID", text: $classIdToSearch)
+                        .padding()
+                    Button(action: {
+                        // 执行查询班级平均分操作
+                        searchClassAverage()
+                    }) {
+                        Text("查询")
+                    }
+                }
+                
+                // 显示班级平均分
+                Text("班级 \(classIdToSearch) 的平均分:")
+                    .font(.headline)
+                
+                // 显示班级平均分结果
+                Text(getClassAverage())
             }
-            .navigationTitle("成绩查看")
-            .onAppear {
-                let gpa = totalGradePoints / totalCredits
-                print("学分绩点: \(gpa)")
-            }
+            .padding()
+        }
+        
+        // 查询某个同学不同课程的成绩
+        func searchStudentGrades() {
+            // 执行查询操作
+            // ...
+        }
+        
+        // 获取某个同学不同课程的成绩
+        func getStudentGrades() -> [String] {
+            // 返回某个同学不同课程的成绩
+            // ...
+            return [""]
+        }
+        
+        // 查询班级平均分
+        func searchClassAverage() {
+            // 执行查询操作
+            // ...
+        }
+        
+        // 获取班级平均分
+        func getClassAverage() -> String {
+            // 返回班级平均分
+            // ...
+            return ""
         }
 }
 
 struct CriticCheck_Previews: PreviewProvider {
     static var previews: some View {
-        CriticCheckView()
+        CriticCheckView(user : .constant(ex_teacher))
     }
 }

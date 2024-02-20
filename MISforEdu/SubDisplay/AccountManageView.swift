@@ -27,7 +27,7 @@ class AccountInfoBucket{
     init(info : StudentInfo,pwd : String){
         self.emailAddress = info.email
         self.name = info.name
-        self.password = pwd
+        self.password = ""//pwd
         self.office = ""
         self.birth = info.birth
         self.role = .Student
@@ -35,7 +35,7 @@ class AccountInfoBucket{
     init(info : TeacherInfo,pwd : String){
         self.emailAddress = info.email
         self.name = info.name
-        self.password = pwd
+        self.password = ""//pwd
         self.office = info.office
         self.birth = info.birth
         self.role = .Teacher
@@ -43,7 +43,7 @@ class AccountInfoBucket{
     init(info : SecretaryInfo,pwd : String){
         self.emailAddress = info.email
         self.name = info.name
-        self.password = pwd
+        self.password = ""//pwd
         self.office = ""
         self.birth = info.birth
         self.role = .Secretary
@@ -230,9 +230,8 @@ struct AccountEditableInfo<T>: View {
             let cols = [GridItem(.flexible()),GridItem(.flexible())]
             LazyVGrid(columns: cols,spacing: 10){
                 HStack{
-                    Text("生日")
-                        .font(.title)
-                        .foregroundColor(.blue)
+                    TitleText(content: "生日")
+                        
                     if isEditing{
                         DatePicker("Select your birthday", selection: userInfo.$birth, displayedComponents: .date)
                             .datePickerStyle(.automatic)
@@ -246,9 +245,7 @@ struct AccountEditableInfo<T>: View {
                     }
                 }
                 HStack{
-                    Text("邮箱")
-                        .font(.title)
-                        .foregroundColor(.blue)
+                    TitleText(content: "邮箱")
                     if isEditing{
                         TextField(userInfo.emailAddress, text: userInfo.$emailAddress)
                             .frame(width:250,height:40)
@@ -260,9 +257,7 @@ struct AccountEditableInfo<T>: View {
                 }
                 if userInfo.role == .Teacher{
                     HStack{
-                        Text("办公室")
-                            .font(.title)
-                            .foregroundColor(.blue)
+                        TitleText(content: "办公室")
                         if isEditing{
                             TextField(userInfo.office, text: userInfo.$office)
                                 .frame(width:250,height:40)
@@ -275,17 +270,13 @@ struct AccountEditableInfo<T>: View {
                 }
                 if isEditing{
                     HStack{
-                        Text("新密码")
-                            .font(.title)
-                            .foregroundColor(.blue)
+                        TitleText(content: "新密码")
                         SecureField("", text: userInfo.$password)
-                            .frame(width:250,height:40)
+                            .frame(width:200,height:40)
                             .textFieldStyle(.roundedBorder)
                     }
                     HStack{
-                        Text("确认密码")
-                            .font(.title)
-                            .foregroundColor(.blue)
+                        TitleText(content: "确认密码")
                         SecureField("", text: $verifypwd)
                             .frame(width:250,height:40)
                             .textFieldStyle(.roundedBorder)
@@ -306,6 +297,7 @@ struct AccountEditableInfo<T>: View {
                             if userInfo.password.count > 0{
                                 tmpUser.interface.password = userInfo.password
                             }
+                            print(tmpUser.interface.Push(execution: tmpUser.GenerateSQL(type: .update )))
                             user = tmpUser as! T
                         }
                         
@@ -357,6 +349,12 @@ struct AccountEditableInfo<T>: View {
             .cornerRadius(10)
     }
     
+    func TitleText(content : String) -> some View{
+        return Text(content)
+            .font(.title)
+            .foregroundColor(.blue)
+            .frame(width:  100)
+    }
 }
 
 struct AccountInfoPair: View {
@@ -364,9 +362,11 @@ struct AccountInfoPair: View {
     let content : String
     var body: some View {
         VStack(alignment:.center) {
+            //TitileText(content :  title)
             Text(title)
                 .font(.title)
                 .foregroundColor(.blue)
+                .frame(width:  200)
             Text(content)
                 .font(.headline)
         }

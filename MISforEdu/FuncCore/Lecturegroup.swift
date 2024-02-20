@@ -4,6 +4,7 @@ struct LectureInfo {
     var school: String
     var type: lecture_type
     var assessment: credit_type
+    var credit: Float
 }
 struct editLectureInterface : editInterface{
     var ID : String
@@ -11,7 +12,7 @@ struct editLectureInterface : editInterface{
         return .successful
     }
     func Fatch(ID : String) -> LectureInfo{
-        return .init(name: "", school: "", type: .basic, assessment: .exam)
+        return .init(name: "", school: "", type: .basic, assessment: .exam,credit: 1.0)
     }
     func Credential() -> String{
         return ""
@@ -38,7 +39,7 @@ struct editClassInterface : editInterface{
         return .successful
     }
     func Fatch(ID : String) -> ClassInfo{
-        return .init(firstWeek: 1, lastWeek: 20, belongedLec: .init(name: "", school: "", type: .basic, assessment: .exam), classTime: [], classRoom: " ")
+        return .init(firstWeek: 1, lastWeek: 20, belongedLec: .init(name: "", school: "", type: .basic, assessment: .exam, credit: 1.0), classTime: [], classRoom: " ")
     }
     func Credential() -> String{
         return ""

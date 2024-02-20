@@ -50,7 +50,7 @@ struct AccountView: View {
                                     }
                                 }
                                 Section {
-                                    NavigationLink(destination: GradeCheckView()) {
+                                    NavigationLink(destination: GradeCheckView(user: Binding<Student?>(get: { user },set: { user = $0 ?? ex_student }))) {
                                         Text("成绩查询")
                                     }
                                 }
@@ -92,7 +92,7 @@ struct AccountView: View {
                                         }
                                     }
                                     Section {
-                                        NavigationLink(destination: CriticCheckView())  {
+                                        NavigationLink(destination: CriticCheckView(user: Binding<Teacher?>(get: { user },set: { user = $0 ?? ex_teacher })))  {
                                             Text("教学评价")
                                         }
                                     }
@@ -165,12 +165,12 @@ struct AccountView: View {
                                 }
                             }
                             Section {
-                                NavigationLink(destination: GradeCheckView()) {
+                                NavigationLink(destination: GradeCheckView(user: Binding<Student?>.constant(nil))) {
                                     Text("成绩管理")
                                 }
                             }
                             Section {
-                                NavigationLink(destination: CriticCheckView()) {
+                                NavigationLink(destination: CriticCheckView(user:Binding<Teacher?>.constant(nil))) {
                                     Text("评价查询")
                                 }
                             }
@@ -208,7 +208,7 @@ struct AccountView: View {
                                 }
                             }
                             Section {
-                                NavigationLink(destination: CriticCheckView()) {
+                                NavigationLink(destination: CriticCheckView(user : Binding<Teacher?>.constant(nil))) {
                                     Text("评价查询")
                                 }
                             }

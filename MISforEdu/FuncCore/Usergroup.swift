@@ -46,6 +46,29 @@ struct Student{
     func AddSubjectToSchool(school : String) -> String{
         return school + "-" + info.subject
      }
+    func GenerateSQL(type : injection_type) -> String{
+        switch type {
+        case .update:
+            let sql_command = "UPDATE PersonClass.Student\n"
+            let sql_execution = "SET name = \(info.name), school = \(info.school), enrollment = \(info.enrollment), subject = \(info.subject), email = \(info.email)\n"
+            let sql_location = "WHERE ID = \(interface.ID)\n" 
+            return sql_command + sql_execution + sql_location
+        case .insert:
+            let sql_command = "INSERT INTO PersonClass.Student"
+            let sql_execution = "VALUES (\(interface.ID), \(info.name), \(info.school), \(info.enrollment), \(info.subject), \(info.email)\n"
+            return sql_command + sql_execution
+        case .delete:
+            let sql_command = "DELETE FROM PersonClass.Student"
+            let sql_location = "WHERE ID = \(interface.ID)\n"
+            return sql_command + sql_location
+        case .select:
+            let sql_command = "SELECT * FROM PersonClass.Student\n"
+            let sql_location = "WHERE ID = \(interface.ID)\n"
+            return sql_command + sql_location
+        case .other:
+            return ""
+        }
+    }
 }
 
 struct Teacher{
@@ -55,6 +78,29 @@ struct Teacher{
         self.interface = user
         self.info = user.Fatch(ID : user.ID)
     }
+    func GenerateSQL(type : injection_type) -> String{
+        switch type {
+        case .update:
+            let sql_command = "UPDATE PersonClass.Teacher\n"
+            let sql_execution = "SET name = \(info.name), school = \(info.school), enrollment = \(info.enrollment), office = \(info.office), email = \(info.email)\n"
+            let sql_location = "WHERE ID = \(interface.ID)\n"
+            return sql_command + sql_execution + sql_location
+        case .insert:
+            let sql_command = "INSERT INTO PersonClass.Teacher"
+            let sql_execution = "VALUES (\(interface.ID), \(info.name), \(info.school), \(info.enrollment), \(info.office), \(info.email)\n"
+            return sql_command + sql_execution
+        case .delete:
+            let sql_command = "DELETE FROM PersonClass.Teacher"
+            let sql_location = "WHERE ID = \(interface.ID)\n"
+            return sql_command + sql_location
+        case .select:
+            let sql_command = "SELECT * FROM PersonClass.Teacher\n"
+            let sql_location = "WHERE ID = \(interface.ID)\n"
+            return sql_command + sql_location
+        case .other:
+            return ""
+        }
+    }
 }
 struct Secretary{
     var interface : SecretaryInterface
@@ -62,5 +108,28 @@ struct Secretary{
     init(user : SecretaryInterface){
         self.interface = user
         self.info = user.Fatch(ID : user.ID)
+    }
+    func GenerateSQL(type : injection_type) -> String{
+        switch type {
+        case .update:
+            let sql_command = "UPDATE PersonClass.Secretary\n"
+            let sql_execution = "SET name = \(info.name), school = \(info.school), enrollment = \(info.enrollment), email = \(info.email)\n"
+            let sql_location = "WHERE ID = \(interface.ID)\n" 
+            return sql_command + sql_execution + sql_location
+        case .insert:
+            let sql_command = "INSERT INTO PersonClass.Secretary"
+            let sql_execution = "VALUES (name = \(info.name), school = \(info.school), enrollment = \(info.enrollment), \(info.email))\n"
+            return sql_command + sql_execution
+        case .delete:
+            let sql_command = "DELETE FROM PersonClass.Secretary"
+            let sql_location = "WHERE ID = \(interface.ID)\n"
+            return sql_command + sql_location
+        case .select:
+            let sql_command = "SELECT * FROM PersonClass.Secretary\n"
+            let sql_location = "WHERE ID = \(interface.ID)\n"
+            return sql_command + sql_location
+        case .other:
+            return ""
+        }
     }
 }
