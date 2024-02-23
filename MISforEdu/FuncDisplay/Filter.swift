@@ -11,8 +11,8 @@ struct FilterView: View {
     @State private var selectedPredicate = "是"
     @State private var selectedOption = "地理与信息工程学院"
     @State private var filterString = ""
-    //let filterItem = 
-    let filter : FilterItem = PersonFilterItem
+    //let filter : FilterItem = PersonFilterItem
+    let filter : FilterItem
     var body: some View {
         ZStack {
             Capsule()
@@ -62,6 +62,6 @@ struct FilterView: View {
 }
 struct Filters_Previews: PreviewProvider {
     static var previews: some View {
-        FilterView()
+        FilterView(filter : PersonFilterItem)
     }
 }

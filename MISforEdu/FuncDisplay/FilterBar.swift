@@ -11,6 +11,7 @@ struct FilterBarProcessor : View{
     @State var capsules : [Int] = []
     @State var toPresent : Bool = false
     //@Environment(\.dismiss) private var dismiss
+    let filter : FilterView //= FilterView(filter: PersonFilterItem)
     var body: some View {
             Button(action: {
                 withAnimation {
@@ -25,7 +26,7 @@ struct FilterBarProcessor : View{
             }.disabled(toPresent)
             .popover(isPresented: $toPresent,arrowEdge: .bottom) {
                 VStack {
-                    FilterBar(capsules: $capsules, toPresent: $toPresent
+                    FilterBar(capsules: $capsules, toPresent: $toPresent, filterView : filter
                               //,Filter: PersonFilter()
                     )
                 }
@@ -40,6 +41,7 @@ struct FilterBar: View {
     //let Filter :struct View
     //@Environment(\.dismiss) private var dismiss
     let rows = [GridItem(.flexible()),GridItem(.flexible())]
+    let filterView : FilterView
     var body: some View {
         VStack {
             ScrollView(.horizontal){
@@ -48,7 +50,8 @@ struct FilterBar: View {
                         ForEach(capsules, id: \.self) { num in
                             HStack {
                                 withAnimation(.spring()) {
-                                    FilterView()
+                                    //FilterView(filter: filterItem)
+                                    filterView
                                         .frame(width: 350, height: 60)
                                         .foregroundColor(.blue)
                                 }
@@ -94,6 +97,6 @@ struct FilterBar: View {
 
 struct FilterBar_Previews: PreviewProvider {
     static var previews: some View {
-        FilterBarProcessor()
+        FilterBarProcessor(filter: FilterView(filter: PersonFilterItem))
     }
 }

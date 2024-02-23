@@ -30,14 +30,14 @@ enum title_type : String{
     case lecturer
 }
 enum credit_type : String{
-    case test
-    case exam
-    case none
+    case test = "考试"
+    case exam = "考核"
+    case none = "无"
 }
 enum lecture_type : String{
-    case basic
-    case restricted
-    case elective
+    case basic = "基础必修"
+    case restricted = "专业选修"
+    case elective = "通用选修"
 }
 enum injection_type{
     case update
@@ -78,8 +78,8 @@ struct FilterItem {
         self.num = title.count
     }
 }
-struct Filter{
-    
+struct Filter{//interprete filter selection to value
+
 }
 
 struct oldStudent{
@@ -102,10 +102,3 @@ struct oldClass{
         var schedule: String
         var classroom: String
 }
-let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .full
-        formatter.timeStyle = .none
-        formatter.dateFormat = "yyyy-MM-dd"
-        return formatter
-    }()

@@ -50,12 +50,12 @@ struct AccountView: View {
                                     }
                                 }
                                 Section {
-                                    NavigationLink(destination: GradeCheckView(user: Binding<Student?>(get: { user },set: { user = $0 ?? ex_student }))) {
+                                    NavigationLink(destination: GradeCheckView(user: user)) {
                                         Text("成绩查询")
                                     }
                                 }
                                 Section {
-                                    NavigationLink(destination: CriticManageView(isFirst: .constant(true))) {
+                                    NavigationLink(destination: CriticManageView(lectureList: ex_lecturelist_name, teacherList: ex_lecturelist_teacher)) {
                                         Text("教学评价")
                                     }
                                 }
@@ -69,6 +69,7 @@ struct AccountView: View {
                                 }
                             }
                         }.background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
+
             }
             if let userInterface = interface as? TeacherInterface{
             //if (interface.role == .Teacher){
@@ -165,7 +166,7 @@ struct AccountView: View {
                                 }
                             }
                             Section {
-                                NavigationLink(destination: GradeCheckView(user: Binding<Student?>.constant(nil))) {
+                                NavigationLink(destination: GradeCheckView(user:nil)) {
                                     Text("成绩管理")
                                 }
                             }

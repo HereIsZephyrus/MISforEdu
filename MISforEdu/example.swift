@@ -15,22 +15,37 @@ var ex_secretary_info = SecretaryInfo(name: "曾云", school: "地理与信息�
 var ex_student = Student(user: ex_student_interface)
 var ex_teacher = Teacher(user: ex_teacher_interface)
 var ex_secretary = Secretary(user: ex_secretary_interface)
-let courses : [LectureInfo] = [
-    LectureInfo(name: "线性代数", school: "地理与信息工程学院", type: .basic, assessment: .test,credit: 3.5),
+let ex_courses : [LectureInfo] = [
+LectureInfo(name: "线性代数", school: "地理与信息工程学院", type: .basic, assessment: .test,credit: 3.5),
 LectureInfo(name: "数据库", school: "地理与信息工程学院", type: .restricted, assessment: .exam,credit: 3),
-    LectureInfo(name: "空间数据库", school: "地理与信息工程学院", type: .elective, assessment: .test,credit: 2.5)]
+LectureInfo(name: "空间数据库", school: "地理与信息工程学院", type: .elective, assessment: .test,credit: 2.5)]
 
-let attendence : [AttendenceInfo] = [
-AttendenceInfo(classId: "CS101", studentId: "1234567890", score: 92.5),
-AttendenceInfo(classId: "CS101", studentId: "1234567890", score: 85.0),
-AttendenceInfo(classId: "DB201", studentId: "1234567890", score: 78.0),
-AttendenceInfo(classId: "WD301", studentId: "1234567890", score: 95.5),
-AttendenceInfo(classId: "CS102", studentId: "1234567890", score: 87.5),
-AttendenceInfo(classId: "CS102", studentId: "1234567890", score: 95.0),
-AttendenceInfo(classId: "DB202", studentId: "1234567890", score: 88.0),
-AttendenceInfo(classId: "WD302", studentId: "1234567890", score: 85.5),
-AttendenceInfo(classId: "CS101", studentId: "0987654321", score: 88.5),
-AttendenceInfo(classId: "CS101", studentId: "0987654321", score: 86.0),
-AttendenceInfo(classId: "DB201", studentId: "0987654321", score: 82.0),
-AttendenceInfo(classId: "WD301", studentId: "0987654321", score: 85.5)]
-let ex_attendence = AttendenceInfo(classId: "CS101", studentId: "1234567890", score: 92.5)
+let ex_attendence : [AttendenceInfo] = [
+AttendenceInfo(classID: "CS101", studentID: "1234567890", score: 92.5),
+AttendenceInfo(classID: "CS101", studentID: "1234567890", score: 85.0),
+AttendenceInfo(classID: "DB201", studentID: "1234567890", score: 78.0),
+AttendenceInfo(classID: "WD301", studentID: "1234567890", score: 95.5),
+AttendenceInfo(classID: "CS102", studentID: "1234567890", score: 87.5),
+AttendenceInfo(classID: "CS102", studentID: "1234567890", score: 95.0),
+AttendenceInfo(classID: "DB202", studentID: "1234567890", score: 88.0),
+AttendenceInfo(classID: "WD302", studentID: "1234567890", score: 85.5),
+AttendenceInfo(classID: "CS101", studentID: "0987654321", score: 88.5),
+AttendenceInfo(classID: "CS101", studentID: "0987654321", score: 86.0),
+AttendenceInfo(classID: "DB201", studentID: "0987654321", score: 82.0),
+AttendenceInfo(classID: "WD301", studentID: "0987654321", score: 85.5)]
+//let ex_attendence = AttendenceInfo(classID: "CS101", studentID: "1234567890", score: 92.5)
+
+let ex_lecturelist_name : [String] = [
+    "数据库与空间数据库1",
+    "数据库与空间数据库2",
+    "数据库与空间数据库3",
+    "数据库与空间数据库4",
+    "数据库与空间数据库5"
+]
+let ex_lecturelist_teacher : [String] = [
+    "郑坤1",
+    "郑坤2",
+    "郑坤3",
+    "郑坤4",
+    "郑坤5"
+]

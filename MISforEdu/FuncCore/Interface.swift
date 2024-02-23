@@ -8,7 +8,7 @@ protocol editInterface {
     func Credential() -> String
     mutating func SyncWithDatabase() -> Bool
 }
-
+/*
 protocol queryInterface{
     associatedtype returnType
     var ID : [String] {get set}
@@ -24,10 +24,20 @@ struct DisplayList<T> : DisplayFormat,queryInterface{
     var ID : [String]
     var style : style_format
     func Fatch(filter : Filter) -> T{
-            return AttendenceInfo(classId: "", studentId: "", score: 0) as! T
+        return T(classId: "", studentId: "", score: 0) as! T
     }
     func Displayinfo(type : T) -> [String : String]{
         return [:]
+    }
+}*/
+struct DisplayInterface<T>{
+    private var elements : [T] = []
+    let filter : Filter
+    func Fatch() -> [T]{
+        return elements
+    }
+    init(filter : Filter){
+        self.filter = filter
     }
 }
 

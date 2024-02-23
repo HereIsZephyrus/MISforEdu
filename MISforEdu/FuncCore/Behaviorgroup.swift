@@ -1,8 +1,8 @@
 import Foundation
 
 struct AttendenceInfo{
-    var classId: String
-    var studentId: String
+    var classID: String
+    var studentID: String
     var score : Float
 }
 struct editAttendenceInterface : editInterface{
@@ -11,7 +11,7 @@ struct editAttendenceInterface : editInterface{
         return .successful
     }
     func Fatch(ID : String) -> AttendenceInfo{
-        return ex_attendence
+        return ex_attendence[0]
     }
     func Credential() -> String{
         return ""

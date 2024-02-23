@@ -14,7 +14,7 @@ struct LectureSelectSheet: View {
         VStack {
             Text("选择待安排的课程名")
                 .font(.title)
-            FilterBarProcessor()
+            FilterBarProcessor(filter: FilterView(filter: PersonFilterItem))
             List(selection: $selectedRow) {
                 ForEach(0..<data.count, id: \.self) { index in
                     Text(data[index])

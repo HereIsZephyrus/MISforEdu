@@ -11,8 +11,8 @@ struct SyllabusView: View {
         var body: some View {
             NavigationStack {
                     VStack {
-                        SyllabusTableView()
                         SyllabusListView()
+                        SyllabusTableView()
                     }
                 .navigationTitle("个人课表查询")
             }

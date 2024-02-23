@@ -32,7 +32,6 @@
 		324A3A6E2B564E2F0026BB79 /* MISforEduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A6D2B564E2F0026BB79 /* MISforEduUITests.swift */; };
 		324A3A702B564E2F0026BB79 /* MISforEduUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A6F2B564E2F0026BB79 /* MISforEduUITestsLaunchTests.swift */; };
 		324A3A802B56526B0026BB79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324A3A7F2B56526A0026BB79 /* Assets.xcassets */; };
-		324A3A862B565F890026BB79 /* DataDict_stu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A3A852B565F890026BB79 /* DataDict_stu.swift */; };
 		3269ECEC2B83B425009A6AD7 /* example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3269ECEA2B83B425009A6AD7 /* example.swift */; };
 		326BE8532B58D1EC00CD3911 /* AccountManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326BE8522B58D1EC00CD3911 /* AccountManageView.swift */; };
 		326BE8552B58D20C00CD3911 /* SyllabusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326BE8542B58D20C00CD3911 /* SyllabusView.swift */; };
@@ -41,6 +40,8 @@
 		326BE85C2B58D4EE00CD3911 /* DataInputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326BE85B2B58D4EE00CD3911 /* DataInputInterface.swift */; };
 		327042872B58128300A8750C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327042862B58128300A8750C /* AccountView.swift */; };
 		327042902B58B96300A8750C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270428F2B58B96300A8750C /* LoginView.swift */; };
+		329349362B886CDF00D4EAC0 /* QuestionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329349352B886CDF00D4EAC0 /* QuestionInfo.swift */; };
+		329349382B88747200D4EAC0 /* FormatterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329349372B88747200D4EAC0 /* FormatterInfo.swift */; };
 		3296FBE62B79FA0F0083FBC2 /* Interface_sql_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */; };
 		32A0B7472B77809F00CB3E76 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0B7462B77809F00CB3E76 /* BackButton.swift */; };
 		32A0B7492B77C02400CB3E76 /* ClassTableSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0B7482B77C02400CB3E76 /* ClassTableSheets.swift */; };
@@ -113,7 +114,6 @@
 		324A3A6D2B564E2F0026BB79 /* MISforEduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MISforEduUITests.swift; sourceTree = "<group>"; };
 		324A3A6F2B564E2F0026BB79 /* MISforEduUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MISforEduUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		324A3A7F2B56526A0026BB79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		324A3A852B565F890026BB79 /* DataDict_stu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDict_stu.swift; sourceTree = "<group>"; };
 		3269ECEA2B83B425009A6AD7 /* example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = example.swift; sourceTree = "<group>"; };
 		326BE8522B58D1EC00CD3911 /* AccountManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManageView.swift; sourceTree = "<group>"; };
 		326BE8542B58D20C00CD3911 /* SyllabusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyllabusView.swift; sourceTree = "<group>"; };
@@ -122,6 +122,8 @@
 		326BE85B2B58D4EE00CD3911 /* DataInputInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInputInterface.swift; sourceTree = "<group>"; };
 		327042862B58128300A8750C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		3270428F2B58B96300A8750C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		329349352B886CDF00D4EAC0 /* QuestionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionInfo.swift; sourceTree = "<group>"; };
+		329349372B88747200D4EAC0 /* FormatterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInfo.swift; sourceTree = "<group>"; };
 		3296FBE32B79FA0E0083FBC2 /* MISforEdu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MISforEdu-Bridging-Header.h"; sourceTree = "<group>"; };
 		3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Interface_sql_server.cpp; sourceTree = "<group>"; };
 		3296FBE52B79FA0F0083FBC2 /* Interface_sql_server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Interface_sql_server.hpp; sourceTree = "<group>"; };
@@ -296,8 +298,9 @@
 		324A3A842B565F680026BB79 /* DataDict */ = {
 			isa = PBXGroup;
 			children = (
-				324A3A852B565F890026BB79 /* DataDict_stu.swift */,
+				329349352B886CDF00D4EAC0 /* QuestionInfo.swift */,
 				32B420672B5A94160029046D /* FilterInfo.swift */,
+				329349372B88747200D4EAC0 /* FormatterInfo.swift */,
 			);
 			path = DataDict;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3269ECEC2B83B425009A6AD7 /* example.swift in Sources */,
+				329349362B886CDF00D4EAC0 /* QuestionInfo.swift in Sources */,
 				320DDC302B58EF700077E50B /* AttendManageView.swift in Sources */,
 				32CDDDD42B5A341900931E9D /* GradeEdit.swift in Sources */,
 				32B420662B5A93CD0029046D /* FilterBar.swift in Sources */,
@@ -558,6 +562,7 @@
 				32F6236A2B84740D003267CA /* CardView.swift in Sources */,
 				32CDDDD22B5A07F300931E9D /* GradeSheet.swift in Sources */,
 				3234BF2A2B7B1A1200E24DF3 /* Lecturegroup.swift in Sources */,
+				329349382B88747200D4EAC0 /* FormatterInfo.swift in Sources */,
 				3234BF292B7B1A1200E24DF3 /* Behaviorgroup.swift in Sources */,
 				326BE8532B58D1EC00CD3911 /* AccountManageView.swift in Sources */,
 				320DDC452B5937300077E50B /* Filter.swift in Sources */,
@@ -576,7 +581,6 @@
 				326BE8572B58D27100CD3911 /* CriticCheckView.swift in Sources */,
 				32B4206A2B5A960E0029046D /* FilterInterpre.swift in Sources */,
 				326BE8552B58D20C00CD3911 /* SyllabusView.swift in Sources */,
-				324A3A862B565F890026BB79 /* DataDict_stu.swift in Sources */,
 				3234BF2D2B7B1A3400E24DF3 /* GlobalDefinition.swift in Sources */,
 				320DDC2A2B58EF250077E50B /* AttendLectureView.swift in Sources */,
 				32B420682B5A94160029046D /* FilterInfo.swift in Sources */,
