@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
-
+/*
 struct GradeSheet: View {
-        let subject = "数据库与空间数据库"
+    let subject = "数据库与空间数据库"
         
     @State private var score: String = ""
     let data = [
@@ -52,3 +52,4 @@ struct GradeSheetView: View {
         }
     }
 }
+*/

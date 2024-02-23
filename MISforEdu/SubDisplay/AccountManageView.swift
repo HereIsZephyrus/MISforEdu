@@ -255,19 +255,6 @@ struct AccountEditableInfo<T>: View {
                             .frame(width:250,height:40)
                     }
                 }
-                if userInfo.role == .Teacher{
-                    HStack{
-                        TitleText(content: "办公室")
-                        if isEditing{
-                            TextField(userInfo.office, text: userInfo.$office)
-                                .frame(width:250,height:40)
-                                .textFieldStyle(.roundedBorder)
-                        }else{
-                            Text(userInfo.office)
-                                .frame(width:250,height:40)
-                        }
-                    }
-                }
                 if isEditing{
                     HStack{
                         TitleText(content: "新密码")
@@ -280,6 +267,19 @@ struct AccountEditableInfo<T>: View {
                         SecureField("", text: $verifypwd)
                             .frame(width:250,height:40)
                             .textFieldStyle(.roundedBorder)
+                    }
+                }
+                if userInfo.role == .Teacher{
+                    HStack{
+                        TitleText(content: "办公室")
+                        if isEditing{
+                            TextField(userInfo.office, text: userInfo.$office)
+                                .frame(width:200,height:40)
+                                .textFieldStyle(.roundedBorder)
+                        }else{
+                            Text(userInfo.office)
+                                .frame(width:120,height:40)
+                        }
                     }
                 }
             }
@@ -401,5 +401,6 @@ struct ManagePortrait: View {
 struct AccountManage_Previews: PreviewProvider {
     static var previews: some View {
         AccountManageView<Student>(user: .constant(ex_student))
+        AccountManageView<Teacher>(user: .constant(ex_teacher))
     }
 }

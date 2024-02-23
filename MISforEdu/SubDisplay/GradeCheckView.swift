@@ -12,7 +12,7 @@ struct GradeCheckView: View {
         let name : String
         let school : String
         let assessment : String
-        let type : String
+        let type : lecture_type
         let grade : String
         let GPA : String
     }
@@ -58,8 +58,8 @@ struct GradeCheckView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
                     Text(lecture.school) .foregroundColor(.secondary)
-                    //Text("类型: \(lecture.type.rawValue)") .foregroundColor(.secondary)
-                    Text("类型: \(lecture.type)") .foregroundColor(.secondary)
+                    Text("类型: \(lecture.type.rawValue)") .foregroundColor(.secondary)
+                    //Text("类型: \(lecture.type)") .foregroundColor(.secondary)
                     //Text("考核方式: \(lecture.assessment.rawValue)").foregroundColor(.secondary)
                     Text("考核方式: \(lecture.assessment)").foregroundColor(.secondary)
                     //Text("成绩: " + floatFormatter.string(from: NSNumber(value: attend.score))!).foregroundColor(.secondary)
@@ -70,7 +70,7 @@ struct GradeCheckView: View {
                 .padding()
             func CalcGPA(credit : Float, score : Float) -> String{
                 let level = Int((score - 60) / 5 + 2)
-                let GPA = credit * Float(level)  / 2
+                let GPA = credit * Float(level)  / 2 * gradeMulti[lecture.type]!
                 return floatFormatter.string(from: NSNumber(value: GPA))!
         }
         }

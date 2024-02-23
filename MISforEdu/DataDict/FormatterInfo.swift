@@ -20,3 +20,4 @@ let floatFormatter: NumberFormatter = {
     formatter.maximumFractionDigits = 2
     return formatter
 }()
+

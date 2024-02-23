@@ -49,3 +49,10 @@ let ex_lecturelist_teacher : [String] = [
     "郑坤4",
     "郑坤5"
 ]
+let ex_classlist_ID : [String] = [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005"
+]

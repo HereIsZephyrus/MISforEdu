@@ -88,7 +88,7 @@ struct AccountView: View {
                                         }
                                     }
                                     Section {
-                                        NavigationLink(destination: GradeManageView())   {
+                                        NavigationLink(destination: GradeManageView(lectureList: ex_lecturelist_name, classList: ex_classlist_ID, creditType: .test))   {
                                             Text("成绩管理")
                                         }
                                     }

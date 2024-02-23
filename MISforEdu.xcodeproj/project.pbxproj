@@ -42,6 +42,8 @@
 		327042902B58B96300A8750C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270428F2B58B96300A8750C /* LoginView.swift */; };
 		329349362B886CDF00D4EAC0 /* QuestionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329349352B886CDF00D4EAC0 /* QuestionInfo.swift */; };
 		329349382B88747200D4EAC0 /* FormatterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329349372B88747200D4EAC0 /* FormatterInfo.swift */; };
+		3293493A2B88D08A00D4EAC0 /* SheetNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329349392B88D08A00D4EAC0 /* SheetNavigationBar.swift */; };
+		3293493C2B88E2F600D4EAC0 /* GradesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293493B2B88E2F600D4EAC0 /* GradesInfo.swift */; };
 		3296FBE62B79FA0F0083FBC2 /* Interface_sql_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */; };
 		32A0B7472B77809F00CB3E76 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0B7462B77809F00CB3E76 /* BackButton.swift */; };
 		32A0B7492B77C02400CB3E76 /* ClassTableSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0B7482B77C02400CB3E76 /* ClassTableSheets.swift */; };
@@ -52,8 +54,6 @@
 		32CDDDCC2B59FDCB00931E9D /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDCB2B59FDCB00931E9D /* Loading.swift */; };
 		32CDDDCE2B5A03B300931E9D /* AttendSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDCD2B5A03B300931E9D /* AttendSheet.swift */; };
 		32CDDDD02B5A042E00931E9D /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDCF2B5A042E00931E9D /* CheckboxButton.swift */; };
-		32CDDDD22B5A07F300931E9D /* GradeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDD12B5A07F300931E9D /* GradeSheet.swift */; };
-		32CDDDD42B5A341900931E9D /* GradeEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDD32B5A341900931E9D /* GradeEdit.swift */; };
 		32CDDDD62B5A480100931E9D /* ClassRoomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDD52B5A480100931E9D /* ClassRoomSheet.swift */; };
 		32CDDDD82B5A4B2F00931E9D /* CampusGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDDDD72B5A4B2F00931E9D /* CampusGuide.swift */; };
 		32F6236A2B84740D003267CA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F623692B84740D003267CA /* CardView.swift */; };
@@ -124,6 +124,8 @@
 		3270428F2B58B96300A8750C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		329349352B886CDF00D4EAC0 /* QuestionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionInfo.swift; sourceTree = "<group>"; };
 		329349372B88747200D4EAC0 /* FormatterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInfo.swift; sourceTree = "<group>"; };
+		329349392B88D08A00D4EAC0 /* SheetNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNavigationBar.swift; sourceTree = "<group>"; };
+		3293493B2B88E2F600D4EAC0 /* GradesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesInfo.swift; sourceTree = "<group>"; };
 		3296FBE32B79FA0E0083FBC2 /* MISforEdu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MISforEdu-Bridging-Header.h"; sourceTree = "<group>"; };
 		3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Interface_sql_server.cpp; sourceTree = "<group>"; };
 		3296FBE52B79FA0F0083FBC2 /* Interface_sql_server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Interface_sql_server.hpp; sourceTree = "<group>"; };
@@ -136,8 +138,6 @@
 		32CDDDCB2B59FDCB00931E9D /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		32CDDDCD2B5A03B300931E9D /* AttendSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendSheet.swift; sourceTree = "<group>"; };
 		32CDDDCF2B5A042E00931E9D /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
-		32CDDDD12B5A07F300931E9D /* GradeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeSheet.swift; sourceTree = "<group>"; };
-		32CDDDD32B5A341900931E9D /* GradeEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeEdit.swift; sourceTree = "<group>"; };
 		32CDDDD52B5A480100931E9D /* ClassRoomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRoomSheet.swift; sourceTree = "<group>"; usesTabs = 1; };
 		32CDDDD72B5A4B2F00931E9D /* CampusGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusGuide.swift; sourceTree = "<group>"; };
 		32F623692B84740D003267CA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -220,8 +220,7 @@
 				32CDDDCB2B59FDCB00931E9D /* Loading.swift */,
 				320DDC482B5963FC0077E50B /* CriticSheet.swift */,
 				32F623692B84740D003267CA /* CardView.swift */,
-				32CDDDD12B5A07F300931E9D /* GradeSheet.swift */,
-				32CDDDD32B5A341900931E9D /* GradeEdit.swift */,
+				329349392B88D08A00D4EAC0 /* SheetNavigationBar.swift */,
 				32CDDDD72B5A4B2F00931E9D /* CampusGuide.swift */,
 			);
 			path = FuncDisplay;
@@ -299,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				329349352B886CDF00D4EAC0 /* QuestionInfo.swift */,
+				3293493B2B88E2F600D4EAC0 /* GradesInfo.swift */,
 				32B420672B5A94160029046D /* FilterInfo.swift */,
 				329349372B88747200D4EAC0 /* FormatterInfo.swift */,
 			);
@@ -555,12 +555,10 @@
 				3269ECEC2B83B425009A6AD7 /* example.swift in Sources */,
 				329349362B886CDF00D4EAC0 /* QuestionInfo.swift in Sources */,
 				320DDC302B58EF700077E50B /* AttendManageView.swift in Sources */,
-				32CDDDD42B5A341900931E9D /* GradeEdit.swift in Sources */,
 				32B420662B5A93CD0029046D /* FilterBar.swift in Sources */,
 				32CDDDD62B5A480100931E9D /* ClassRoomSheet.swift in Sources */,
 				320DDC412B592E060077E50B /* ClassTimeSheet.swift in Sources */,
 				32F6236A2B84740D003267CA /* CardView.swift in Sources */,
-				32CDDDD22B5A07F300931E9D /* GradeSheet.swift in Sources */,
 				3234BF2A2B7B1A1200E24DF3 /* Lecturegroup.swift in Sources */,
 				329349382B88747200D4EAC0 /* FormatterInfo.swift in Sources */,
 				3234BF292B7B1A1200E24DF3 /* Behaviorgroup.swift in Sources */,
@@ -568,6 +566,7 @@
 				320DDC452B5937300077E50B /* Filter.swift in Sources */,
 				327042902B58B96300A8750C /* LoginView.swift in Sources */,
 				3234BF282B7B1A1200E24DF3 /* Interface.swift in Sources */,
+				3293493A2B88D08A00D4EAC0 /* SheetNavigationBar.swift in Sources */,
 				32B420642B5A8E500029046D /* CampusView.swift in Sources */,
 				32CDDDD02B5A042E00931E9D /* CheckboxButton.swift in Sources */,
 				32CDDDCC2B59FDCB00931E9D /* Loading.swift in Sources */,
@@ -586,6 +585,7 @@
 				32B420682B5A94160029046D /* FilterInfo.swift in Sources */,
 				3206A4062B56A31500E35D90 /* AppDelegate.swift in Sources */,
 				32CDDDCE2B5A03B300931E9D /* AttendSheet.swift in Sources */,
+				3293493C2B88E2F600D4EAC0 /* GradesInfo.swift in Sources */,
 				32A0B7472B77809F00CB3E76 /* BackButton.swift in Sources */,
 				3234BF2B2B7B1A1200E24DF3 /* Usergroup.swift in Sources */,
 				320DDC262B58EE8B0077E50B /* GradeManageView.swift in Sources */,
