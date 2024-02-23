@@ -91,10 +91,12 @@ struct oldStudent{
         var enrollment: Int
         var birth: String
 }
-struct oldCourse {
+struct oldCourse : Identifiable{
+    let id = UUID()
     let name: String
     let grade: String
     let credit: Double
+    var isSelected = false
 }
 struct oldClass{
         var id: String
