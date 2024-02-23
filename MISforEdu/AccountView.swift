@@ -45,7 +45,7 @@ struct AccountView: View {
                                     }
                                 }
                                 Section {
-                                    NavigationLink(destination: SyllabusView()) {
+                                    NavigationLink(destination: SyllabusView(user : user)) {
                                         Text("课表查看")
                                     }
                                 }
@@ -83,7 +83,7 @@ struct AccountView: View {
                                         }
                                     }
                                     Section {
-                                        NavigationLink(destination: SyllabusView()) {
+                                        NavigationLink(destination: SyllabusView(user: user)) {
                                             Text("课表查看")
                                         }
                                     }
@@ -203,11 +203,12 @@ struct AccountView: View {
                                     Text("教师管理")
                                 }
                             }
+                            /*
                             Section {
                                 NavigationLink(destination: SyllabusView()) {
                                     Text("课程查询")
                                 }
-                            }
+                            }*/
                             Section {
                                 NavigationLink(destination: CriticCheckView(user : Binding<Teacher?>.constant(nil))) {
                                     Text("评价查询")

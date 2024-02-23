@@ -7,12 +7,56 @@
 
 import SwiftUI
 
-struct SyllabusView: View {
+struct SyllabusView<T>: View {
+    let weekviewClassList : [[String]]
+    let dayviewClassClassList : [oldClass]
+    init(user : T){
+        var weekly : [[String]] = [[String]]()
+        var daily : [oldClass] = [oldClass]()
+        if let student = user as? Student{
+            weekly = [
+                ["数据库", "数据库", "", "数据库", "", "", ""],
+                ["", "", "", "", "", "数据库", ""],
+                ["", "数据库", "", "", "数据库", "", ""],
+                ["", "", "数据库", "", "", "", "数据库"],
+                ["", "", "", "", "数据库", "", ""],
+                ["", "", "", "", "", "", ""],
+                ["", "", "", "", "", "", ""]
+            ]
+            daily = [
+                oldClass(id: "1库", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室A"),
+                oldClass(id: "2", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室B"),
+                oldClass(id: "3", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室C"),
+                oldClass(id: "4", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室D"),
+                oldClass(id: "5", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室E")
+            ]
+        }
+        if let teacher = user as? Teacher{
+            weekly = [
+                ["数据库", "数据库", "", "数据库", "", "", ""],
+                ["", "", "", "", "", "数据库", ""],
+                ["", "数据库", "", "", "数据库", "", ""],
+                ["", "", "数据库", "", "", "", "数据库"],
+                ["", "", "", "", "数据库", "", ""],
+                ["", "", "", "", "", "", ""],
+                ["", "", "", "", "", "", ""]
+            ]
+            daily = [
+                oldClass(id: "1库", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室A"),
+                oldClass(id: "2", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室B"),
+                oldClass(id: "3", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室C"),
+                oldClass(id: "4", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室D"),
+                oldClass(id: "5", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室E")
+            ]
+        }
+        self.weekviewClassList = weekly
+        self.dayviewClassClassList = daily
+    }
         var body: some View {
             NavigationStack {
                     VStack {
-                        SyllabusListView()
-                        SyllabusTableView()
+                        SyllabusListView(classlist: dayviewClassClassList)
+                        SyllabusTableView(classes: weekviewClassList)
                     }
                 .navigationTitle("个人课表查询")
             }
@@ -21,21 +65,15 @@ struct SyllabusView: View {
 
 struct SyllabusView_Previews: PreviewProvider {
     static var previews: some View {
-        SyllabusView()
+        SyllabusView<Student>(user: ex_student)
+        SyllabusView<Teacher>(user: ex_teacher)
     }
 }
 
 struct SyllabusTableView: View {
+   
     let weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-        let classes = [
-            ["数据库", "数据库", "", "数据库", "", "", ""],
-            ["", "", "", "", "", "数据库", ""],
-            ["", "数据库", "", "", "数据库", "", ""],
-            ["", "", "数据库", "", "", "", "数据库"],
-            ["", "", "", "", "数据库", "", ""],
-            ["", "", "", "", "", "", ""],
-            ["", "", "", "", "", "", ""]
-        ]
+    let classes : [[String]]
     var body: some View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 0), count: weekdays.count), spacing: 10) {
             ForEach(0..<weekdays.count) { column in
@@ -59,13 +97,7 @@ struct SyllabusTableView: View {
 }
 
 struct SyllabusListView: View {
-    let classlist: [oldClass] = [
-            oldClass(id: "1库", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室A"),
-            oldClass(id: "2", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室B"),
-            oldClass(id: "3", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室C"),
-            oldClass(id: "4", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室D"),
-            oldClass(id: "5", lecture: "数据库与空间数据库", schedule: "8:30-22:30", classroom: "教室E")
-        ]
+    let classlist: [oldClass]
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {
         GeometryReader{geo in
