@@ -44,6 +44,7 @@
 		329349382B88747200D4EAC0 /* FormatterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329349372B88747200D4EAC0 /* FormatterInfo.swift */; };
 		3293493A2B88D08A00D4EAC0 /* SheetNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329349392B88D08A00D4EAC0 /* SheetNavigationBar.swift */; };
 		3293493C2B88E2F600D4EAC0 /* GradesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293493B2B88E2F600D4EAC0 /* GradesInfo.swift */; };
+		3293493E2B89B38B00D4EAC0 /* FileUploaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3293493D2B89B38B00D4EAC0 /* FileUploaderButton.swift */; };
 		3296FBE62B79FA0F0083FBC2 /* Interface_sql_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */; };
 		32A0B7472B77809F00CB3E76 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0B7462B77809F00CB3E76 /* BackButton.swift */; };
 		32A0B7492B77C02400CB3E76 /* ClassTableSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0B7482B77C02400CB3E76 /* ClassTableSheets.swift */; };
@@ -126,6 +127,7 @@
 		329349372B88747200D4EAC0 /* FormatterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInfo.swift; sourceTree = "<group>"; };
 		329349392B88D08A00D4EAC0 /* SheetNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNavigationBar.swift; sourceTree = "<group>"; };
 		3293493B2B88E2F600D4EAC0 /* GradesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesInfo.swift; sourceTree = "<group>"; };
+		3293493D2B89B38B00D4EAC0 /* FileUploaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploaderButton.swift; sourceTree = "<group>"; };
 		3296FBE32B79FA0E0083FBC2 /* MISforEdu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MISforEdu-Bridging-Header.h"; sourceTree = "<group>"; };
 		3296FBE42B79FA0F0083FBC2 /* Interface_sql_server.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Interface_sql_server.cpp; sourceTree = "<group>"; };
 		3296FBE52B79FA0F0083FBC2 /* Interface_sql_server.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Interface_sql_server.hpp; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				320DDC482B5963FC0077E50B /* CriticSheet.swift */,
 				32F623692B84740D003267CA /* CardView.swift */,
 				329349392B88D08A00D4EAC0 /* SheetNavigationBar.swift */,
+				3293493D2B89B38B00D4EAC0 /* FileUploaderButton.swift */,
 				32CDDDD72B5A4B2F00931E9D /* CampusGuide.swift */,
 			);
 			path = FuncDisplay;
@@ -596,6 +599,7 @@
 				326BE8592B58D48400CD3911 /* CriticManageView.swift in Sources */,
 				320DDC382B58F1F20077E50B /* AttendView.swift in Sources */,
 				320DDC342B58F0A60077E50B /* InstructManageView.swift in Sources */,
+				3293493E2B89B38B00D4EAC0 /* FileUploaderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
