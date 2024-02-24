@@ -69,7 +69,7 @@ class UserInterface{
     }
 
 }
-class StudentInterface : UserInterface{
+class StudentInterface : UserInterface,BasicInterface{
     override func Credential() -> String{
         var errorMessage = ""
         if (ID.count == 0){
@@ -118,7 +118,7 @@ class StudentInterface : UserInterface{
     }
 }
 
-class TeacherInterface : UserInterface{
+class TeacherInterface : UserInterface,BasicInterface{
     override func Credential() -> String{
         var errorMessage = ""
         if (ID.count == 0){
@@ -158,7 +158,7 @@ class TeacherInterface : UserInterface{
     }
 }
 
-class SecretaryInterface : UserInterface{
+class SecretaryInterface : UserInterface,BasicInterface{
     override func Credential() -> String{
         var errorMessage = ""
         if (ID.count == 0){

@@ -9,60 +9,59 @@ import SwiftUI
     
 
 typealias infoStack = HStack<TupleView<(VStack<TupleView<(AccountInfoPair, AccountInfoPair, AccountInfoPair)>>, Divider, VStack<TupleView<(AccountInfoPair, AccountInfoPair, AccountInfoPair)>>)>>
-class AccountInfoBucket{
-    @State var emailAddress : String
-    @State var name : String
-    @State var password : String
-    @State var office : String
-    @State var birth : Date
+class AccountInfoBucket : ObservableObject ,BasicEditInfo{
+    @Published var email : String
+    @Published var name : String
+    @Published var password : String
+    @Published var office : String
+    @Published var birth : Date
     var role : user_role?
     init(){
-        self.emailAddress = ""
+        self.email = ""
         self.name = ""
         self.password = ""
         self.office = ""
         self.birth = Date()
         self.role = nil
     }
-    init(info : StudentInfo,pwd : String){
-        self.emailAddress = info.email
+    init(info : StudentInfo){
+        self.email = info.email
         self.name = info.name
-        self.password = ""//pwd
+        self.password = ""
         self.office = ""
         self.birth = info.birth
         self.role = .Student
     }
-    init(info : TeacherInfo,pwd : String){
-        self.emailAddress = info.email
+    init(info : TeacherInfo){
+        self.email = info.email
         self.name = info.name
-        self.password = ""//pwd
+        self.password = ""
         self.office = info.office
         self.birth = info.birth
         self.role = .Teacher
     }
-    init(info : SecretaryInfo,pwd : String){
-        self.emailAddress = info.email
+    init(info : SecretaryInfo){
+        self.email = info.email
         self.name = info.name
-        self.password = ""//pwd
+        self.password = ""
         self.office = ""
         self.birth = info.birth
         self.role = .Secretary
     }
 }
-struct AccountManageView<T>: View {
-    //@State var user=oldStudent(id: 20221000679, name: "童川博", sex: "男", email: "Channing@cug.edu.com", subjects: 4, enrollment: 2022, birth: "2003-13-17")
+struct AccountManageView<T : User>: View {
     @Binding var user : T
+    @ObservedObject var userInfo : AccountInfoBucket = AccountInfoBucket()
     @State var isEditing : Bool = false
-    //@State var editInfo : AccountInfoBucket = AccountInfoBucket()
+    @State var saveChange : Bool = false
     var body: some View {
         let info = AccountBasicInfo(user : user)
         NavigationStack {
             VStack {
-                //AccountBasicInfo(uid: String(user.id), name: user.name, school: "地理与信息工程学院", subject: "地理信息科学")
                 AccountIdentityInfo(account_head_info : info)
                 Divider()
-               // AccountEditableInfo(isEditing: $isEditing, birth: $user.birth, email: $user.email)
-                AccountEditableInfo<T>(isEditing: $isEditing,user : $user)
+                AccountEditableInfo<T>(saveChange: $saveChange,isEditing: $isEditing,user : $user)
+                showSaveStatus(toSave: saveChange)
                 Spacer()
             }
             
@@ -76,6 +75,46 @@ struct AccountManageView<T>: View {
         )
         }
     }
+    
+    func showSaveStatus(toSave : Bool) -> Text{
+        if toSave{
+            if user is Student{
+                //typealias Student = T
+                print(userInfo.birth)
+                user.info.email = userInfo.email
+                user.info.birth = userInfo.birth
+                if userInfo.password.count > 0 {
+                    user.interface.password = userInfo.password
+                }
+                // print(user.interface.Push(execution: user.GenerateSQL(type: .update)))
+
+                //user = tmpUser as! T
+            }
+            
+            if var tmpUser = user as? Teacher{
+                tmpUser.info.email = userInfo.email
+                //user.info.email = userInfo.email
+                tmpUser.info.birth = userInfo.birth
+                if userInfo.password.count > 0{
+                    tmpUser.interface.password = userInfo.password
+                }
+                tmpUser.info.office = userInfo.office
+                user = tmpUser as! T
+            }
+            if var tmpUser = user as? Secretary{
+                tmpUser.info.email = userInfo.email
+                //user.info.email = userInfo.email
+                tmpUser.info.birth = userInfo.birth
+                if userInfo.password.count > 0{
+                    tmpUser.interface.password = userInfo.password
+                }
+                user = tmpUser as! T
+            }
+            return Text("保存成功(immutable特性给我干碎了)")
+        }
+        return Text("")
+    }
+    
     func AccountBasicInfo(user : T) -> infoStack{
         var account_head_info = HStack(spacing: 20) {
                 VStack(spacing:30){
@@ -144,10 +183,6 @@ struct AccountManageView<T>: View {
 }
 
 struct AccountIdentityInfo: View {
-    //let uid : String
-    //let name : String
-   // let school : String
-    //let subject : String
     let account_head_info : infoStack
     var body: some View {
         HStack (alignment: .top){
@@ -164,26 +199,25 @@ struct AccountIdentityInfo: View {
         }
 }
 
-struct AccountEditableInfo<T>: View {
+struct AccountEditableInfo<T : User>: View {
+    @Binding var saveChange : Bool
     @Binding var isEditing : Bool
-    //@ Binding var birth : String
-    //@ Binding var email : String
-    var userInfo : AccountInfoBucket
     @Binding var user : T
-    //@State private var selectedDate = Date()
+    @ObservedObject var userInfo : AccountInfoBucket
     @State private var verifypwd :String = ""
     @State var showAlert : Bool = false
-    init(isEditing: Binding<Bool>, user : Binding<T>) {
+    init(saveChange : Binding<Bool>,isEditing: Binding<Bool>, user : Binding<T>) {
+        self._saveChange = saveChange
         self._user = user
         self._isEditing = isEditing
         if let student = user.wrappedValue as? Student {
-                self.userInfo = AccountInfoBucket(info: student.info, pwd: student.interface.ID)
+                self.userInfo = AccountInfoBucket(info: student.info)
             //typealias T = Student
             } else if let teacher = user.wrappedValue as? Teacher {
-                self.userInfo = AccountInfoBucket(info: teacher.info, pwd: teacher.interface.ID)
+                self.userInfo = AccountInfoBucket(info: teacher.info)
             //    typealias T = Teacher
             } else if let secretary = user.wrappedValue as? Secretary {
-                self.userInfo = AccountInfoBucket(info: secretary.info, pwd: secretary.interface.ID)
+                self.userInfo = AccountInfoBucket(info: secretary.info)
              //   typealias T = Student
             } else {
                 // Handle the case where user is not of type Student, Teacher, or Secretary
@@ -193,47 +227,13 @@ struct AccountEditableInfo<T>: View {
     var body: some View {
        
         VStack {
-            /*
-            HStack {
-                HStack{
-                    Text("生日")
-                        .font(.title)
-                        .foregroundColor(.blue)
-                    if isEditing{
-                        DatePicker("Select your birthday", selection: $selectedDate, displayedComponents: .date)
-                            .datePickerStyle(.automatic)
-                            .labelsHidden()
-                            .frame(width:120,height:40)
-                            .padding(.horizontal,20)
-                    }else{
-                        Text(birth)
-                            .frame(width:100,height:40)
-                            .padding(.horizontal,20)
-                    }
-                }
-                Spacer()
-                HStack{
-                    Text("邮箱")
-                        .font(.title)
-                        .foregroundColor(.blue)
-                    if isEditing{
-                        TextField(email, text: $changedemail)
-                            .frame(width:250,height:40)
-                            .textFieldStyle(.roundedBorder)
-                    }else{
-                        Text(email)
-                            .frame(width:250,height:40)
-                    }
-                }
-            }.padding(.horizontal,40)
-            */
             let cols = [GridItem(.flexible()),GridItem(.flexible())]
             LazyVGrid(columns: cols,spacing: 10){
                 HStack{
                     TitleText(content: "生日")
                         
                     if isEditing{
-                        DatePicker("Select your birthday", selection: userInfo.$birth, displayedComponents: .date)
+                        DatePicker("Select your birthday", selection: $userInfo.birth, displayedComponents: .date)
                             .datePickerStyle(.automatic)
                             .labelsHidden()
                             .frame(width:120,height:40)
@@ -247,18 +247,18 @@ struct AccountEditableInfo<T>: View {
                 HStack{
                     TitleText(content: "邮箱")
                     if isEditing{
-                        TextField(userInfo.emailAddress, text: userInfo.$emailAddress)
+                        TextField(userInfo.email, text: $userInfo.email)
                             .frame(width:250,height:40)
                             .textFieldStyle(.roundedBorder)
                     }else{
-                        Text(userInfo.emailAddress)
+                        Text(userInfo.email)
                             .frame(width:250,height:40)
                     }
                 }
                 if isEditing{
                     HStack{
                         TitleText(content: "新密码")
-                        SecureField("", text: userInfo.$password)
+                        SecureField("", text: $userInfo.password)
                             .frame(width:200,height:40)
                             .textFieldStyle(.roundedBorder)
                     }
@@ -273,7 +273,7 @@ struct AccountEditableInfo<T>: View {
                     HStack{
                         TitleText(content: "办公室")
                         if isEditing{
-                            TextField(userInfo.office, text: userInfo.$office)
+                            TextField(userInfo.office, text: $userInfo.office)
                                 .frame(width:200,height:40)
                                 .textFieldStyle(.roundedBorder)
                         }else{
@@ -289,37 +289,7 @@ struct AccountEditableInfo<T>: View {
                     showAlert = verifypwd != userInfo.password
                     if showAlert == false{
                         isEditing = false
-                        
-                        if var tmpUser = user as? Student{
-                            tmpUser.info.email = userInfo.emailAddress
-                            //user.info.email = userInfo.emailAddress
-                            tmpUser.info.birth = userInfo.birth
-                            if userInfo.password.count > 0{
-                                tmpUser.interface.password = userInfo.password
-                            }
-                            print(tmpUser.interface.Push(execution: tmpUser.GenerateSQL(type: .update )))
-                            user = tmpUser as! T
-                        }
-                        
-                        if var tmpUser = user as? Teacher{
-                            tmpUser.info.email = userInfo.emailAddress
-                            //user.info.email = userInfo.emailAddress
-                            tmpUser.info.birth = userInfo.birth
-                            if userInfo.password.count > 0{
-                                tmpUser.interface.password = userInfo.password
-                            }
-                            tmpUser.info.office = userInfo.office
-                            user = tmpUser as! T
-                        }
-                        if var tmpUser = user as? Secretary{
-                            tmpUser.info.email = userInfo.emailAddress
-                            //user.info.email = userInfo.emailAddress
-                            tmpUser.info.birth = userInfo.birth
-                            if userInfo.password.count > 0{
-                                tmpUser.interface.password = userInfo.password
-                            }
-                            user = tmpUser as! T
-                        }
+                        saveChange = true
                     }
                     else{
                         userInfo.password = ""

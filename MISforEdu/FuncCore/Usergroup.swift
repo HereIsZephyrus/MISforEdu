@@ -7,9 +7,18 @@ protocol BasicUserInfo{
     var sex : sex_type {get set}
     var birth : Date {get set}
 }
+protocol BasicEditInfo{
+    var email : String {get set}
+    //var office : String {get set}
+    var birth : Date {get set}
+}
+protocol BasicInterface{
+    var ID : String {get set}
+    var password : String {get set}
+}
 
-struct StudentInfo : BasicUserInfo{
-    var name : String 
+struct StudentInfo : BasicUserInfo, BasicEditInfo{
+    var name : String
     var school : String 
     var enrollment : String 
     var subject : String 
@@ -17,8 +26,8 @@ struct StudentInfo : BasicUserInfo{
     var sex : sex_type 
     var birth : Date 
 }
-struct TeacherInfo : BasicUserInfo {
-    var name : String 
+struct TeacherInfo : BasicUserInfo, BasicEditInfo {
+    var name : String
     var school : String 
     var enrollment : String 
     var email : String 
@@ -27,8 +36,8 @@ struct TeacherInfo : BasicUserInfo {
     var birth : Date 
     var title : title_type 
 }
-struct SecretaryInfo : BasicUserInfo {
-    var name : String 
+struct SecretaryInfo : BasicUserInfo, BasicEditInfo {
+    var name : String
     var school : String 
     var enrollment : String 
     var email : String 
@@ -36,12 +45,34 @@ struct SecretaryInfo : BasicUserInfo {
     var birth : Date 
 }
 
-struct Student{
+protocol User{
+    //associatedtype user_info : AccountInfo
+    associatedtype user_info : BasicEditInfo
+    associatedtype user_interface : BasicInterface
+    var info : user_info {get set}
+    var interface : user_interface {get set}
+}
+struct Student : User{
     var interface : StudentInterface
     var info : StudentInfo
     init(user : StudentInterface){
         self.interface = user
         self.info = user.Fatch(ID : user.ID)
+    }
+    init (student : Student){
+        self.interface = student.interface
+        self.info = student.info
+        self.interface.ID = student.interface.ID
+        self.interface.password = student.interface.password
+        self.interface.logged = student.interface.logged
+        self.interface.sync = student.interface.sync
+        self.info.name = student.info.name
+        self.info.school = student.info.school
+        self.info.enrollment = student.info.enrollment
+        self.info.subject = student.info.subject
+        self.info.email = student.info.email
+        self.info.sex = student.info.sex
+        self.info.birth = student.info.birth
     }
     func AddSubjectToSchool(school : String) -> String{
         return school + "-" + info.subject
@@ -71,12 +102,16 @@ struct Student{
     }
 }
 
-struct Teacher{
+struct Teacher : User{
     var interface : TeacherInterface
     var info : TeacherInfo
     init(user : TeacherInterface){
         self.interface = user
         self.info = user.Fatch(ID : user.ID)
+    }
+    init (teacher : Teacher){
+        interface = teacher.interface
+        info = teacher.info
     }
     func GenerateSQL(type : injection_type) -> String{
         switch type {
@@ -102,12 +137,16 @@ struct Teacher{
         }
     }
 }
-struct Secretary{
+struct Secretary : User{
     var interface : SecretaryInterface
     var info : SecretaryInfo
     init(user : SecretaryInterface){
         self.interface = user
         self.info = user.Fatch(ID : user.ID)
+    }
+    init (secretary : Secretary){
+        interface = secretary.interface
+        info = secretary.info
     }
     func GenerateSQL(type : injection_type) -> String{
         switch type {
