@@ -62,6 +62,8 @@ struct FilterView: View {
 }
 struct Filters_Previews: PreviewProvider {
     static var previews: some View {
-        FilterView(filter : PersonFilterItem)
+        FilterView(filter : Filters().PersonFilterItem)
+        FilterView(filter : Filters().GradeFilterItem)
+        FilterView(filter : Filters().LectureFilterItem)
     }
 }

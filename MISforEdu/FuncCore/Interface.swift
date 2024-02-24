@@ -30,14 +30,43 @@ struct DisplayList<T> : DisplayFormat,queryInterface{
         return [:]
     }
 }*/
-struct DisplayInterface<T>{
+class DisplayList<T>{
     private var elements : [T] = []
-    let filter : Filter
+    var filter : Filter
     func Fatch() -> [T]{
         return elements
     }
     init(filter : Filter){
         self.filter = filter
+    }
+}
+class SchoolInfoDisplay : DisplayList<SchoolInfo>{
+    private var elements : [SchoolInfo] = []
+    override func Fatch() -> [SchoolInfo]{
+        elements = ex_school_info
+        return elements
+    }
+    override init(filter : Filter){
+        super.init(filter: Filter())
+    }
+}
+class SubjectInfoDisplay : DisplayList<SubjectInfo>{
+    private var elements : [SubjectInfo] = []
+    override func Fatch() -> [SubjectInfo]{
+        elements = ex_subject_info
+        return elements
+    }
+    override init(filter : Filter){
+        super.init(filter: Filter())
+    }
+}
+class LectureInfoDisplay : DisplayList<LectureInfo>{
+    private var elements : [LectureInfo] = []
+    override func Fatch() -> [LectureInfo]{
+        return elements
+    }
+    override init(filter : Filter){
+        super.init(filter: Filter())
     }
 }
 

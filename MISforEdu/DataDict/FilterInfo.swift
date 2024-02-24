@@ -6,102 +6,78 @@
 //
 
 import Foundation
-let PersonFilterItem = FilterItem(
+
+let schoolList = {
+    let list = SchoolInfoDisplay(filter: Filter()).Fatch()
+    return list.map{($0.name)}
+}()
+let subjectList = {
+    let list = SubjectInfoDisplay(filter: Filter()).Fatch()
+    return list.map{($0.name)}
+}()
+let enrollmentList = {
+    let currentYear = Calendar.current.component(.year, from: Date())
+    let list = Array(stride(from: currentYear - 15, through: currentYear, by: 1))
+    return list.map {String($0)}
+}()
+let semesterList = {
+    let currentYear = Calendar.current.component(.year, from: Date())
+    var list : [String] = []
+    for year in currentYear - 5...currentYear {
+        let firstSemester = "\(year)学院第一学期"
+        let secondSemester = "\(year)学院第二学期"
+        list.append(firstSemester)
+        list.append(secondSemester)
+    }
+    return list
+}()
+let lectureTypeList = {
+    var list : [String] = []
+    for cate in lecture_type.allCases{
+        list.append(cate.rawValue)
+    }
+    return list
+}()
+let AssessmentTypeList = {
+    var list : [String] = []
+    for cate in credit_type.allCases{
+        list.append(cate.rawValue)
+    }
+    return list
+}()
+let creditList = Array(stride(from: 1.0, through: 5.0, by: 0.5)).map {String($0)}
+let weekdayList = ["星期一","星期二","星期三","星期四","星期五","星期六","星期日"]
+
+struct Filters{
+    let PersonFilterItem = FilterItem(
     title: ["学院","专业","入学年份","姓名","学号"],
     inputType: [.option,.option,.option,.textfill,.textfill],
     predicate: [["是"],["是"],["是","早于","晚于"],["是","包含"],["是"]],
     item: [
-    //school
-    ["体育学院",
-     "外国语学院",
-     "马克思主义学院",
-     "地球科学学院",
-     "地理与信息工程学院",
-     "资源学院",
-     "海洋学院",
-     "工程学院",
-     "公共管理学院",
-     "材料与化学学院",
-     "环境学院",
-     "地球物理与空间信息学院",
-     "自动化学院",
-     "机械与电子信息学院",
-     "经济管理学院",
-     "计算机学院",
-     "数学与物理学院",
-     "珠宝学院",
-     "艺术与传媒学院"],
-    ["地球化学",
-     "资源勘查工程",
-     "石油工程",
-     "应用化学",
-     "材料科学与工程",
-     "材料化学",
-     "水文与水资源工程",
-     "地下水科学与工程",
-     "环境工程",
-     "生物科学",
-     "大气科学",
-     "土木工程",
-     "城市地下空间工程",
-     "安全工程",
-     "地质工程",
-     "应急技术与管理",
-     "勘查技术与工程（钻探工程）",
-     "勘查技术与工程（勘查地球物理）",
-     "地球物理学",
-     "地球信息科学与技术",
-     "机械设计制造及其自动化",
-     "工业设计",
-     "电子信息工程",
-     "通信工程",
-     "信息管理与信息系统",
-     "工程管理",
-     "工商管理",
-     "市场营销",
-     "会计学",
-     "经济学",
-     "国际经济与贸易",
-     "旅游管理",
-     "统计学",
-     "英语",
-     "地理科学",
-     "自然地理与资源环境",
-     "软件工程",
-     "测绘工程",
-     "遥感科学与技术",
-     "地理信息科学",
-     "地理空间信息工程",
-     "数学与应用数学",
-     "信息与计算科学",
-     "物理学",
-     "社会体育指导与管理",
-     "宝石及材料工艺学",
-     "产品设计（珠宝首饰设计）",
-     "广播电视学",
-     "音乐学",
-     "视觉传达设计",
-     "环境设计",
-     "数字媒体艺术",
-     "法学",
-     "土地资源管理",
-     "公共事业管理",
-     "行政管理",
-     "土地整治工程",
-     "应急管理",
-     "思想政治教育",
-     "计算机科学与技术",
-     "网络工程",
-     "信息安全",
-     "空间信息与数字技术",
-     "数据科学与大数据技术",
-     "智能科学与技术",
-     "测控技术与仪器",
-     "自动化",
-     "海洋科学",
-     "海洋工程与技术",
-    ],
-    //enrollment
-    Array(stride(from: 2013, through: 2023, by: 1)).map {String($0) }
-    
-])
+        schoolList,
+        subjectList,
+        enrollmentList
+    ])
+    let GradeFilterItem = FilterItem(
+    title: ["学期","课程类别","学分","开课学院"],
+    inputType: [.option,.option,.option,.option],
+    predicate: [["是","早于","晚于"],["是","不是"],["是","大于","小于"],["是"]],
+    item: [
+        semesterList,
+        lectureTypeList,
+        creditList,
+        schoolList
+    ])
+    let LectureFilterItem = FilterItem(
+    title: ["课程类别","考核方式","学分","开课学院","上课时间","授课老师"],
+    inputType: [.option,.option,.option,.option,.option,.textfill],
+    predicate: [["是"],["是"],["是","大于","小于"],["是"],["是","包含","不包含"],["是"]],
+    item: [
+        lectureTypeList,
+        AssessmentTypeList,
+        creditList,
+        schoolList,
+        weekdayList
+    ])
+}
+

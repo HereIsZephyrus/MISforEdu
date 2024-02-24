@@ -40,7 +40,7 @@ struct GradeCheckView: View {
             //self.lecturelist.append(DisplayInterface<LectureInfo>(filter: lectureFilter).Fatch())
         //}
         //lectureFilter = Filter()
-        let lectureList = DisplayInterface<LectureInfo>(filter: lectureFilter).Fatch()
+        let lectureList = LectureInfoDisplay(filter: lectureFilter).Fatch()
         NavigationStack{
             List {
                 //GradeBar(lecture: ex_courses[0], attend: ex_attendence[0])

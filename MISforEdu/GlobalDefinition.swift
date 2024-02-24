@@ -29,12 +29,12 @@ enum title_type : String{
     case associate_professor
     case lecturer
 }
-enum credit_type : String{
+enum credit_type : String, CaseIterable{
     case test = "考试"
     case exam = "考核"
     case none = "无"
 }
-enum lecture_type : String{
+enum lecture_type : String, CaseIterable{
     case basic = "基础必修"
     case restricted = "专业选修"
     case elective = "通用选修"

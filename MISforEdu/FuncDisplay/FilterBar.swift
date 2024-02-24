@@ -97,6 +97,6 @@ struct FilterBar: View {
 
 struct FilterBar_Previews: PreviewProvider {
     static var previews: some View {
-        FilterBarProcessor(filter: FilterView(filter: PersonFilterItem))
+        FilterBarProcessor(filter: FilterView(filter: Filters().PersonFilterItem))
     }
 }
