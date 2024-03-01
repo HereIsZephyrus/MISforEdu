@@ -27,11 +27,14 @@ struct Lecture{
 }
 
 struct ClassInfo {
+    var name : String
     var firstWeek : Int
     var lastWeek : Int
     var belongedLec: LectureInfo
     var classTime : [Int]
     var classRoom : String
+    var instructor : String
+    var info : String
 }
 struct editClassInterface : editInterface{
     var ID : String
@@ -39,7 +42,7 @@ struct editClassInterface : editInterface{
         return .successful
     }
     func Fatch(ID : String) -> ClassInfo{
-        return .init(firstWeek: 1, lastWeek: 20, belongedLec: .init(name: "", school: "", type: .basic, assessment: .exam, credit: 1.0), classTime: [], classRoom: " ")
+        return .init(name: "sjk-1", firstWeek: 1, lastWeek: 20, belongedLec: ex_lecture_info[0], classTime: [], classRoom: " ",instructor: "郑坤",info: "")
     }
     func Credential() -> String{
         return ""
@@ -99,4 +102,32 @@ struct editSubjectInterface : editInterface{
 struct Subject{
     let interface : editClassInterface
     var info : SubjectInfo
+}
+
+struct AttendenceInfo{
+    var classID: String
+    var studentID: String
+    var score : Float
+}
+struct editAttendenceInterface : editInterface{
+    var ID : String
+    func Push(execution: String) -> update_status{
+        return .successful
+    }
+    func Fatch(ID : String) -> AttendenceInfo{
+        return ex_attendence_info[0]
+    }
+    func Credential() -> String{
+        return ""
+    }
+    func SyncWithDatabase() -> Bool{
+        return true
+    }
+}
+struct ToAttendence{
+    let interface : editAttendenceInterface
+    var info : AttendenceInfo
+    func Analysis(){
+
+    }
 }

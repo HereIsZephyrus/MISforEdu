@@ -11,8 +11,9 @@ struct SheetNavigationBar: View {
     let num : Int
     @Binding var index : Int
     let SourseView : AccountView
-    let confirmAction : () -> Void
+    let confirmAction : () -> Bool
     @Binding var finishedSheet : [Bool]
+    @State var showAlert : Bool = false
     @State var allFinished : Bool = false
     var next_index = 0
     var body: some View {
@@ -26,34 +27,34 @@ struct SheetNavigationBar: View {
             
             Button{
                 index -= 1
+                showAlert = false
             }label: {
                 NavigationTextStyle(content: "上一页")
             }.disabled(index <= 0)
             
             Button{
                 index += 1
+                showAlert = false
             }label: {
                 NavigationTextStyle(content: "下一页")
             }.disabled(index >= num - 1)
             
             Button{
-                finishedSheet[index].toggle()
-                let  next_index = FindNextCritic(stateList : finishedSheet)
-                if (next_index == num){
-                    allFinished = true
+                showAlert = confirmAction()
+                if (showAlert == false){
+                    finishedSheet[index].toggle()
+                    let  next_index = FindNextCritic(stateList : finishedSheet)
+                    if (next_index == num){
+                        allFinished = true
+                    }
+                    else{
+                        index = next_index
+                    }
                 }
-                else{
-                    index = next_index
-                }
-                confirmAction()
-                //print(finishCritic)
-                //print(allFinished)
-                //print(next_index)
             } label: {
                 NavigationTextStyle(content: finishedSheet[index] ? "修改" : "提交")
-            }.alert(isPresented: $allFinished, content: {
-                Alert(title: Text("已完成全部评价"))
-            })
+            }.alert(isPresented: $allFinished, content: { Alert(title: Text("已完成全部评价")) })
+                .alert(isPresented: $showAlert, content: { Alert(title: Text("请完成每一项评价")) })
         }
     }
     func NavigationTextStyle(content : String) -> some View{

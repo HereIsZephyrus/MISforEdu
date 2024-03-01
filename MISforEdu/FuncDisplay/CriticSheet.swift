@@ -10,14 +10,17 @@ import SwiftUI
 struct CriticSheet: View {
     let question : [String]
     let questionNum : Int
+    let editable : Bool
     @Binding var rating : [Int]
+    @State var showAlert : Bool = false
     //@State var rating : [Int]
-    init(questionList : [String],ratingSheet : Binding<[Int]>){
+    init(questionList : [String],ratingSheet : Binding<[Int]>,editable : Bool){
     //init(questionList : [String]){
         self.question = questionList
         self._rating = ratingSheet
         //self.rating = Array(repeating: 0, count: questionList.count)
         self.questionNum = questionList.count
+        self.editable = (editable == false)
     }
     var body: some View {
         GeometryReader { geometry in
@@ -35,7 +38,12 @@ struct CriticSheet: View {
                                         Image(systemName: index <= rating[item] ? "star.fill" : "star")
                                             .foregroundColor(index <= rating[item] ? .yellow : .gray)
                                             .onTapGesture {
-                                                rating[item] = index
+                                                if editable{
+                                                    rating[item] = index
+                                                }
+                                                else{
+                                                    showAlert = true
+                                                }
                                             }
                                     }
                                     
@@ -50,7 +58,9 @@ struct CriticSheet: View {
                                 .fill(Color.white)
                                 .shadow(radius: 1)
                         )
-                    }
+                    }.alert(isPresented: $showAlert, content: {
+                        Alert(title: Text("您已提交评价,请先点击修改按钮"), primaryButton: .default(Text("好的"), action: {showAlert = false}), secondaryButton: .default(Text("取消"), action: {showAlert = false}))
+                    })
                 }
         }
     }

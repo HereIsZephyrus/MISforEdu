@@ -55,7 +55,9 @@ struct AccountView: View {
                                     }
                                 }
                                 Section {
-                                    NavigationLink(destination: CriticManageView(lectureList: ex_lecturelist_name, teacherList: ex_lecturelist_teacher)) {
+                                    NavigationLink(destination: //CriticManageView(lectureList: ex_lecturelist_name, teacherList: ex_lecturelist_teacher)
+                                    CriticManageView(lectureList: ex_class_info)
+                                    ) {
                                         Text("教学评价")
                                     }
                                 }
@@ -88,7 +90,10 @@ struct AccountView: View {
                                         }
                                     }
                                     Section {
-                                        NavigationLink(destination: GradeManageView(lectureList: ex_lecturelist_name, classList: ex_classlist_ID, creditType: .test))   {
+                                        NavigationLink(destination:
+                                                        //GradeManageView(lectureList: ex_lecturelist_name, classList: ex_classlist_ID, creditType: .test))
+                                        GradeManageView(classList: ex_class_info, creditType: .test))
+                                        {
                                             Text("成绩管理")
                                         }
                                     }

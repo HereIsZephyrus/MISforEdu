@@ -20,10 +20,11 @@ struct GradeManageView: View {
     @State var index : Int = 0
     let sheetHeader : [String]
     //@State private var isGradeConfirmed = false
-    init(lectureList : [String], classList : [String], creditType : credit_type){
-        self.lectureName = lectureList
-        self.classID = classList
-        self.lectureNum = lectureList.count
+    //init(lectureList : [String], classList : [String], creditType : credit_type){
+    init(classList : [ClassInfo], creditType : credit_type){
+        self.lectureName = classList.map{($0.belongedLec.name)}
+        self.classID = classList.map{($0.name)}
+        self.lectureNum = classList.count
         self.finishCritic = Array(repeating: false, count: lectureNum)
         //let initscore = Array(repeating: 0.0, count: gradeSheetHeads[creditType]!.count)
         self.gradeSheets = Array(repeating: [
@@ -80,14 +81,16 @@ struct GradeManageView: View {
                 .font(.title2)
         }
     }
-    func confirmGrades() {
+    func confirmGrades() -> Bool{
         //isGradeConfirmed = true
+        return false
     }
 }
 
 struct GradeManageView_Previews: PreviewProvider {
     static var previews: some View {
-        GradeManageView(lectureList: ex_lecturelist_name, classList: ex_classlist_ID,creditType: .test)
+        //GradeManageView(lectureList: ex_lecturelist_name, classList: ex_classlist_ID,creditType: .test)
+        GradeManageView(classList: ex_class_info, creditType: .test)
     }
 }
 

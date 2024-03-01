@@ -69,6 +69,26 @@ class LectureInfoDisplay : DisplayList<LectureInfo>{
         super.init(filter: Filter())
     }
 }
+class CriticListDisplay : DisplayList<ClassInfo>{
+    private var elements : [ClassInfo] = []
+    override func Fatch() -> [ClassInfo]{
+        //再抓取instructor信息检查课程是否已经评价
+        elements = ex_class_info
+        return elements
+    }
+    override init(filter : Filter){
+        super.init(filter: Filter())
+    }
+    func mapToTitle() -> ([String],[String]){
+        return (elements.map{$0.name},elements.map{$0.instructor})
+    }
+    func setElements(elements : [ClassInfo]){
+        self.elements = elements
+    }
+    func getElements() -> [ClassInfo]{
+        return elements
+    }
+}
 
 class UserInterface{
     var ID : String
